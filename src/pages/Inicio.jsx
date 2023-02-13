@@ -8,11 +8,23 @@ import Behance from '../Icons/Behance.svg'
 import Github  from '../Icons/Git.svg'
 import Linkedin from '../Icons/linkedin.svg'
 import Slider from '../components/Slider'
+import Menu from '../components/Menu'
 
-const Inicio = () => {
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
+
+function Inicio ()  {
+    
   return (
+
+
 <div>
-<h3 className=' lg:ml-24 ml-12 sm:ml-24 text-teal-400 text-lg font-medium' >Hola me llamo</h3>
+<Menu />
+<h3 className=' lg:ml-24 ml-12 sm:ml-24 text-teal-400 text-lg font-medium mt-10' >Hola me llamo</h3>
 <br></br>
 <h1 className='   text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold'>BRAYAN ALBADAM</h1>
 <h1 className=' md:h-auto md:w-30 text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold' >DISEÑADOR <span className='text-teal-400'>MULTIMEDIA</span></h1>
@@ -30,10 +42,10 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <a href="https://www.github.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-4' src={Github} alt="github" /></a>
 <a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer"><img className='ml-4' src={Linkedin} alt="linkedin" /></a>
 </div> 
-<div className=' flex md:ml-24'>
-<button className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg" role="link" onClick={()=> window.location='mailto:brayanalbadam@gmail.com'}>
+<div id='quiensoy' className=' flex md:ml-24'>
+<a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
   Contacto
-</button>
+</a>
 <button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1NpszMZ-FZMmAxQNMcMuR0yytxGVaXkh5/view?usp=share_link" target="_blank" rel="noopener noreferrer">
   CV</a>
 </button>
@@ -41,18 +53,19 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <br></br>
 <br></br>
 <br></br>
-<img className='hover:bg-gray-400 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  md:w-48 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
-<h2 className='max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl'>01 Quien Soy</h2>
+<img    className=' hover:bg-gray-400 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  
+md:w-48 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
+<h2 className='max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
 <hr className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></hr>
 
-<p className='leading-normal ml-5 lg:ml-24 text-left  text-gray-200'>
+<p className='leading-normal ml-5 lg:ml-24 text-left  text-gray-200 "'>
 Hola!! Soy Brayan Albadam diseñador multimedia y desarrollador frontend del diplomado<a href="http://www.misiontic.gov.co" target="_blank" rel="noopener noreferrer"> <span className='text-teal-400'> Misión TIC 2022. </span></a> <br></br>
 Tengo experiencia en medios de comunicación, radio y televisión donde participe en la parte tecnica audiovisual;<br></br>
 también labore en las emisoras de Todelar Palmira, HopeRadio Colombia y Armonias del Palmar de RCN Radio.<br></br>
 Me he desempeñado en comunicación digital, social media, periodismo digital y radio host.<br></br>
 </p>
 <br></br>
-<p className='leading-relaxed ml-5 lg:ml-24 text-left whitespace-normal break-normal  text-gray-200'>
+<p  className='leading-relaxed ml-5 lg:ml-24 text-left whitespace-normal break-normal  text-gray-200'>
 En el area del diseño he creado la marca para pequeñas y medianas empresas ademas de personas profesionales,<br></br>
 me he desempeñado como desarrollador frontend en Wordpress y de implementación de una plataforma educativa<br></br>
 para usuarios en centroamerica donde enfoque mis habilidades en Diseño Ux y desarrollo.<br></br>
@@ -62,10 +75,10 @@ También fui seleccionado como semifinalista del <a href='https://www.infobae.co
 Estos son algunos de los programas con los que me he desempeñado:<br></br>
 </p>
 
-<Slider />
+< Slider />
 
 <div className='shadow-lg rounded-xl mt-2 py-3 ml-5 mx-10' >
-<h2 className='ml-12 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl'>02 Formación Academica</h2>
+<h2 className='ml-12 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>02 Formación Academica</h2>
 <hr className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></hr>
 
 
@@ -85,7 +98,7 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
     <tr>
       <td className='px-2 md:px-6 py-4'>Curso comunidades digitales administración de interacciones<br></br>
               en linea | MINTIC</td>
-      <td className='px-1 py-4 md:px-6 '>Certificación periodismo ciudadano recursos para la comunicación digital | AppsCO</td>
+      <td   className='px-1 py-4 md:px-6 '>Certificación periodismo ciudadano recursos para la comunicación digital | AppsCO</td>
       
     </tr>
     <tr>
@@ -100,7 +113,7 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
       
     </tr>
     <tr>
-      <td className='px-2 md:px-6 py-4'>Curso Desarrollo WEB | Google Activate</td>
+      <td id='experiencia'  className='px-2 md:px-6 py-4'>Curso Desarrollo WEB | Google Activate</td>
       <td className='px-1 py-4 md:px-6 '>Certificación Autocad 2D: Aplicación de herramientas intermedias para proyectos CAD | SENA</td>
       
     </tr>
@@ -120,7 +133,7 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
 <br></br>
 
 <div className=' shadow-lg rounded-xl mt-2 py-3 ml-5 mx-10' >
-<h2 className='ml-12 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl'>03 Experiencia Laboral</h2>
+<h2 className='ml-12 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>03 Experiencia Laboral</h2>
 <hr className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></hr>
 
 
@@ -129,15 +142,15 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
   <tbody>
     <tr>
       <td className='px-2 md:px-6 py-4'>Productor de audio | Radio Luna Todelar</td>
-      <td className='px-1 py-4 md:px-6 '>Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN RADIO</td>
+      <td className='px-1 py-4 md:px-10 '>Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN RADIO</td>
     </tr>
     <tr>
       <td className='px-2 md:px-6 py-4'>Periodista | Contratista comunicaciones<br></br>Alcaldia de Palmira  </td>
-      <td className='px-1 py-4 md:px-6 '>Productor de Audio - Community Manager | Hope Radio Colombia</td>
+      <td className='px-1 py-4 md:px-10 '>Productor de Audio - Community Manager | Hope Radio Colombia</td>
     </tr>
     <tr>
       <td className='px-2 md:px-6 py-4'>Periodista Digital | ANC Noticias</td>
-      <td className='px-1 py-4 md:px-6 '>Web y Multimedia Developer | We Are Angular</td>
+      <td className='px-1 py-4 md:px-10 '>Web y Multimedia Developer | We Are Angular</td>
     </tr>
     <tr>
       <td className='px-2 md:px-6 py-4'>Gestor de Proyecto TI | Innpulsa-AppsCo-ICESI</td>
@@ -148,7 +161,7 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
     </div>
     <br></br>
    <div>
-   <h2 className='text-center   md:ml-36 md:text-left text-teal-500 font-medium text-xl my-1'>04 Contacto</h2>
+   <h2 id='contacto' className='text-center   md:ml-36 md:text-left text-teal-500 font-medium text-xl my-1 data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>04 Contacto</h2>
     <hr className='h-1 bg-teal-500 w-1/2 mx-20 my-1'></hr>
     <p className=' text-center mt-10 text-gray-200'>No dudes en contactar conmigo, cada proyecto es un nuevo desafio para mi,<br></br>
           no existen clientes grandes o pequeños, todos son importantes y todos <br></br>
@@ -156,13 +169,14 @@ Estos son algunos de los programas con los que me he desempeñado:<br></br>
    </div>
  
     <div className='flex justify-center'>
-    <button className="button mt-8 boton hover:bg-teal-500 text-white font-medium py-5  rounded-lg " role="link" onClick={()=> window.location='mailto:brayanalbadam@gmail.com'}>
+    <a className="button mt-8 boton hover:bg-teal-500 text-white font-medium py-5  rounded-lg " href='mailto:brayanalbadam@gmail.com'>
         CONTACTAME
-    </button>
+    </a>
     </div>
     <br></br>
     <br></br>
     <Footer/>
+   
 </div>
 
 

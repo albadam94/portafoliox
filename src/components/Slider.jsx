@@ -38,9 +38,9 @@ export default function App() {
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper mt-6 ">
-            <div className="className='w-5 md:w-32 lg:w-48 py-10 mx-10 md:w-10'">
+            <div  className="className='w-5 md:w-32 lg:w-48 py-10 mx-10 md:w-10'">
         <SwiperSlide>
-            <img className="mb-10" src={ Illustrator} alt="illustrator" />
+            <img id='estudios'  className="mb-10" src={ Illustrator} alt="illustrator" />
         </SwiperSlide>
         <SwiperSlide>
             <img src={ Photoshop} alt="photoshop" />
