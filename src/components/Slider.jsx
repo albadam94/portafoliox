@@ -37,10 +37,10 @@ export default function App() {
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper">
-            <div className="className='w-5 md:w-32 lg:w-48'">
+        className="mySwiper mt-6 ">
+            <div className="className='w-5 md:w-32 lg:w-48 py-10 mx-10 md:w-10'">
         <SwiperSlide>
-            <img src={ Illustrator} alt="illustrator" />
+            <img className="mb-10" src={ Illustrator} alt="illustrator" />
         </SwiperSlide>
         <SwiperSlide>
             <img src={ Photoshop} alt="photoshop" />
