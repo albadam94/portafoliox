@@ -1,4 +1,5 @@
 import React from 'react'
+import 'animate.css';
 import Footer from '../components/Footer'
 import Foto from '../images/Perfil.png'
 import Facebook from '../Icons/Facebook.svg'
@@ -27,7 +28,7 @@ function Inicio ()  {
 <h3 className=' lg:ml-24 ml-12 sm:ml-24 text-teal-400 text-lg font-medium mt-10' >Hola me llamo</h3>
 <br></br>
 <h1 className='   text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold'>BRAYAN ALBADAM</h1>
-<h1 className=' md:h-auto md:w-30 text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold' >DISEÑADOR <span className='text-teal-400'>MULTIMEDIA</span></h1>
+<h1 className='animate__slideInUp md:h-auto md:w-30 text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold' >DISEÑADOR <span className='text-teal-400'>UX/UI</span></h1>
 <br></br>
 <p className='leading-relaxed ml-12 lg:ml-24 text-gray-200 text-lg font-medium ml:text-base'>
 Diseñador Multimedia y Desarrollador Frontend MINTIC 🧑‍💻  <br></br> especializado en diseño Ux/Ui, creación de marca y marketing digital<br></br>
@@ -55,7 +56,7 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <br></br>
 <img    className=' hover:bg-gray-400 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  
 md:w-48 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
-<h2 className='max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
+<h2 className=' max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
 <hr className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></hr>
 
 <p className='leading-normal ml-5 lg:ml-24 text-left  text-gray-200 "'>
@@ -72,7 +73,7 @@ para usuarios en centroamerica donde enfoque mis habilidades en Diseño Ux y des
 
 También fui seleccionado como semifinalista del <a href='https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/' target="_blank" rel="noopener noreferrer"> <span className='text-teal-400'> concurso </span></a>de rediseño de la marca del aeropuerto Felipe Ángeles de México<br></br><br></br>
 
-Estos son algunos de los programas con los que me he desempeñado:<br></br>
+Estos son algunos de los software con los que me he desempeñado:<br></br>
 </p>
 
 < Slider />

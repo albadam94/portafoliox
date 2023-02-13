@@ -1,5 +1,5 @@
 
-import { NavLink } from "react-router-dom";
+import { NavLink,Link} from "react-router-dom";
 
 import logo from "../images/logo.png";
 
@@ -30,34 +30,35 @@ export default function Menu ()  {
  
  
 
-        <li>
-          <NavLink activeclass='active' onClick to="/#quiensoy" className="text-white block py-2 pl-2 pr-4 text-white-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray md:dark:hover:bg-transparent">Quien soy</NavLink>
+        <li >
+          <Link onClick to='/#quiensoy'  className="text-white block py-2 pl-2 pr-4 text-white-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-gray md:dark:hover:bg-transparent">Quien soy</Link>
         </li>
         <li>
-          <a href="#estudios" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Estudios</a>
+          <Link onClick to="/#estudios" className=" text-white block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Estudios</Link>
         </li>
         <li>
-          <a href="#experiencia" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiencia</a>
+          <Link onClick to="/#experiencia" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experiencia</Link>
         </li>
         <li>
-          <a href="#contacto" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
+          <Link onClick to="/#contacto" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</Link>
         </li>
         <li>
-          <a href="/Portafolio" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
-           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portafolio</a>
+          <Link reloadDocument onClick to="/Portafolio" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+           md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portafolio</Link>
         </li>
       </ul>
-    </div>
-  </div>
-
+      </div>
+      </div>
 </nav>
 
 
 
+
     </header>
+    
   )
 }

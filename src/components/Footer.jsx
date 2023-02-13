@@ -14,12 +14,12 @@ export default function Footer() {
         <p className="text-left ml-1 leading-relaxed  md:ml-24">Diseño | Desarrollo: Albadam Diseñador Multimedia</p>
 
 <div className='flex float-right mb-1 justify-items-stretch '>
-        <img className=' hover:bg-teal-400 bg-repeat-round' src={Facebook} alt="facebook" />
-        <img className='ml-4  hover:bg-teal-400' src={Instagram} alt="instagram" />
-        <img className='ml-4  hover:bg-teal-400' src={Twitter} alt="twitter" />
-        <img className='ml-4  hover:bg-teal-400' src={Behance} alt="behance" />
-        <img className='ml-4  hover:bg-teal-400' src={Github} alt="github" />
-        <img className='ml-4  hover:bg-teal-400' src={Linkedin} alt="linkedin" />
+<a href="https://www.facebook.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-10 md:ml-24 hover:bg-teal-700 rounded-lg' src={Facebook} alt="facebook" /></a>
+<a href="https://www.instagram.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-4 hover:bg-teal-700 rounded-lg ' src={Instagram} alt="instagram"/> </a>
+<a href="https://www.twitter.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-4 hover:bg-teal-700 rounded-lg' src={Twitter} alt="twitter" /></a>
+<a href="https://www.behance.net/brayanalbadam" target="_blank" rel="noopener noreferrer"><img className='ml-4 mt-2 hover:bg-teal-700 rounded-sm' src={Behance} alt="behance" /></a>
+<a href="https://www.github.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-4 hover:bg-teal-700 rounded-lg' src={Github} alt="github" /></a>
+<a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer"><img className='ml-4 hover:bg-teal-700 rounded-lg' src={Linkedin} alt="linkedin" /></a>
 </div> 
         </footer>
     );
