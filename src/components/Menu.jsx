@@ -28,7 +28,7 @@ import logo from "../images/logo.png";
     <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
       <ul class="flex flex-col p-1 text-teal-300 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  dark:bg-gray-800  dark:border-gray-700">
         <li>
-          <NavLink activeclass='active' onClick to="/" class=" text-white md:bg-transparent  md:p-0 md:dark:text-white dark:bg-gray-600 md:dark:bg-transparent" aria-current="page">Inicio</NavLink>
+          <NavLink exact  activeclass='active' onClick to="/" class=" text-white md:bg-transparent  md:p-0 md:dark:text-white dark:bg-gray-600 md:dark:bg-transparent" aria-current="page">Inicio</NavLink>
         </li>
  
  
@@ -42,11 +42,11 @@ import logo from "../images/logo.png";
            md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Estudios</NavLink>
         </li>
         <li>
-          <NavLink activeclass='active'  onClick to="#experiencia" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+          <NavLink activeclass='active'  onClick to="/#experiencia" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
            md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Experiencia</NavLink>
         </li>
         <li>
-          <NavLink activeclass='active' onClick to="#contacto" className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
+          <NavLink activeclass='active' onClick to={"/#contacto"} className=" text-white block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0
            md:hover:text-teal-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" >Contacto</NavLink>
         </li>
         <li>

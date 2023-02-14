@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as  Router,Route, Routes} from 'react-router-dom'
 import Portafolio from './pages/Portafolio'
+import Error from './components/Error'
+
 
 import Inicio from './pages/Inicio'
 
@@ -14,8 +16,9 @@ export default function App ()  {
     <Menu />
     
     <Routes>
-      <Route path="/" element={<Inicio/>} />
-      <Route path="/portafolio" element={<Portafolio />} />
+      <Route  exact path="/" element={<Inicio/>} />
+      <Route  exact path="/portafolio" element={<Portafolio/>} />
+      <Route path="*"  element={<Error/>} />
       
        
 

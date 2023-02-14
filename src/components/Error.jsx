@@ -1,11 +1,11 @@
 import React from 'react'
 import emoji from '../images/Emoji.png'
-import Menu from './Menu'
+
 import Footer from './Footer'
 const Error = () => {
   return (
     <div>
-      <Menu />
+      
       <div className='h-screen w-full flex flex-col justify-center items-center'>
       <img className=' justify-center items-center h-80 ' src={emoji} alt="error 404" />
       <h1 className='text-9xl font-extrabold text-teal-400 tracking-widest' > 404</h1>

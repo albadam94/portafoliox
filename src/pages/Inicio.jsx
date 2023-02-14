@@ -9,6 +9,8 @@ import Behance from '../Icons/Behance.svg'
 import Github  from '../Icons/Git.svg'
 import Linkedin from '../Icons/linkedin.svg'
 import Slider from '../components/Slider'
+import ScrollButton from '../components/ScrollButton';
+
 
 
 import AOS from 'aos';
@@ -176,6 +178,7 @@ Estos son algunos de los software con los que me he desempeñado:<br></br>
     </div>
     <br></br>
     <br></br>
+<ScrollButton/>
     <Footer/>
    
 </div>
