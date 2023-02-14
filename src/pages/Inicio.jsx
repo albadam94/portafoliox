@@ -49,7 +49,7 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
   Contacto
 </a>
-<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1jqp-vIHMMtUzdSU6pwN_JW7ChZMXCRtZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1sXZOzKBSm4lg-30bDrIEEFtnQgv9qe2q/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   CV</a>
 </button>
 </div>

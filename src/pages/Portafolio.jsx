@@ -13,6 +13,7 @@ import Polo from '../media/POLO.png';
 import MK from '../media/MK1.png';
 import Movil from '../media/Movil.png';
 import Planetas from '../media/Planetas.png';
+import ScrollButton from '../components/ScrollButton';
 
 
 
@@ -87,7 +88,7 @@ const Portafolio = () => {
              </div>
              </div>
           </>
-      
+          <ScrollButton/>
       <Footer />
     </div>
       
