@@ -1,35 +1,30 @@
 import React from 'react'
-
-import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { BrowserRouter as  Router,Route, Routes} from 'react-router-dom'
+import Portafolio from './pages/Portafolio'
 
 import Inicio from './pages/Inicio'
-import Portafolio from './pages/Portafolio'
-import Error from './components/Error'
 
+import Menu from './components/Menu'
 
-const router = createBrowserRouter([
-
-  { path: '/',
-   element: <Inicio/>,
-  errorElement: <Error/>
-  },
-
-  { 
-    path: '/portafolio', 
-    element: <Portafolio/>, 
-    errorElement: <Error/>
-  },
-
-])
-
-
-
-
+export default function App ()  {
   
-export default function App() {
   return (
-    <RouterProvider router={router}>
-     <></>
-    </RouterProvider>
-  )
+    <Router>
+     
+    <Menu />
+    
+    <Routes>
+      <Route path="/" element={<Inicio/>} />
+      <Route path="/portafolio" element={<Portafolio />} />
+      
+       
+
+    </Routes>
+    
+    
+    
+    </Router>
+  );
 }
+
+

@@ -1,6 +1,6 @@
 
 import Footer from '../components/Footer'
-import Menu from '../components/Menu'
+
 
 import Labogada from '../media/LH COLOR.png';
 import Aeropuerto from '../media/LOGO AEROPUERTO.png';
@@ -22,7 +22,7 @@ import Planetas from '../media/Planetas.png';
 const Portafolio = () => {
   return (
     <div>
-      <Menu />
+     
 
       <>
 

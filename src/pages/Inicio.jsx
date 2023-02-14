@@ -9,7 +9,7 @@ import Behance from '../Icons/Behance.svg'
 import Github  from '../Icons/Git.svg'
 import Linkedin from '../Icons/linkedin.svg'
 import Slider from '../components/Slider'
-import Menu from '../components/Menu'
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -24,7 +24,7 @@ function Inicio ()  {
 
 
 <div>
-<Menu />
+
 <h3 className=' lg:ml-24 ml-12 sm:ml-24 text-teal-400 text-lg font-medium mt-10' >Hola me llamo</h3>
 <br></br>
 <h1 className='   text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold'>BRAYAN ALBADAM</h1>
@@ -47,7 +47,7 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
   Contacto
 </a>
-<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1NpszMZ-FZMmAxQNMcMuR0yytxGVaXkh5/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1jqp-vIHMMtUzdSU6pwN_JW7ChZMXCRtZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   CV</a>
 </button>
 </div>
