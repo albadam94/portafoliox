@@ -13,6 +13,7 @@ import ScrollButton from '../components/ScrollButton';
 
 
 
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -30,7 +31,7 @@ function Inicio ()  {
 <h3 className=' lg:ml-24 ml-12 sm:ml-24 text-teal-400 text-lg font-medium mt-10' >Hola me llamo</h3>
 <br></br>
 <h1 className='   text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold'>BRAYAN ALBADAM</h1>
-<h1 className='animate__slideInUp md:h-auto md:w-30 text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold' >DISEÑADOR <span className='text-teal-400'>UX/UI</span></h1>
+<h1 className='animate__slideInUp md:h-auto md:w-30 text-gray-200 lg:text-7xl md:flex-1 ml-12 lg:ml-24 lg:text-[80px] font-bold' >UX <span className='text-teal-400'>ENGINEER</span></h1>
 <br></br>
 <p className='leading-relaxed ml-12 lg:ml-24 text-gray-200 text-lg font-medium ml:text-base'>
 Diseñador Multimedia y Desarrollador Frontend MINTIC 🧑‍💻  <br></br> especializado en diseño Ux/Ui, creación de marca y marketing digital<br></br>
@@ -49,7 +50,7 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
   Contacto
 </a>
-<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1sXZOzKBSm4lg-30bDrIEEFtnQgv9qe2q/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<button className="ml-10 md:ml-32 mt-8 boton hover:bg-teal-500 text-white font-medium py-3 px-8 rounded-xl shadow-lg"  role="link" ><a href="https://drive.google.com/file/d/1WVyGqmGoQ38Ndriqlzjugfe0mMPumoCa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   CV</a>
 </button>
 </div>
@@ -95,7 +96,7 @@ Estos son algunos de los software con los que me he desempeñado:<br></br>
     </tr>
     <tr>
       <td className='px-2 md:px-6 py-4'>Curso marketing digital IAB Spain | Google Activate</td>
-      <td className='px-1 py-4 md:px-6 '>Diseño Ux: Experiencia de usuario Ux/Ui + Figma | Udemy</td>
+      <td className='px-1 py-4 md:px-6 '>Diseño Ux: Diseño Experiencia de usuario-Diseño de Interfaces Ux/Ui + Figma | Udemy</td>
       
     </tr>
     <tr>
