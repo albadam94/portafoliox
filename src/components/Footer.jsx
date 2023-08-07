@@ -11,7 +11,7 @@ import Linkedin from '../Icons/linkedin.svg'
 export default function Footer() {
     return (
         <footer className="footer p-10 mt-10 text-center text-gray-200">
-        <p className="text-left ml-1 leading-relaxed  md:ml-24">Diseño | Desarrollo: Albadam Diseñador Multimedia</p>
+        <p className="text-left ml-1 leading-relaxed  md:ml-24">Diseño | Desarrollo: UXAlbadam</p>
 
 <div className='flex float-right mb-1 justify-items-stretch '>
 <a href="https://www.facebook.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='ml-10 md:ml-24 hover:bg-teal-700 rounded-lg' src={Facebook} alt="facebook" /></a>
