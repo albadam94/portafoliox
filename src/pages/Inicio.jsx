@@ -47,17 +47,17 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 ml-4' src={Linkedin} alt="linkedin" /></a>
 </div> 
 <div id='quiensoy' className=' flex md:ml-24'>
-<button className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-10 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
+<a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-10 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
   Contacto
-</button>
-<button className="ml-10 md:ml-32 mt-10 boton hover:bg-teal-500 text-white font-medium py-3 px-10 rounded-xl shadow-lg"  role="link"  href="https://drive.google.com/file/d/1WVyGqmGoQ38Ndriqlzjugfe0mMPumoCa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+</a>
+<a className="ml-10 md:ml-32 mt-10 boton hover:bg-teal-500 text-white font-medium py-3 px-10 rounded-xl shadow-lg"  href="https://drive.google.com/file/d/1p_3yPSe-I-E2Am3uqp6ArPC-0zS5vsOI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
   CV
-</button>
+</a>
 </div>
 <br></br>
 <br></br>
 <br></br>
-<img    className=' hover:bg-gray-50 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  
+<img    className=' hover:bg-slate-500 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  
 md:w-48 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
 <h2 className=' max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
 <p className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></p>
@@ -174,7 +174,7 @@ Estos son algunos de los software con los que me he desempeñado:<br></br>
    </div>
  
     <div className='flex justify-center'>
-    <a className="button mt-8 boton hover:bg-teal-500 text-white font-medium py-5  rounded-lg " href='mailto:brayanalbadam@gmail.com'>
+    <a id='contacto'className="button mt-8 boton hover:bg-teal-500 text-white font-medium py-5  rounded-xl " href='mailto:brayanalbadam@gmail.com'>
         CONTACTAME
     </a>
     

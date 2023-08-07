@@ -5,11 +5,11 @@ import Movil from '../media/Movil.png';
 import Afro from '../media/Afroproyectos.png';
 import Labogada from '../media/LH COLOR.png';
 import Aeropuerto from '../media/LOGO AEROPUERTO.png';
-import Elemento from '../media/QUINTO ELEMENTO.png';
 import Waya from '../media/WAYA-03.png';
 import MK from '../media/MK1.png';
-import Planetas from '../media/Planetas.png';
+import Design from '../media/Design.png';
 import ScrollButton from '../components/ScrollButton';
+import Cerveceria from '../media/LaCerveceria.png';
 
 
 
@@ -26,7 +26,7 @@ const Portafolio = () => {
  <ul>
             <h1 className=" text-center text-white text-5xl mt-10  " >PORTAFOLIO</h1>
              <div className="d-flex justify-content-center">
-               <li className=' text-center text-white bg-teal-600 md:bg-teal-600 md:py-2 md:my-5 md:ml-9 mr-6  ' >Marcas-Diseño Web-Desarrollo Web</li>
+               <li className=' text-center text-white bg-teal-600 md:bg-teal-600 md:py-2 md:my-5 md:ml-9 mr-6  ' >Marca-Diseño UX-Desarrollo Web</li>
                </div>
             </ul>
          
@@ -71,11 +71,11 @@ const Portafolio = () => {
           src={ MK} /> </a>
       </div>
       <div class="w-1/2 p-1 md:p-2">
-      <a href="https://www.behance.net/gallery/121154455/EL-QUINTO-ELEMENTO-SPAIDENTIDAD-VISUALDISENO-WEB"  target="_blank" rel="noopener noreferrer">
+      <a href="https://www.behance.net/gallery/176885333/Lets-Design-Caso-de-Estudio"  target="_blank" rel="noopener noreferrer">
         <img
           alt="gallery"
           class="block h-full w-full rounded-lg object-cover object-center"
-          src={Elemento} /> </a>
+          src={Design} /> </a>
       </div>
       <div class="w-1/2 p-1 md:p-2">
       <a href="https://www.behance.net/gallery/124044579/MARCA-WAYA-REPOSTERIA-ANCESTRAL"  target="_blank" rel="noopener noreferrer">
@@ -93,11 +93,11 @@ const Portafolio = () => {
           </a>
       </div>
       <div class="w-1/2 p-1 md:p-2">
-      <a href="https://www.behance.net/gallery/163075969/UXUI-Planetas"  target="_blank" rel="noopener noreferrer"> 
+      <a href="https://www.behance.net/gallery/176068785/La-Cerveceria-APP"  target="_blank" rel="noopener noreferrer"> 
         <img
           alt="gallery"
           class="block h-full w-full rounded-lg object-cover object-center bg-white"
-          src={Planetas} />
+          src={Cerveceria} />
           </a>
       </div>
     </div>
