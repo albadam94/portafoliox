@@ -11,14 +11,14 @@ import logo from "../images/logo.png";
 
 
   return (
-    <header className="sticky  z-20 top-0 p-12 shadow-lg ">
+    <header className="sticky  z-2 top-0 p-12 shadow-lg ">
   
    <nav class="px-2  py-2">
   <div class="container flex flex-wrap items-center justify-between mx-">
     <a href="/" class="flex items-center">
     <img className="h-12 ml-16 " src={logo} alt="Logo"/>
     </a>
-    <button class="hamburger" type="button"/>
+    <button class="navbar-burger" type="button"/>
     <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-1 ml-2 text-sm rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false" 
    >
       <span class="sr-only"></span>

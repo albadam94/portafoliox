@@ -57,12 +57,12 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <br></br>
 <br></br>
 <br></br>
-<img    className=' hover:bg-slate-500 ease-in sombra float-right   md:mt-8 mr-20 w-44 m  
-md:w-48 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
-<h2 className=' max-w-full ml-24 lg:mt-5 mt-64 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
+<img    className=' hover:bg-slate-500 ease-in sombra float-right   md:mt-8 mr-20 w-60 m my-8  
+md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl  ' src={Foto} alt='Fotoperfil'/>
+<h2 className='  max-w-full ml-28 lg:mt-5 mt-18  text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>01 Quien Soy</h2>
 <p className='h-1 bg-teal-500 w-1/2 mx-24 my-1'></p>
 
-<p className='leading-normal ml-5 lg:ml-24 text-left  text-gray-200 "'>
+<p className='mt-7 leading-normal ml-5 lg:ml-24 text-left  text-gray-200 "'>
 Hola!! Soy Brayan Albadam diseñador multimedia y desarrollador frontend del diplomado<a href="http://www.misiontic.gov.co" target="_blank" rel="noopener noreferrer"> <span className='text-teal-400'> Misión TIC 2022. </span></a> <br></br>
 Tengo experiencia en medios de comunicación, radio y televisión donde participe en la parte tecnica audiovisual;<br></br>
 también labore en las emisoras de Todelar Palmira, HopeRadio Colombia y Armonias del Palmar de RCN Radio.<br></br>
@@ -166,7 +166,7 @@ Estos son algunos de los software con los que me he desempeñado:<br></br>
     </div>
     <br></br>
    <div>
-   <h2 className='ml-12 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>04 Contacto</h2>
+   <h2 className='ml-16 md:ml-24 container max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-10 text-teal-500 font-medium text-xl data-aos="fade-up"data-aos-easing="linear" data-aos-duration="1000"'>04 Contacto</h2>
     <p className='h-1 bg-teal-500 w-1/2 mx-20 my-1'></p>
     <p className=' text-center mt-10 text-gray-200'>No dudes en contactar conmigo, cada proyecto es un nuevo desafio para mi,<br></br>
           no existen clientes grandes o pequeños, todos son importantes y todos <br></br>
