@@ -11,7 +11,7 @@ import logo from "../images/logo.png";
 
 
   return (
-    <header className="sticky  z-2 top-0 p-12 shadow-lg ">
+    <header className="sticky  z-10 top-0 p-12 shadow-lg ">
   
    <nav class="px-2  py-2">
   <div class="container flex flex-wrap items-center justify-between mx-">

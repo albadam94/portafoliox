@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 
 import Movil from '../media/Movil.png';
 import Afro from '../media/Afroproyectos.png';
-import Labogada from '../media/LH COLOR.png';
+import App from '../media/LH COLOR.png';
 import Aeropuerto from '../media/LOGO AEROPUERTO.png';
 import Waya from '../media/WAYA-03.png';
 import MK from '../media/MK1.png';
@@ -39,11 +39,11 @@ const Portafolio = () => {
   <div class="-m-1 flex flex-wrap md:-m-2">
     <div class="flex w-1/2 flex-wrap">
       <div class="w-1/2 p-1 md:p-2">
-      <a href="https://www.behance.net/gallery/126198439/DISENO-MARCA-LALA-GUTY"  target="_blank" rel="noopener noreferrer"> 
+      <a href="https://www.behance.net/gallery/177325279/UX-App-Ejercicios-Universidad-SanBuenaventura"  target="_blank" rel="noopener noreferrer"> 
         <img
           alt="gallery"
-          class="block h-full w-full rounded-lg object-cover object-center"
-          src={Labogada} />
+          class="block h-full w-full rounded-lg object-cover object-center bg-slate-200"
+          src={App} />
           </a>
       </div>
    

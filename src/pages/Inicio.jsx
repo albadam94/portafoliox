@@ -4,13 +4,12 @@ import Footer from '../components/Footer'
 import Foto from '../images/Perfil.png'
 import Facebook from '../Icons/Facebook.svg'
 import Instagram from '../Icons/Instagram.svg'
-import Twitter from '../Icons/twitter.svg'
 import Behance from '../Icons/Behance.svg'
 import Github  from '../Icons/Git.svg'
 import Linkedin from '../Icons/linkedin.svg'
 import Slider from '../components/Slider'
 import ScrollButton from '../components/ScrollButton';
-
+import X from '../Icons/X.svg'
 
 
 
@@ -40,11 +39,11 @@ Enfocado en tecnologia y diseño para aplicar la creatividad en la ejecución de
 <br></br>
 <div className=' flex  md: items-stretch '>
 <a className='' href="https://www.facebook.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-full ml-10 md:ml-24' src={Facebook} alt="facebook" /></a>
-<a className=' ' href="https://www.instagram.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-full ml-4' src={Instagram} alt="instagram"/> </a>
-<a href="https://www.twitter.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-full ml-4' src={Twitter} alt="twitter" /></a>
-<a href="https://www.behance.net/brayanalbadam" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 ml-4 mt-2' src={Behance} alt="behance" /></a>
+<a className=' ' href="https://www.instagram.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-md ml-4' src={Instagram} alt="instagram"/> </a>
+<a href="https://www.twitter.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-sm ml-4' src={X} alt="twitter" /></a>
+<a href="https://www.behance.net/brayanalbadam" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500  ml-4 mt-2' src={Behance} alt="behance" /></a>
 <a href="https://www.github.com/albadam94" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-full ml-4' src={Github} alt="github" /></a>
-<a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 ml-4' src={Linkedin} alt="linkedin" /></a>
+<a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer"><img className='hover:bg-teal-500 rounded-md ml-4' src={Linkedin} alt="linkedin" /></a>
 </div> 
 <div id='quiensoy' className=' flex md:ml-24'>
 <a className= "max-w-full ml-5 md:ml-10 mt-8 hover:bg-teal-500 text-white font-medium py-3 px-10 rounded-xl shadow-lg" href='mailto:brayanalbadam@gmail.com'>
