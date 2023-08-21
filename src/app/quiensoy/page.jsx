@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Swiper from '../components/carousel'
 import Acordion from '../components/accordion'
+import Experiencia from '../components/aexperiencia'
 
 export default function QuienSoy() {
     return (
@@ -67,7 +68,8 @@ export default function QuienSoy() {
        
         </div>
         <Acordion/>
-
+        <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">Experiencia</h1>
+        <Experiencia/>
         </main>
     )
     }

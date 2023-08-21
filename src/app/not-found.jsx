@@ -1,14 +1,20 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function NotFound() {
     return (
         <main>
         <div>
-            <h1>404</h1>
-            <p>Lo siento, no he encontrado la página que buscas.</p>
+            <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">404</h1>
+            <Image src="/Lumalee.svg" alt="Lumalee" width={500} height={200} className="mx-auto mb-5"/>
+            <p className="flex justify-center mb-6 font-semibold">La recompensa de haberte perdido es estar más perdido</p>
             <Link href="/" legacyBehavior>
-            <a>Volver al inicio</a>
-            </Link>
+                
+            <div class="flex justify-center">
+                 <button class="bg-blue-950 hover:bg-teal-300 text-white font-semibold py-2 px-4 rounded mb-44">
+                        Volver al inicio
+                 </button>
+            </div>
+         </Link>
         </div>
         </main>
     );
