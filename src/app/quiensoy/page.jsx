@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Swiper from '../components/carousel'
+import Acordion from '../components/accordion'
 
 export default function QuienSoy() {
     return (
@@ -45,7 +46,7 @@ export default function QuienSoy() {
 </div>
 
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-5">
         <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Habilidades</h1>
         <div class="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-base">
                 <div>Diseño UX</div>
@@ -58,9 +59,14 @@ export default function QuienSoy() {
                 <div>Diseño de producto</div>
                 <div>Sketchup</div>
 </div>
-<Swiper/>
+                <Swiper/>
         </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">
+        <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Formación Academica</h1>
+
        
+        </div>
+        <Acordion/>
 
         </main>
     )

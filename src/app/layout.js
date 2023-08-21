@@ -1,7 +1,10 @@
+'use client'
 import './globals.css'
 import { Plus_Jakarta_Sans} from 'next/font/google'
 import Menu from './components/menu'
 import Footer from './components/footer'
+import {NextUIProvider} from '@nextui-org/react'
+
 
 
 
@@ -19,13 +22,15 @@ const Jakarta= Plus_Jakarta_Sans({
 
 export default function RootLayout({ children }) {
   return (
+   
     <html lang="en">
-    
+       
       <body className={Jakarta.className}>
-        <Menu />
-      
+        <Menu/>
+        <NextUIProvider>
+        
         {children}
-      
+      </NextUIProvider>
         <Footer />
 
 
@@ -34,5 +39,7 @@ export default function RootLayout({ children }) {
       </body>
       
     </html>
+   
+  
   )
 }

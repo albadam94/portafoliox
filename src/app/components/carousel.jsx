@@ -19,8 +19,8 @@ const MyComponent = () => {
 
   return (
     <Swiper
-      slidesPerView={5}
-      spaceBetween={20}
+      slidesPerView={6}
+      spaceBetween={0}
       freeMode={true}
       pagination={{
         clickable: true,
@@ -45,13 +45,13 @@ const MyComponent = () => {
             <Image src='/Logos/Lightroom.svg' width={90} height={90}  alt="Lightroom" />
         </SwiperSlide>
         <SwiperSlide>
-            <Image src='/Logos/Figma.svg' width={90} height={90}  alt="Figma" />
+            <Image src='/Logos/Figma.svg' width={70} height={90}  alt="Figma" />
         </SwiperSlide>
         <SwiperSlide>
-            <Image src='/Logos/iconHTML.svg' width={90} height={90}  alt="HTML" />
+            <Image src='/Logos/iconHTML.svg' width={80} height={90}  alt="HTML" />
         </SwiperSlide>
         <SwiperSlide>
-            <Image src='/Logos/iconCSS.svg' width={90} height={90}  alt="CSS" />
+            <Image src='/Logos/iconCSS.svg' width={70} height={90}  alt="CSS" />
         </SwiperSlide>
         <SwiperSlide>
             <Image src='/Logos/Tailwind.svg' width={90} height={90}  alt="Tailwind" />
