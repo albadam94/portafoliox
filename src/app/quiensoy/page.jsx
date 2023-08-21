@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Swiper from '../components/carousel'
 
 export default function QuienSoy() {
     return (
@@ -57,7 +58,7 @@ export default function QuienSoy() {
                 <div>Diseño de producto</div>
                 <div>Sketchup</div>
 </div>
-
+<Swiper/>
         </div>
        
 
