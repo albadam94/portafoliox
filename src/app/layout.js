@@ -1,7 +1,7 @@
 import './globals.css'
 import { Plus_Jakarta_Sans} from 'next/font/google'
 import Menu from './components/menu'
-
+import Footer from './components/footer'
 
 
 
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       
         {children}
       
-
+        <Footer />
 
 
       

@@ -28,7 +28,7 @@ export default function Menu () {
                 <Link href="/" legacyBehavior>
                   <a className="hover:text-teal-400">Inicio</a>
                 </Link>
-                <Link href="/" legacyBehavior>
+                <Link href="#Proyectos" legacyBehavior>
                   <a className=" hover:text-teal-400">Proyectos</a>
                 </Link>
                 <Link href="/quiensoy" legacyBehavior>
