@@ -1,11 +1,18 @@
+import React from 'react'
+import Image from 'next/image'
+
 export default function QuienSoy() {
     return (
         <main>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">
+       
             <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Hi 👋</h1>
+            <Image    className=' ml-24 mr-20 mt-5 float-right   md:mt-8  w-60 m my-8  
+            md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl'  src='/Perfil.png' width={431}  height={539} alt='Fotoperfil'/>
+            
             <div class="text-left md:text-left lg:text-left md:flex md:justify-left">
-  <p class="text-base md:text-lg lg:text-xl mt-6 mb-24 font-medium">
+  <p className="text-base md:text-xs lg:text-base mt-6 mb-24 font-medium">
     Soy Brayan Albadam, diseñador multimedia y desarrollador frontend del <br/>
     diplomado Misión TIC 2022, y certificado profesionalmente en diseño de<br/>
      experiencia de usuario por Google.<br/><br/>
@@ -37,6 +44,22 @@ export default function QuienSoy() {
 </div>
 
         </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">
+        <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Habilidades</h1>
+        <div class="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-base">
+                <div>Diseño UX</div>
+                <div>Wireframing</div>
+                <div>Adobe Creative Cloud</div>
+                <div>Investigación de usuarios</div>
+                <div>Design Thinking</div>
+                <div>Autocad</div>
+                <div>Prototipado</div>
+                <div>Diseño de producto</div>
+                <div>Sketchup</div>
+</div>
+
+        </div>
+       
 
         </main>
     )
