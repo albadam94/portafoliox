@@ -1,36 +1,46 @@
-import React from "react"
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
+
+const socialLinks = [
+  { url: "https://www.facebook.com/Albadam94", icon: "/BlancoFacebook.svg", alt: "Facebook" },
+  { url: "https://www.instagram.com/albadam94/", icon: "/BlancoInstagram.svg", alt: "Instagram" },
+  { url: "https://twitter.com/Albadam94", icon: "/BlancoX.svg", alt: "Twitter" },
+  { url: "https://www.behance.net/brayanalbadam", icon: "/BlancoBH.svg", alt: "Behance" },
+  { url: "https://github.com/albadam94", icon: "/BlancoGit.svg", alt: "GitHub" },
+  { url: "https://www.linkedin.com/in/brayanalbadamvanegas/", icon: "/BlancoLinkedin.svg", alt: "LinkedIn" },
+];
 
 export default function Footer() {
-    return (
-        <div>
-        <footer class="footer justify-stretch">
-            <p className="text-cyan-50 max-w-7xl mx-auto px-2 sm:px-6 lg:px-9 mt-12">Diseño-Desarrollo: UX Albadam
-            <br/>Desarrollado en NextJS-Tailwind CSS | Deployment Netlify
-            </p>
-        <div className="flex justify-end mr-24 max-w-sm mx-auto px-2 sm:px-6 lg:px-16  ">
-  <a href="https://www.facebook.com/Albadam94" target="_blank" rel="noopener noreferrer" className="mr-2">
-    <Image src="/BlancoFacebook.svg" width={30} height={30} quality={100} alt="IconoFacebook" />
-  </a>
-  <a href="https://www.instagram.com/albadam94/" target="_blank" rel="noopener noreferrer" className="mr-2">
-    <Image src="/BlancoInstagram.svg" width={30} height={30} quality={100} alt="IconoInstagram" />
-  </a>
-  <a href="https://twitter.com/Albadam94" target="_blank" rel="noopener noreferrer" className="mr-2">
-    <Image src="/BlancoX.svg" width={30} height={30} quality={30} alt="IconoTwitter" />
-  </a>
-  <a href="https://www.behance.net/brayanalbadam" target="_blank" rel="noopener noreferrer" className="mr-2 mt-1">
-    <Image src="/BlancoBH.svg" width={30} height={50} quality={30} alt="IconoBehance" />
-  </a>
-  <a href="https://github.com/albadam94" target="_blank" rel="noopener noreferrer" className="mr-2">
-    <Image src="/BlancoGit.svg" width={30} height={30} quality={100} alt="IconoGithub" />
-  </a>
-  <a href="https://www.linkedin.com/in/brayanalbadamvanegas/" target="_blank" rel="noopener noreferrer" className="mr-2">
-    <Image src="/BlancoLinkedin.svg" width={30} height={30} quality={100} alt="IconoLinkedin" />
-  </a>
-</div>
-              
-            
-        </footer>
+  return (
+    <div>
+      <footer className="footer justify-stretch">
+        <div className="flex items-center justify-between max-w-7xl mx-auto px-2 sm:px-6 lg:px-9 mt-12">
+          <p className="text-cyan-50">
+            Diseño-Desarrollo: UX Albadam
+            <br />
+            Desarrollado en NextJS-Tailwind CSS | Deployment Netlify
+          </p>
+          <div className="flex">
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mr-2 ${link.alt === "Behance" ? "mt-1" : ""}`}
+              >
+                <Image
+                  src={link.icon}
+                  width={30}
+                  height={link.alt === "Behance" ? 50 : 30}
+                  quality={100}
+                  alt={link.alt}
+                />
+              </a>
+            ))}
+          </div>
         </div>
-    ) 
+      </footer>
+    </div>
+  );
 }

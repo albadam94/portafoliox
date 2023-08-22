@@ -1,23 +1,28 @@
 "use client"
 
-import React from 'react'
-import Image from 'next/image'
-import Swiper from '../components/carousel'
-import Acordion from '../components/accordion'
-import Experiencia from '../components/aexperiencia'
-import ScrollToTopButton from '../components/ScrollToTopButton'
+import React from 'react';
+import Image from 'next/image';
+import Swiper from '../components/carousel';
+import Accordion from '../components/accordion';
+import Experiencia from '../components/aexperiencia';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 
-export default function QuienSoy() {
+const QuienSoyPage = () => {
     return (
         <main>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">
        
             <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Hi 👋</h1>
-            <Image    className=' ml-24 mr-20 mt-5 float-right   md:mt-8  w-60 m my-8  
-            md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl'  src='/Perfil.png' width={431}  height={539} alt='Fotoperfil'/>
+            <Image
+          className="ml-24 mr-20 mt-5 float-right md:mt-8 w-60 m my-8 md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl"
+          src="/Perfil.png"
+          width={431}
+          height={539}
+          alt="Fotoperfil"
+        />
             
-            <div class="text-left md:text-left lg:text-left md:flex md:justify-left">
+            <div className="text-left md:text-left lg:text-left md:flex md:justify-left">
   <p className="text-base md:text-xs lg:text-base mt-6 mb-24 font-medium">
     Soy Brayan Albadam, diseñador multimedia y desarrollador frontend del <br/>
     diplomado Misión TIC 2022, y certificado profesionalmente en diseño de<br/>
@@ -52,7 +57,7 @@ export default function QuienSoy() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-5">
         <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Habilidades</h1>
-        <div class="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-base">
+        <div className="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-base">
                 <div>Diseño UX</div>
                 <div>Wireframing</div>
                 <div>Adobe Creative Cloud</div>
@@ -70,11 +75,11 @@ export default function QuienSoy() {
 
        
         </div>
-        <Acordion/>
+        <Accordion/>
         <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">Experiencia</h1>
         <Experiencia/>
         <ScrollToTopButton/>
         </main>
     )
     }
-    
+    export default QuienSoyPage;

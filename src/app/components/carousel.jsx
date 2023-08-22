@@ -28,7 +28,7 @@ const MyComponent = () => {
       className="mySwiper mt-10"
     >
       {/* Your SwiperSlides here */}
-      <div  className="className='w-5 md:w-32 lg:w-48 py-10 mx-10 md:w-10'">
+      <div  className='w-5 md:w-32 lg:w-48 py-10 mx-10'>
         <SwiperSlide>
             <Image id='estudios'  className="mb-10" src='/Logos/Ilustrator.svg' width={90} height={90} alt="illustrator" />
         </SwiperSlide>

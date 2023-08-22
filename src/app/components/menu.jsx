@@ -25,8 +25,8 @@ export default function Menu() {
   };
 
   return (
-    <header className='menu mt-0 sticky top-0 z-50 p-4  shadow-md'>
-      <nav>
+    
+      <nav className='menu mt-0 sticky top-0 z-50 p-4  shadow-md'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex justify-between items-center h-16'>
             <div className='flex-shrink-0 flex items-center'>
@@ -42,9 +42,9 @@ export default function Menu() {
                 </a>
               </Link>
             </div>
-            <div className='hidden sm:block sm:ml-6 ml-6  items-center space-x-5 sm:space-x-10'>
+            <div className='hidden sm:block sm:ml-6 ml-6  items-center space-x-3 sm:space-x-6'>
               <Link href='/' legacyBehavior>
-                <a className='hover:text-teal-400'>Inicio</a>
+                <a className=' hover:text-teal-400'>Inicio</a>
               </Link>
               <button
                 className='hover:text-teal-400'
@@ -63,7 +63,7 @@ export default function Menu() {
                 </button>
               </a>
               <a legacyBehavior href='https://drive.google.com/file/d/1p_3yPSe-I-E2Am3uqp6ArPC-0zS5vsOI/view?usp=sharing' target="_blank" rel="noopener noreferrer"   >
-                <button className='bg-blue-950 text-white px-4 py-2 rounded-md hover:bg-opacity-80 ml-4'>
+                <button className='bg-blue-950 text-white px-4 py-2 rounded-md hover:bg-opacity-80 ml-2'>
                   CV
                 </button>
               </a>
@@ -108,6 +108,7 @@ export default function Menu() {
           )}
         </div>
       </nav>
-    </header>
+     
+   
   );
 }
