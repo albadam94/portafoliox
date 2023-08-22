@@ -4,9 +4,9 @@ export default function NotFound() {
     return (
         <main>
         <div>
-            <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">404</h1>
+            <h1 className="ux2 flex justify-center text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-16">404</h1>
             <Image src="/Lumalee.svg" alt="Lumalee" width={500} height={200} className="mx-auto mb-5"/>
-            <p className="flex justify-center mb-6 font-semibold">La recompensa de haberte perdido es estar más perdido</p>
+            <p className="flex justify-center mb-6 font-semibold">Oh oh parece que te has perdido solo queda el dulce alivio de que te quedes sin internet</p>
             <Link href="/" legacyBehavior>
                 
             <div class="flex justify-center">

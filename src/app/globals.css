@@ -26,6 +26,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+background: linear-gradient(90deg, #FFF1EB 0%, #ACE0F9 100%);
 }
 
 .ux{
