@@ -97,7 +97,7 @@ export default function Menu() {
                 Inicio
               </a>
             </Link>
-            <Link href='/#Proyectos' legacyBehavior>
+            <Link href='#Proyectos' legacyBehavior>
               <a className='block mt-2 sm:inline-block sm:mt-0 hover:text-teal-400'>
                 Proyectos
               </a>
