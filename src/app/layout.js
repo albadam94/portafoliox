@@ -10,7 +10,8 @@ import {NextUIProvider} from '@nextui-org/react'
 
 
 
-const metadata = {
+
+export const metadata = {
      title: 'UX Albadam',
     description: 'Albadam Ux-Engineer - Diseñador UX/UI-Desarrollador Frontend, diseño web, UX/UI, Social Media',
     additionalMetaTags: [
