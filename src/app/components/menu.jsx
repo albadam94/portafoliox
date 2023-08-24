@@ -56,13 +56,9 @@ export default function Menu() {
             <Link href='/' legacyBehavior>
               <a className='hover:text-teal-400'>Inicio</a>
             </Link>
-            <Link href='/#Proyectos' onClick={scrollToProjects}  legacyBehavior>
-              <a className='block mt-2 sm:inline-block sm:mt-0 hover:text-teal-400'>
-                Proyectos
-              </a>
-            </Link>
-
-
+            <button className='hover:text-teal-400' onClick={scrollToProjects} legacyBehavior>
+              Proyectos
+            </button>
             <Link href='/quiensoy' legacyBehavior>
               <a className='hover:text-teal-400'>Quién Soy</a>
             </Link>
@@ -97,7 +93,7 @@ export default function Menu() {
                 Inicio
               </a>
             </Link>
-            <Link href='#Proyectos' legacyBehavior>
+            <Link href='/#Proyectos' legacyBehavior>
               <a className='block mt-2 sm:inline-block sm:mt-0 hover:text-teal-400'>
                 Proyectos
               </a>
