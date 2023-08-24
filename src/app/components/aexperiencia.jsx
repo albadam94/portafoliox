@@ -13,7 +13,7 @@ export default function App() {
       <AccordionItem className="text-xl font-semibold mb-2" key="1" aria-label="Productor de audio | Radio Luna" title="Productor de audio">
         <p className="text-sm">Grabación y edición de programas y comerciales<br/>Radio Operador de la emisora afiliada a la cadena radial TODELAR</p>
       </AccordionItem>
-      <AccordionItem className="text-xl font-semibold mb-2" key="2" aria-label="Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN RADIO" title="Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN RADIO">
+      <AccordionItem className="text-xl font-semibold mb-2" key="2" aria-label="Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN Radio" title="Coordinador Programa de Opinión De Cuando Acá | Armonias del Palmar RCN Radio">
         <p className="text-sm">Desempeñe la coordinación del programa de opinión en Radio, me encargue de editar las entrevistas, coordinar las notas para la emisión, realice también la presentación del programa - Locución.</p>
       </AccordionItem>
       </Accordion>
