@@ -56,9 +56,11 @@ export default function Menu() {
             <Link href='/' legacyBehavior>
               <a className='hover:text-teal-400'>Inicio</a>
             </Link>
-            <button className='hover:text-teal-400' onClick={scrollToProjects} legacyBehavior>
-              Proyectos
-            </button>
+            <Link href='/#Proyectos' legacyBehavior>
+              <a className='block mt-2 sm:inline-block sm:mt-0 hover:text-teal-400'>
+                Proyectos
+              </a>
+            </Link>
             <Link href='/quiensoy' legacyBehavior>
               <a className='hover:text-teal-400'>Quién Soy</a>
             </Link>
