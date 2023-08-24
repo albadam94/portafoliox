@@ -12,13 +12,15 @@ const socialLinks = [
   { url: "https://www.linkedin.com/in/brayanalbadamvanegas/", icon: "/IcLinkedin.svg", alt: "LinkedIn" },
 ];
 
+
 const HomePage = () => {
   return (
     <main>
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-40">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">Hi 👋 I am</h2>
         <h1 className="ux2 text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">Brayan Albadam</h1>
-        <h1 className="ux text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold">UX Engineer</h1>
+        <h1 className="ux text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mt-3">UX Engineer</h1>
         <p className="md:text-xl font-semibold text-xs mt-5">
           Diseñador multimedia y desarrollador Frontend<br />
           especializado en diseño de experiencia de usuario

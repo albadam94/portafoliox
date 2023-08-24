@@ -26,7 +26,7 @@ const QuienSoyPage = () => {
   <p className="text-base md:text-xs lg:text-base mt-6 mb-24 font-medium">
     Soy Brayan Albadam, diseñador multimedia y desarrollador frontend del <br/>
     diplomado Misión TIC 2022, y certificado profesionalmente en diseño de<br/>
-     experiencia de usuario por Google.<br/><br/>
+     experiencia de usuario por <a href="https://www.coursera.org/programs/diseno-de-experiencia-de-usuario-iiehw/professional-certificates/diseno-de-experiencia-del-usuario-ux-de-google" className="google-link text-teal-500 font-bold underline">Google</a>  y diseño de experiencia de usuario y<br/>  consumidor de la Universidad San Buenaventura Calí<br/> <br/>
 
     En el ámbito del diseño, he creado marcas para pequeñas y medianas<br/>
     empresas, así como para profesionales de diversas disciplinas. He trabajado<br/>
@@ -36,7 +36,7 @@ const QuienSoyPage = () => {
     <br/><br/>
 
     Además, tuve el honor de ser seleccionado como semifinalista en el <br/>
-    concurso de rediseño de la marca del Aeropuerto Felipe Ángeles de México.
+    <a href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/" className="text-teal-500 font-bold underline">concurso</a> de rediseño de la marca del Aeropuerto Felipe Ángeles de México.
     <br/><br/>
 
     Anteriormente, adquirí valiosa experiencia en medios de comunicación, <br/>

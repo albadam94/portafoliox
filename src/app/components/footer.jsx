@@ -20,7 +20,26 @@ export default function Footer() {
             <br />
             Desarrollado en NextJS-Tailwind CSS | Deployment Netlify
           </p>
-          <div className="flex">
+          <div className="flex sm:hidden">
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mr-2 ${link.alt === "Behance" ? "mt-1" : ""}`}
+              >
+                <Image
+                  src={link.icon}
+                  width={30}
+                  height={link.alt === "Behance" ? 50 : 30}
+                  quality={100}
+                  alt={link.alt}
+                />
+              </a>
+            ))}
+          </div>
+          <div className="hidden sm:flex">
             {socialLinks.map((link, index) => (
               <a
                 key={index}

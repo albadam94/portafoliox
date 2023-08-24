@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 
 
 
@@ -37,3 +38,4 @@ background: linear-gradient(90deg, #FFF1EB 0%, #ACE0F9 100%);
   background-color:#0A192F;
   padding: 3%;
 }
+
