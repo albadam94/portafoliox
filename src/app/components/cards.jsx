@@ -12,7 +12,7 @@ export default function Cards() {
         src="/Lacerveceria.svg"
         width={800  }
         height={400}
-        alt="Hollywood Sign on The Hill" />
+        alt="Diseño app la cerveceria" />
     </a>
     <div class="p-6">
       <h5
@@ -33,7 +33,7 @@ export default function Cards() {
         src="/Letdesign.svg"
         width={750}
         height={400}
-        alt="Palm Springs Road" />
+        alt="Diseño sitio web de aprendizaje" />
     </a>
     <div class="p-6">
       <h5
@@ -54,14 +54,14 @@ export default function Cards() {
         src="/Donar.svg"
         width={800}
         height={100}
-        alt="Skyscrapers" />
+        alt="DonarAPP aplicacion de donaciones" />
     </a>
     <div class="p-6">
       <h5
         class="mb-2 text-xl  leading-tight text-neutral-800 dark:text-cyan-950 font-semibold">
         DonarApp
       </h5>
-      <p class="mb-4 text-base text-cyan-950 dark:text-cyan-950">
+      <p class="mb-8 text-base text-cyan-950 dark:text-cyan-950">
         Diseño de una aplicación mobile que permita a los usuarios realizar donaciones<br/>
         a diferentes fundaciones.
       </p>
@@ -74,14 +74,14 @@ export default function Cards() {
         src="/AppEjercicios.svg"
         width={750}
         height={100}
-        alt="Los Angeles Skyscrapers" />
+        alt="App Ejercicios" />
     </a>
     <div class="p-6">
       <h5
-        class="mb-2 text-xl  leading-tight text-neutral-800 dark:text-cyan-950 font-semibold">
+        class="mb-0 text-xl  leading-tight text-neutral-800 dark:text-cyan-950 font-semibold">
         App Ejercicios
       </h5>
-      <p class="mb-4 text-base text-cyan-950 dark:text-cyan-950">
+      <p class="mb-0 text-base text-cyan-950 dark:text-cyan-950">
         Diseño de una aplicación que permita a los usuarios seleccionar los ejercicios<br/>
         acorde a la categoria y tiempo que deseen.
       </p>

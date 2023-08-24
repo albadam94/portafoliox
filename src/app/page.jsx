@@ -40,7 +40,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <h1 id="Proyectos" className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 mt-32">Proyectos</h1>
+      <h1 id="Proyectos" className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 md:mt-32 mt-10">Proyectos</h1>
 
       <Cards />
       <ScrollToTopButton />
