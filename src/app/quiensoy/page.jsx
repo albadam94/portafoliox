@@ -15,7 +15,7 @@ const QuienSoyPage = () => {
        
             <h1 className="ux2 text-4xl sm:text-5xl md:text-8xl font-bold">Hi 👋</h1>
             <Image
-          className="ml-24 mr-20 mt-5 float-right md:mt-8 w-60 m my-8 md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl"
+          className="ml-24 mr-20 mt-5 float-right md:mt-8 w-60 m my-8 md:w-18 xl:w-96 border-teal-500 border-4 rounded-3xl bg-slate-800 shadow-2xl "
           src="/Perfil.png"
           width={431}
           height={539}
@@ -35,8 +35,8 @@ const QuienSoyPage = () => {
     en Centroamérica, donde he aplicado mis habilidades en Diseño UX y <br/>desarrollo frontend.
     <br/><br/>
 
-    Además, tuve el honor de ser seleccionado como semifinalista en el <br/>
-    <a href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/" className="text-teal-500 font-bold underline">concurso</a> de rediseño de la marca del Aeropuerto Felipe Ángeles de México.
+    Además, fui seleccionado como semifinalista en el 
+    <a href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/" className="text-teal-500 font-bold underline"> concurso</a> de rediseño<br/> de la marca del Aeropuerto Felipe Ángeles de México.
     <br/><br/>
 
     Anteriormente, adquirí valiosa experiencia en medios de comunicación, <br/>
