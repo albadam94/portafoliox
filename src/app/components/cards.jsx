@@ -27,10 +27,10 @@ export default function Cards() {
   </div>
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg  bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-teal-200 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://www.behance.net/gallery/176885333/Lets-Design-Caso-de-Estudio "target="_blank" rel="noopener noreferrer ">
+    <a href="https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia" target="_blank" rel="noopener noreferrer ">
       <Image 
         class="rounded-t-lg bg-white"
-        src="/Letdesign.svg"
+        src="/Bancolombia.svg"
         width={750}
         height={400}
         alt="Diseño sitio web de aprendizaje" />
@@ -38,11 +38,10 @@ export default function Cards() {
     <div class="p-6">
       <h5
         class="mb-2 text-xl  leading-tight dark:text-cyan-950 font-semibold">
-       Let´s Design
+       Bank Design Bancolombia
       </h5>
       <p class="mb-4 text-base text-cyan-950 dark:text-cyan-950">
-        Es una app web que permite a usuarios de bajos recursos<br/>
-        aprender sobre diseño de manera gratuita.
+        Mejorar la experiencia de usuario de la sucursal virtual de Bancolombia para personas de la tercera edad
       </p>
     </div>
   </div>
@@ -73,7 +72,7 @@ export default function Cards() {
       <Image className="bg-white rounded-t-lg"
         src="/AppEjercicios.svg"
         width={750}
-        height={100}
+        height={150}
         alt="App Ejercicios" />
     </a>
     <div class="p-6">
