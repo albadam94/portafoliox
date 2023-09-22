@@ -26,7 +26,7 @@ const QuienSoyPage = () => {
   <p className="text-base md:text-xs lg:text-base mt-6 mb-24 font-medium">
     Soy Brayan Albadam, diseñador multimedia y desarrollador frontend del <br/>
     diplomado Misión TIC 2022, y certificado profesionalmente en diseño de<br/>
-     experiencia de usuario por <a href="https://www.coursera.org/programs/diseno-de-experiencia-de-usuario-iiehw/professional-certificates/diseno-de-experiencia-del-usuario-ux-de-google" className="google-link text-teal-500 font-bold underline">Google</a>  y diseño de experiencia de usuario y<br/>  consumidor de la Universidad San Buenaventura Calí<br/> <br/>
+     experiencia de usuario por <a href="https://www.coursera.org/programs/diseno-de-experiencia-de-usuario-iiehw/professional-certificates/diseno-de-experiencia-del-usuario-ux-de-google" className="google-link text-teal-500 font-bold underline">Google</a>  y diseño de experiencia de usuario y<br/>  consumidor de la Universidad San Buenaventura Calí.<br/> <br/>
 
     En el ámbito del diseño, he creado marcas para pequeñas y medianas<br/>
     empresas, así como para profesionales de diversas disciplinas. He trabajado<br/>
@@ -36,8 +36,9 @@ const QuienSoyPage = () => {
     <br/><br/>
 
     Además, fui seleccionado como semifinalista en el 
-    <a href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/" className="text-teal-500 font-bold underline"> concurso</a> de rediseño<br/> de la marca del Aeropuerto Felipe Ángeles de México.
-    <br/><br/>
+    <a href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/" className="text-teal-500 font-bold underline"> concurso</a> de rediseño<br/> 
+    de la marca del Aeropuerto Felipe Ángeles de México y también participe en el reto de diseño de experiencia de usuario de Bancolombia Bank Design 2023.
+    <br/><br/> 
 
     Anteriormente, adquirí valiosa experiencia en medios de comunicación, <br/>
     incluyendo radio y televisión, donde participé en aspectos técnicos<br/>
@@ -47,10 +48,9 @@ const QuienSoyPage = () => {
     <br/><br/>
         
     A lo largo de mi carrera, he cultivado habilidades en la creación de conceptos<br/>
-    visionarios, investigación de usuarios y establecimiento de marcos de<br/>
+    de diseño, investigación de usuarios y establecimiento de marcos de<br/>
     productos mediante el uso de prototipos. Con una actitud positiva y una<br/>
-    mentalidad enfocada en el crecimiento, siempre estoy en búsqueda de<br/>
-    oportunidades para ampliar mis conocimientos y habilidades como diseñador.
+    mentalidad enfocada en el diseño de productos, consolido las mejores experiencias para los usuarios.
   </p>
 </div>
 

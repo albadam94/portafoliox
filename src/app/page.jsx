@@ -23,7 +23,7 @@ const HomePage = () => {
         <h1 className="ux text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mt-3">UX Engineer</h1>
         <p className="md:text-xl font-semibold text-xs mt-5">
           Diseñador multimedia y desarrollador Frontend<br />
-          especializado en diseño de experiencia de usuario
+          especializado en diseño de experiencia de usuario (UX/UI)
         </p>
         <div className="flex justify-stretch mt-3">
           {socialLinks.map((link, index) => (
