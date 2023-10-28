@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #161616;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #161616;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+body {
+ background-color: #161616;
+ font-family: 'Inter', sans-serif;
+ color:#FFFFFF;
+}
+
+.fa-2x:hover{
+  color: #16BCCB !important;
+}
+
+
+
+/* Efecto cursor*/
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #16BCCB;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: difference; /* Opcional: agrega un efecto de mezcla de modos */
+  opacity: 30%;
+}
