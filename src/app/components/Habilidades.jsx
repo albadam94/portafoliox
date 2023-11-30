@@ -4,7 +4,7 @@ const Habilidades = () => {
   return (
     <div>
 
-        <h1 className='mt-28 text-5xl font-semibold font-inter leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 text-custom-teal'>Habilidades</h1>
+        <h1 className='mt-28 text-5xl font-semibold font-Rubik leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 text-custom-teal'>Habilidades</h1>
 
         <div className="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-white md:mx-12 lg:mx-20 xl:mx-80">
                 <div>Diseño UX/UI</div>

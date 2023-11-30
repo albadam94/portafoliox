@@ -7,7 +7,7 @@ const Experiencia = () => {
   return (
     <div>
 
-        <h1 className="text-custom-teal text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Inter'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10 lg:mt-20">
+        <h1 className="text-custom-teal text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10 lg:mt-20">
                 Experiencia
         </h1>
 

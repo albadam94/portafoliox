@@ -60,7 +60,7 @@ export default function Menu() {
           </div>
           <div className='hidden sm:block sm:ml-6 space-x-4'>
             <a href='mailto:brayanalbadam@gmail.com' legacyBehavior>
-              <button className="text-cyan-500 text-sm font-semibold font-['Inter'] leading-none w-[110.23px] h-10 rounded-md border border-zinc-800">
+              <button className="text-cyan-500 text-sm font-semibold font-['Rubik'] leading-none w-[110.23px] h-10 rounded-md border border-zinc-800">
                 Contacto
               </button>
             </a>
@@ -70,7 +70,7 @@ export default function Menu() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <button className="text-cyan-500 text-sm font-semibold font-['Inter'] leading-none w-[110.23px] h-10 rounded-md border border-zinc-800 mr-4">
+              <button className="text-cyan-500 text-sm font-semibold font-['Rubik'] leading-none w-[110.23px] h-10 rounded-md border border-zinc-800 mr-4">
                 Descargar CV
               </button>
             </a>

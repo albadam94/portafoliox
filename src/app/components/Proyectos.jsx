@@ -12,7 +12,7 @@ const proyectosData = [
   {
     id: 2,
     title: 'Bank Design Bancolombia',
-    description: 'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual en su versión Web',
+    description: 'Diseño para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual en su versión Web',
     imageUrl: '/Bancolombia.svg',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
@@ -45,14 +45,14 @@ const Proyecto = ({ proyecto }) => {
         alt={proyecto.title}
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="text-white text-sm font-semibold font-['Inter'] leading-none">
+        <h5 className="text-white text-sm font-semibold font-['Rubik'] leading-none">
           {proyecto.title}
         </h5>
-        <p className="text-zinc-500 text-sm font-normal font-['Inter'] leading-tight mt-3">
+        <p className="text-zinc-500 text-sm font-normal font-['Rubik'] leading-tight mt-3">
           {proyecto.description}
         </p>
         <a href={proyecto.link} rel="noopener noreferrer" target="_blank">
-          <button className="mt-6 w-[105.17px] h-7 rounded-md border border-zinc-800 text-zinc-500 text-[10px] font-medium font-['Inter'] uppercase leading-tight tracking-wide">
+          <button className="mt-6 w-[105.17px] h-7 rounded-md border border-zinc-800 text-zinc-500 text-[10px] font-medium font-['Rubik'] uppercase leading-tight tracking-wide">
             VER PROYECTO
           </button>
         </a>

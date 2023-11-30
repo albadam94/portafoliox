@@ -5,7 +5,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 const Formacion = () => {
   return (
     <div>
-      <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Inter'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10">
+      <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10">
         Formación <span className="text-custom-teal">Académica</span>
       </h1>
 
@@ -27,8 +27,7 @@ const Formacion = () => {
               Probar e iterar diseños</p>
             </AccordionItem>
             <AccordionItem className="text-xl font-medium mb-2 text-white" key="2" aria-label="Diseño de experiencia de usuario y consumidor UX-CX | Universidad San Buenaventura"  title={<span style={{ color: '#16BDCA' }}>Diseño de experiencia de usuario y consumidor UX-CX | Universidad San Buenaventura</span>}>
-              <p className="text-sm text-white font-normal">Uso de herramientas de investigación, diseño y evaluación de la experiencia desde las necesidades del cliente con el propósito de poder conectar el mundo de las personas y emociones
-               de los clientes con el mundo de las organizaciones e indicadores de negocio, agregar valor y bienestar al cliente desde el diseño centrado en el usuario.</p>
+              <p className="text-sm text-white font-normal">Creación de productos digitales que permitan una buena experiencia del usuario teniendo en cuenta aspectos de experiencia del lado del cliente para satisfacer necesidades desde el diseño aplicando metodologías como el design thinking.</p>
             </AccordionItem>
           </Accordion>
 

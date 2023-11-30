@@ -1,5 +1,5 @@
 "use client"
-import { Inter } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 import './globals.css'
 import {NextUIProvider} from "@nextui-org/react";
 import {ScrollShadow} from "@nextui-org/scroll-shadow";
@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import CustomCursor from './components/CustomCursor'
 
-const inter = Inter({ subsets: ['latin'] })
+const Font = Rubik({ subsets: [ "latin"] })
 
 const metadata = {
   title: 'UX Albadam',
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
     
       
-      <body className={inter.className}>
+      <body className={Font.className}>
 
         <Menu/>
       <NextUIProvider>
