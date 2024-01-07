@@ -20,8 +20,8 @@ const proyectosData = [
         id: 3,
         title: 'Proyecto ASAVirtual',
         description: 'Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS',
-        imageUrl: '/ASAvirtual.svg',
-        link: 'https://asavirtual.instructure.com/login/canvas',
+        imageUrl: '/CoverB.svg',
+        link: 'https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual',
     },
     {
         id: 4,
