@@ -15,7 +15,7 @@ export default function Home() {
       <div className='mx-4 md:mx-12 lg:mx-20 xl:mx-80'>
           <div className='mt-14 md:mt-20 lg:mt-32 xl:mt-64'>
           <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-['Rubik']  font-semibold ">Hola!! 👋 Soy Brayan</h1>
-          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px]">UX/UI <span class="text-custom-teal">Designer</span></h1>
+          <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px]">UX/UI <span className="text-custom-teal">Designer</span></h1>
           <p className="text-white text-base md:text-lg lg:text-xl xl:text-base font-medium font-['Rubik'] leading-normal mt-5">Diseñador multimedia y desarrollador Frontend<br></br> Especializado en diseño de experiencia de usuario</p>
           <Icons />
       </div>
