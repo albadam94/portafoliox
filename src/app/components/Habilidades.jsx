@@ -8,7 +8,7 @@ const Habilidades = () => {
 
         <div className="h-56 grid grid-cols-3 gap-4 content-evenly font-medium text-white md:mx-12 lg:mx-20 xl:mx-80 font-['Archivo']">
                 <div>Diseño UX/UI</div>
-                <div>Wireframing</div>
+                <div>Wireframe</div>
                 <div>Adobe Creative Cloud</div>
                 <div>Investigación de usuarios</div>
                 <div>Design Thinking</div>
