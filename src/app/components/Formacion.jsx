@@ -5,12 +5,12 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 const Formacion = () => {
   return (
     <div>
-      <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10">
+      <h1 className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10 font-['Archivo']">
         Formación <span className="text-custom-teal">Académica</span>
       </h1>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20  ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-['Archivo'] ">
 
           <Accordion isCompact className="flex flex-col h-full p-4 border rounded-lg mb-4 ">
             <AccordionItem className=" text-white  font-medium" key="1 " aria-label="Tecnólogo en producción multimedia" title={<span style={{ color: '#16BDCA' }}>Tecnólogo en producción multimedia</span>}>

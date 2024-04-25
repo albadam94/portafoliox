@@ -1,5 +1,5 @@
 "use client"
-import { Rubik } from 'next/font/google'
+import { Archivo} from 'next/font/google'
 import './globals.css'
 import {NextUIProvider} from "@nextui-org/react";
 import {ScrollShadow} from "@nextui-org/scroll-shadow";
@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 import ScrollToTopButton from './components/ScrollToTopButton'
 import CustomCursor from './components/CustomCursor'
 
-const Font = Rubik({ subsets: [ "latin"] })
+const Font = Archivo({ subsets: [ "latin"] })
 
 const metadata = {
   title: 'UX Albadam',

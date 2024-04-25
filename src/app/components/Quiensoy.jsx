@@ -10,7 +10,7 @@ const Quiensoy = () => {
             <div className="mt-14 md:mt-20 lg:mt-32 xl:mt-64 " >
    
         
-   <h1 className="text-white text-5xl font-semibold font-Rubik leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 ">
+   <h1 className="text-white text-5xl font-semibold font-['Archivo'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 ">
      Acerca de <span className="text-custom-teal">mi</span>
    </h1>
 
@@ -18,7 +18,7 @@ const Quiensoy = () => {
      <Image src={Perfil} alt="Brayan Albadam" width={400} height={400} className="float-right ml-24 mr-1 mt-5  sm:mr-20  rounded-2xl shadow border-2 border-cyan-500  lg:w-96 w-screen mb-9 " />
    </div> 
 
-   <div className="text-white text-base font-normal font-['Rubik'] leading-normal  xl:mx-80 mt-10 md:w-[612px] w-fit ">
+   <div className="text-white text-base font-normal font-['Archivo'] leading-normal  xl:mx-80 mt-10 md:w-[612px] w-fit ">
      <p>
        Soy Brayan Albadam, diseñador multimedia y desarrollador frontend del diplomado Misión TIC 2022. Certificado profesionalmente en diseño de experiencia de usuario por{' '}
        <a

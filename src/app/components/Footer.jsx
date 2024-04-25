@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="bg-stone-900 w-full py-4 mt-20">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center p-4">
-        <div className="text-white text-sm font-normal font-['Rubik'] leading-tight md:mx-4 lg:mx-12 xl:mx-20">
-          UXAlbadam Diseño-Desarrollo en {''}
+        <div className="text-white text-sm font-normal leading-tight md:mx-4 lg:mx-12 xl:mx-20 font-['Archivo']">
+          UX Albadam Diseño-Desarrollo en {''}
           <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon className='fa-2x w-[289px] h-6 justify-start items-start gap-[29px] inline-flex'
               icon={faFigma}

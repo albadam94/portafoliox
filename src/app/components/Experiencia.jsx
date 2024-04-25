@@ -7,12 +7,12 @@ const Experiencia = () => {
   return (
     <div>
 
-        <h1 className="text-custom-teal text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Rubik'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10 lg:mt-20">
+        <h1 className="text-custom-teal text-4xl md:text-5xl lg:text-6xl xl:text-5xl font-semibold font-['Archivo'] leading-[56px] md:mx-12 lg:mx-20 xl:mx-80 mt-10 lg:mt-20">
                 Experiencia
         </h1>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-['Archivo']">
           
     <Accordion isCompact className="flex flex-col h-full p-4 border rounded-lg shadow-md text-lg font-medium mb-4">
       <AccordionItem className="text-xl font-medium mb-2" key="1" aria-label="Productor de audio | Radio Luna" title={<span style={{ color: '#16BDCA' }}>Productor de audio</span>}>

@@ -36,7 +36,7 @@ const proyectosData = [
 
 const Proyecto = ({ proyecto }) => {
   return (
-    <div className="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl dark:border-custom-teal mt-6">
+    <div className="flex flex-col items-center rounded-lg shadow md:flex-row md:max-w-xl dark:border-custom-teal mt-6 font-['Archivo'] ">
       <Image
         className="object-cover w-full md:w-48 md:h-auto rounded-t-lg md:rounded-none md:rounded-l-lg "
         width={200}
@@ -45,14 +45,14 @@ const Proyecto = ({ proyecto }) => {
         alt={proyecto.title}
       />
       <div className="flex flex-col justify-between p-4 leading-normal">
-        <h5 className="text-white text-sm font-semibold font-['Rubik'] leading-none">
+        <h5 className="text-white text-sm font-semibold leading-none">
           {proyecto.title}
         </h5>
-        <p className="text-zinc-500 text-sm font-normal font-['Rubik'] leading-tight mt-3">
+        <p className="text-zinc-400 text-sm font-normal  leading-tight mt-3">
           {proyecto.description}
         </p>
         <a href={proyecto.link} rel="noopener noreferrer" target="_blank">
-          <button className="mt-6 w-[105.17px] h-7 rounded-md border border-zinc-800 text-zinc-500 text-[10px] font-medium font-['Rubik'] uppercase leading-tight tracking-wide">
+          <button className="mt-6 w-[105.17px] h-7 rounded-md border border-zinc-600  text-zinc-400 text-[10px] font-medium uppercase leading-tight tracking-wide">
             VER PROYECTO
           </button>
         </a>
