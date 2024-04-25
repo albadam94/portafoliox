@@ -31,7 +31,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <nav className='menu mt-0 sticky top-0 z-50 p-4 shadow-md bg-stone-900'>
+    <nav className='menu mt-0 sticky top-0 z-50 p-4 shadow-md bg-inherit'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           <div className='flex-shrink-0 flex items-center'>
