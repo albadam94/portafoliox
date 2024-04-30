@@ -29,7 +29,7 @@ const Quiensoy = () => {
             En el ámbito del diseño, he creado marcas para pequeñas y medianas empresas, así como para profesionales de diversas disciplinas.
             <br />
             <br />
-            Me desempeñé como desarrollador frontend en WordPress y como UX Engineer en la implementación de una plataforma educativa en CANVAS, dirigida a agricultores de Centroamérica, donde la experiencia de usuario fue factor fundamental, apliqué habilidades en diseño de experiencia y desarrollo Frontend.
+            Me desempeñé como desarrollador frontend en WordPress y como UX Engineer en la implementación de una plataforma educativa en CANVAS, dirigida a agricultores de Centroamérica, donde la experiencia de usuario fue factor fundamental, aplicando habilidades en diseño de experiencias y desarrollo Frontend.
             <br />
             <br />
             También me desempeñé como Project Manager en un proyecto con el Ministerio TIC, AppsCO y la Universidad ICESI. Me encargué de gestionar las actividades necesarias que debían realizar los diseñadores y desarrolladores para ser entregados en los tiempos
