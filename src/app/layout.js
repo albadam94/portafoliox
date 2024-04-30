@@ -1,4 +1,3 @@
-// Importaciones necesarias
 "use client"
 import { Archivo } from 'next/font/google';
 import './globals.css';
@@ -9,10 +8,10 @@ import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import CustomCursor from './components/CustomCursor';
 
-// Configuración de la fuente (suponiendo que Archivo es una fuente de Google Fonts)
+
 const Font = Archivo({ subsets: ['latin'] });
 
-// Objeto de metadatos para el encabezado del documento
+
 const metadata = {
   title: 'UX Albadam',
   description: 'Albadam UX/UI Designer -Desarrollador Frontend, diseño web, UX/UI, Social Media',
@@ -25,12 +24,12 @@ const metadata = {
   'google-site-verification': 'Y0E6OuCeDeetuG8_FSbCEDuPLGl7K8_tDB-w0GyxEJA',
 };
 
-// Función de componente RootLayout
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        {/* Configuración de metadatos */}
+        
         <meta name="title" content={metadata.title} />
         <meta name="description" content={metadata.description} />
         <meta name="author" content={metadata.author} />
@@ -40,15 +39,16 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content={metadata['google-site-verification']} />
       </head>
       <body className={Font.className}>
-        {/* Componentes principales del layout */}
+       
         <Menu />
         <NextUIProvider>
           <CustomCursor />
-          {/* La clase 'lg:h-[1450px]' ajusta la altura en dispositivos grandes, asegúrate de necesitar esta clase */}
-          <ScrollShadow hideScrollBar className="lg:h-[1450px]">
+          
+          <ScrollShadow hideScrollBar className="md:h-[1450px]">
             {children}
-            <ScrollToTopButton />
+            
           </ScrollShadow>
+          <ScrollToTopButton />
         </NextUIProvider>
         <Footer />
       </body>

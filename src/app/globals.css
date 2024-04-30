@@ -7,25 +7,25 @@
 
 
 :root {
-  background-color: #161616;
+  background-color: #FBFBFB;
   font-family: 'Archivo', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: #161616;
+    background-color: #FBFBFB;
     font-family: 'Archivo', sans-serif;
   }
 }
 
 body {
- background-color: #161616;
+ background-color: #FBFBFB;
  font-family: 'Archivo', sans-serif;
  color:#FFFFFF;
 }
 
 .fa-2x:hover{
-  color: #16BCCB !important;
+  color: #FFD700 !important;
 }
 
 
@@ -35,11 +35,15 @@ body {
   position: fixed;
   width: 30px;
   height: 30px;
-  background-color: #16BCCB;
+  background-color: #4CB5F5;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  mix-blend-mode: difference; /* Opcional: agrega un efecto de mezcla de modos */
+  /*mix-blend-mode: difference;  Opcional: agrega un efecto de mezcla de modos */
   opacity: 90%;
+}
+
+.Title{
+  letter-spacing: -2px;
 }

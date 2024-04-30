@@ -2,7 +2,7 @@
 import React from 'react';
 import Quiensoy from '../components/Quiensoy';
 import Habilidades from '../components/Habilidades';
-import Carrusel from '../components/Carrusel';
+import Carrusel from '../components/Stack';
 import Formacion from '../components/Formacion';
 import Experiencia from '../components/Experiencia';
 

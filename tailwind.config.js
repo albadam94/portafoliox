@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'custom-teal': '#16BCCB',
+        'custom-blue': '#083040',
+        'Darkcharcoal': '#333333',
       },
     },
   },
