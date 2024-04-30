@@ -15,6 +15,8 @@ export default function Menu() {
     const projectsSection = document.getElementById('Proyectos');
     if (projectsSection) {
       projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }else{
+      window.location.href = '/#Proyectos';
     }
   };
 
@@ -31,7 +33,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <nav className='menu mt-0 sticky top-0 z-50 p-4 shadow-md bg-inherit'>
+    <nav className='menu mt-0 sticky top-0 z-50 p-4  bg-inherit'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center h-16'>
           <div className='flex-shrink-0 flex items-center'>
