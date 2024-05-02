@@ -59,3 +59,30 @@ body {
   transform: translateY(50px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+
+
+
+
+
+.text-custom-blue .UX {
+  background-image: linear-gradient(to right, rgb(8, 48, 64) 20%, rgb(8, 48, 64) 30%, rgb(76, 181, 245) 70%, rgb(76, 181, 245) 80%);
+  -webkit-background-clip: text; 
+  color: transparent; 
+  animation: shine 7s linear infinite; 
+  background-size: 200% 100%; 
+  background-clip: text; 
+}
+
+
+@keyframes shine {
+  0% {
+    background-position: 100% 50%; 
+  }
+  50% {
+    background-position: 0% 50%; 
+  }
+  100% {
+    background-position: 100% 50%; 
+  }
+}
