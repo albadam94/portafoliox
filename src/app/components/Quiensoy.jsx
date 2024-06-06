@@ -19,7 +19,7 @@ const Quiensoy = () => {
             Soy Brayan Albadam, diseñador multimedia y desarrollador frontend de la Universidad industrial de
             Santander. Certificado profesionalmente en diseño de experiencia de usuario por{' '}
             <a
-              href="https://www.coursera.org/programs/diseno-de-experiencia-de-usuario-iiehw/professional-certificates/diseno-de-experiencia-del-usuario-ux-de-google"
+              href="https://www.coursera.org/account/accomplishments/specialization/certificate/DVYLRJ2VVTH5"
               className="text-sky-400 font-bold underline" target="_blank" rel="noopener noreferrer" >
               Google
             </a>{' '}

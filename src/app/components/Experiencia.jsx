@@ -23,7 +23,12 @@ const Experiencia = () => {
                 Difusión de los planes y proyectos que adelantó la administración en un programa de radio | contrato 1473-2018
               </p>
             </AccordionItem>
-            <AccordionItem className="font-medium"  key="4" title={<span style={{ color: '#083040' }}>UX Engineer</span>} subtitle="We Are Angular" aria-label="UX Engineer">
+            <AccordionItem className="font-medium"  key="4" title={<span style={{ color: '#083040' }}>Community manager-Productor de audio </span>} subtitle="Hope Radio" aria-label="Community manager-Radio operador">
+              <p className="text-sm text-Darkcharcoal font-normal">
+                Grabación y edición de programas, social media, locución
+              </p>
+            </AccordionItem>
+            <AccordionItem className="font-medium"  key="5" title={<span style={{ color: '#083040' }}>Diseñador UX/UI-Desarrollador Frontend</span>} subtitle="We Are Angular" aria-label="UX Engineer">
               <p className="text-sm text-Darkcharcoal font-normal">
                 Diseño y desarrollo de landings page en Wordpress<br />
                 Lideré la implementación Frontend de LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.<br />
@@ -32,7 +37,7 @@ const Experiencia = () => {
                 Brindé apoyo en el diseño UI y prototipado realizando modificaciones en las interfaces de los cursos e implementándolos en la aplicación mediante código HTML y CSS tanto para agricultores como Extensionistas.
               </p>
             </AccordionItem>
-            <AccordionItem className="font-medium"  key="5" title={<span style={{ color: '#083040' }}>Project Manager</span>} subtitle="Ministerio de tecnologías de información y comunicaciones | Innpulsa | Universidad ICESI" aria-label="Project Manager">
+            <AccordionItem className="font-medium"  key="6" title={<span style={{ color: '#083040' }}>Project Manager</span>} subtitle="Ministerio de tecnologías de información y comunicaciones | Innpulsa | Universidad ICESI" aria-label="Project Manager">
               <p className="text-sm text-Darkcharcoal font-normal">
                 Líder de proyecto Mid Level, encargado de gestionar las actividades necesarias que debían realizar los diseñadores y desarrolladores, para entregar en los tiempos establecidos los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co- Fase Producto Digital.
               </p>
