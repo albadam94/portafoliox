@@ -30,11 +30,11 @@ const Experiencia = () => {
             </AccordionItem>
             <AccordionItem className="font-medium"  key="5" title={<span style={{ color: '#083040' }}>Diseñador UX/UI-Desarrollador Frontend</span>} subtitle="We Are Angular" aria-label="UX Engineer">
               <p className="text-sm text-Darkcharcoal font-normal">
-                Diseño y desarrollo de landings page en Wordpress<br />
-                Lideré la implementación Frontend de LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.<br />
-                Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.<br />
-                Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos.<br />
-                Brindé apoyo en el diseño UI y prototipado realizando modificaciones en las interfaces de los cursos e implementándolos en la aplicación mediante código HTML y CSS tanto para agricultores como Extensionistas.
+                Diseño y desarrollo de landings page e ecommerce en Wordpress<br /><br></br>
+                Lideré la implementación Frontend de un LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.<br /><br></br>
+                Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.<br /><br></br>
+                Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos y brinde apoyo en el diseño UI en la creación de banners y demas elementos visuales.<br /><br></br>
+                Brindé apoyo en el diseño UI y prototipado realizando modificaciones en las interfaces de los cursos e implementándolos en la aplicación mediante código HTML y CSS tanto para agricultores como Extensionistas en la plataforma de CANVAS LMS.
               </p>
             </AccordionItem>
             <AccordionItem className="font-medium"  key="6" title={<span style={{ color: '#083040' }}>Project Manager</span>} subtitle="Ministerio de tecnologías de información y comunicaciones | Innpulsa | Universidad ICESI" aria-label="Project Manager">

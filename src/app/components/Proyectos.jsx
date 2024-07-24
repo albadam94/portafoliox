@@ -32,6 +32,13 @@ const proyectosData = [
         imageUrl: '/Ejercicios.svg',
         link: 'https://guitarplay.netlify.app/',
     },
+    {
+      id: 5,
+      title: 'Ecommerce Tienda Cannabis',
+      description:'Diseño en Figma y desarrollo de un ecommerce en Wordpress usando elementor y woocommerce, alojado estaticamente en netlify ',
+      imageUrl: '/Cannabis.svg',
+      link: 'https://medicalcannabis.netlify.app/',
+  },
 
   
 ];
