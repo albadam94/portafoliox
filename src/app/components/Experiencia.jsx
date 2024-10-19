@@ -42,6 +42,14 @@ const Experiencia = () => {
                 Líder de proyecto Mid Level, encargado de gestionar las actividades necesarias que debían realizar los diseñadores y desarrolladores, para entregar en los tiempos establecidos los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co- Fase Producto Digital.
               </p>
             </AccordionItem>
+            <AccordionItem className="font-medium"  key="7" title={<span style={{ color: '#083040' }}>Freelance</span>} subtitle="Independiente" aria-label="Freelance">
+              <p className="text-sm text-Darkcharcoal font-normal">
+              Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.
+              ● Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal
+              ● Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos, Diseño de flujos, diseño UI, UI KIT, diseño de componentes, diseño de banners, diseño paginas de perfil, pagina de carga de contenidos, diseño de dashboard de estadísticas y pagos. <a href="https://playme.us"target="_blank"
+              rel="noopener noreferrer" className="text-sky-400 font-bold underline"> Proyecto playme.us</a>
+              </p>
+            </AccordionItem>
           </Accordion>
         </div>
       </div>

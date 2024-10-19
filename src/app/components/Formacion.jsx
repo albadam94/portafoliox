@@ -10,6 +10,12 @@ const Formacion = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6 font-['Archivo'] mt-20">
         <Accordion isCompact className="flex flex-col p-4 border rounded-lg shadow-md mb-4">
+        <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Comunicación social</span>}subtitle="UNAD Proceso de homologación" aria-label="Comunicación social">
+            <p className="text-sm text-Darkcharcoal font-normal">
+            Comunicador Social, Jefe de Prensa y/o Consultor en organizaciones estatales como alcaldías, departamentos y diferentes dependencias, organizaciones del sector privado y organizaciones no gubernamentales-ONG.
+            • Productor de Medios de comunicación (radio, prensa, TV, multimedia, fotografía). • Diseñador gestor o mediador en proyectos como: medios comunitarios; proyectos de desarrollo social; medios masivos; educación; periodismo ciudadano; investigación social, cultural y comunicacional; estrategias de comunicación en organizaciones; gestión cultural, y política pública. • Gestor de contenidos digitales. •Gestor de prácticas comunicativas y ciudadanas digitales: generación de contenidos y productos convergentes, diseño e implementación de estrategias y narrativas transmedia e hipermedia, competencias digitales, alfabetización en prácticas digitales ciudadanas, diseño de redes informáticas comunitarias. 
+            </p>
+          </AccordionItem>
           <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Tecnólogo producción multimedia</span>}subtitle="SENA" aria-label="Tecnólogo en producción multimedia">
             <p className="text-sm text-Darkcharcoal font-normal">
               Desarrollador de multimedia (offline y online) • Diseñador gráfico digital • Ilustrador • Diseñador UX/UI • Webmaster • Editor de audio y video • Asesor de sistemas multimediales • Director de proyectos multimediales
