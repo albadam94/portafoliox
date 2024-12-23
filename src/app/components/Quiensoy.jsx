@@ -16,7 +16,7 @@ const Quiensoy = () => {
 
         <div className="text-Darkcharcoal font-normal font-['Archivo'] leading-normal xl:mx-36 mt-10 md:mb-10 ml-4 mr-2">
           <div>
-            Soy Brayan Albadam, diseñador multimedia y desarrollador frontend de la Universidad industrial de
+            Soy Brayan Albadam, product designer y desarrollador frontend de la Universidad industrial de
             Santander. Certificado profesionalmente en diseño de experiencia de usuario por{' '}
             <a
               href="https://www.coursera.org/account/accomplishments/specialization/certificate/DVYLRJ2VVTH5"
