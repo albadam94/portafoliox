@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMeta, faInstagram, faBehance, faXTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faMeta, faInstagram, faBehance, faGithub, faLinkedin,faDribbble } from '@fortawesome/free-brands-svg-icons';
 
 const Icons = () => {
   return (
@@ -14,8 +14,8 @@ const Icons = () => {
       <a href="https://www.behance.net/brayanalbadam" target="_blank" rel="noopener noreferrer" >
         <FontAwesomeIcon icon={faBehance} className="fa-2x"  style={{ color: '#083040',height:'24', width:'24' }} />
       </a>
-      <a href="https://twitter.com/Albadam94" target="_blank" rel="noopener noreferrer" >
-        <FontAwesomeIcon icon={faXTwitter}className="fa-2x"  style={{ color: '#083040',height:'24', width:'24'}} />
+      <a href="https://dribbble.com/Albadam94" target="_blank" rel="noopener noreferrer" >
+        <FontAwesomeIcon icon={faDribbble}className="fa-2x"  style={{ color: '#083040',height:'24', width:'24'}} />
       </a>
       <a href="https://github.com/albadam94" target="_blank" rel="noopener noreferrer" >
         <FontAwesomeIcon icon={faGithub}className="fa-2x"   style={{ color: '#083040',height:'24', width:'24' }} />
