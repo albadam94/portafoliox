@@ -19,15 +19,15 @@ const proyectosData = [
   },
     {
         id: 3,
-        title: 'La cerveceria',
-        description: 'Diseño de una app que permita reservar espacios, productos y realizar pagos QR en un Pub-bar',
-        imageUrl: '/Lacerveceria.svg.svg',
-        link: 'https://www.behance.net/gallery/176068785/La-Cerveceria-APP',
+        title: 'Fluity Fintech App',
+        description: 'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
+        imageUrl: '/PresentaciónSVG.svg',
+        link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
        
     },
     {
         id: 4,
-        title: 'Ecommerce',
+        title: 'Ecommerce GuitarLA',
         description:'Desarrollo de E-commerce de Guitarras en React-Vite y estilos con tailwind CSS  ',
         imageUrl: '/Ejercicios.svg',
         link: 'https://guitarplay.netlify.app/',
