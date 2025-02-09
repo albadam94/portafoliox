@@ -8,26 +8,6 @@ const Experiencia = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-6 font-['Archivo'] mt-20">
           <Accordion isCompact className="flex flex-col p-4 border rounded-lg shadow-md mb-4">
-            <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Productor de audio</span>} subtitle="Radio Luna" aria-label="Productor de audio">
-              <p className="text-sm text-Darkcharcoal font-normal">
-                Grabación y edición de programas y comerciales<br />Radio Operador de la emisora afiliada a la cadena radial TODELAR
-              </p>
-            </AccordionItem>
-            <AccordionItem className="font-medium"  key="2" title={<span style={{ color: '#083040' }}>Coordinador programa de opinión De Cuando Acá</span>} subtitle="Armonias del Palmar" aria-label="Coordinador programa de opinión De Cuando Acá">
-              <p className="text-sm text-Darkcharcoal font-normal">
-                Desempeñé la coordinación del programa de opinión en Radio, me encargué de editar las entrevistas, coordinar las notas para la emisión, también realicé la presentación del programa - Locución.
-              </p>
-            </AccordionItem>
-            <AccordionItem className="font-medium"  key="3" title={<span style={{ color: '#083040' }}>Contratista comunicaciones Alcaldía de Palmira</span>} subtitle="Alcaldía de Palmira" aria-label="Contratista comunicaciones Alcaldía de Palmira">
-              <p className="text-sm text-Darkcharcoal font-normal">
-                Difusión de los planes y proyectos que adelantó la administración en un programa de radio | contrato 1473-2018
-              </p>
-            </AccordionItem>
-            <AccordionItem className="font-medium"  key="4" title={<span style={{ color: '#083040' }}>Community manager-Productor de audio </span>} subtitle="Hope Radio" aria-label="Community manager-Radio operador">
-              <p className="text-sm text-Darkcharcoal font-normal">
-                Grabación y edición de programas, social media, locución
-              </p>
-            </AccordionItem>
             <AccordionItem className="font-medium"  key="5" title={<span style={{ color: '#083040' }}>Diseñador UX/UI-Desarrollador Frontend</span>} subtitle="We Are Angular" aria-label="UX Engineer">
               <p className="text-sm text-Darkcharcoal font-normal">
                 Diseño y desarrollo de landings page e ecommerce en Wordpress<br /><br></br>
@@ -48,6 +28,18 @@ const Experiencia = () => {
               ● Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal
               ● Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos, Diseño de flujos, diseño UI, UI KIT, diseño de componentes, diseño de banners, diseño paginas de perfil, pagina de carga de contenidos, diseño de dashboard de estadísticas y pagos. <a href="https://playme.us"target="_blank"
               rel="noopener noreferrer" className="text-sky-400 font-bold underline"> Proyecto playme.us</a>
+              </p>
+            </AccordionItem>
+            <AccordionItem className="font-medium"  key="8" title={<span style={{ color: '#083040' }}>Product Designer</span>} subtitle="Innovative MOJO" aria-label="Product Designer">
+              <p className="text-sm text-Darkcharcoal font-normal">
+              Realizar investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informar las decisiones de diseño.<br /><br></br>
+              Desarrollar perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.<br /><br></br>
+              Crear prototipos interactivos que articulen claramente el flujo y la funcionalidad de los productos digitales.<br /><br></br>
+              Diseñar interfaces visualmente atractivas que se alineen con la identidad de la marca y los objetivos de marketing.<br /><br></br>
+              Desarrollar sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales.<br /><br></br>
+              Colaborar con los desarrolladores para garantizar que la integridad del diseño se mantenga durante la fase de desarrollo.
+
+              
               </p>
             </AccordionItem>
           </Accordion>
