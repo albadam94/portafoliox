@@ -5,7 +5,7 @@ import Image from 'next/image';
 const SkillItem = ({ logoSrc, title, description }) => {
     
   return (
-    <div className="flex justify-start items-start gap-[35px]">
+    <div className="flex justify-start items-start gap-[35px] font-['Outfit']">
       <div className="w-[242px] px-[19px] py-2.5 bg-white rounded-xl shadow flex flex-col justify-start items-start gap-2.5">
         <div className="flex items-center gap-5">
           <Image src={logoSrc} width={25} height={25} alt={title} />
@@ -22,7 +22,7 @@ const SkillItem = ({ logoSrc, title, description }) => {
 const Stack = () => {
   return (
     <div className="w-full max-w-[800px] mx-auto mt-10 px-10 py-10 md:px-6 md:py-8 bg-white rounded-3xl shadow-lg">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-archivo">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-['Outfit']">
 
         
         <SkillItem logoSrc="/Logos/Figma.svg" title="Figma" description="Diseño de interfaces"/>

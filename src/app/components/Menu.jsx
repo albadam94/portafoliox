@@ -49,7 +49,7 @@ export default function Menu() {
               </a>
             </Link>
           </div>
-          <div className="bg-Darkcharcoal py-3 px-10 rounded-3xl md:items-center hidden sm:block sm:ml-6 md:ml-60 items-center space-x-6 sm:space-x-9 font-['Archivo']" >
+          <div className="bg-Darkcharcoal py-3 px-10 rounded-3xl md:items-center hidden sm:block sm:ml-6 md:ml-60 items-center space-x-6 sm:space-x-9 font-['Outfit']" >
             <Link href='/' legacyBehavior>
               <a className='hover:text-custom-teal'>Inicio</a>
             </Link>
@@ -63,7 +63,7 @@ export default function Menu() {
 
           <div className='hidden sm:block sm:ml-6 space-x-4'>
             <a href='mailto:brayanalbadam@gmail.com' legacyBehavior>
-              <button className="text-white bg-Darkcharcoal px-3 py-3 text-sm font-semibold font-['Archivo'] leading-none w-[110.23px] h-10 rounded-3xl border ">
+              <button className="text-white bg-Darkcharcoal px-3 py-3 text-sm font-semibold font-['Outfit'] leading-none w-[110.23px] h-10 rounded-3xl border ">
                 Contacto
               </button>
             </a>
@@ -73,7 +73,7 @@ export default function Menu() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <button className="text-cyan-500 bg-Darkcharcoal py-3  text-sm font-semibold font-['Archivo'] leading-none w-[110.23px] h-10 md:w-36 rounded-3xl border  mr-4">
+              <button className="text-cyan-500 bg-Darkcharcoal py-3  text-sm font-semibold font-['Outfit'] leading-none w-[110.23px] h-10 md:w-36 rounded-3xl border  mr-4">
                 Descargar CV
               </button>
             </a>
