@@ -24,9 +24,9 @@ const Experiencia = () => {
             </AccordionItem>
             <AccordionItem className="font-medium"  key="7" title={<span style={{ color: '#083040' }}>Freelance</span>} subtitle="Independiente" aria-label="Freelance">
               <p className="text-sm text-Darkcharcoal font-normal">
-              Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.
-              ● Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal
-              ● Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos, Diseño de flujos, diseño UI, UI KIT, diseño de componentes, diseño de banners, diseño paginas de perfil, pagina de carga de contenidos, diseño de dashboard de estadísticas y pagos. <a href="https://playme.us"target="_blank"
+              Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.<br /><br></br>
+              Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal<br /><br></br>
+              Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos, Diseño de flujos, diseño UI, UI KIT, diseño de componentes, diseño de banners, diseño paginas de perfil, pagina de carga de contenidos, diseño de dashboard de estadísticas y pagos. <a href="https://playme.us"target="_blank"
               rel="noopener noreferrer" className="text-sky-400 font-bold underline"> Proyecto playme.us</a>
               </p>
             </AccordionItem>
