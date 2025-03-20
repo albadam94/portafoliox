@@ -1,24 +1,44 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useLayoutEffect, useEffect } from "react";
 import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import { cn } from "../lib/utils";
 
 export const TracingBeam = ({ children, className }) => {
   const ref = useRef(null);
+  const contentRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const contentRef = useRef(null);
   const [svgHeight, setSvgHeight] = useState(0);
 
-  useEffect(() => {
+  // Función para actualizar la altura del SVG dinámicamente
+  const updateHeight = () => {
     if (contentRef.current) {
       setSvgHeight(contentRef.current.offsetHeight);
     }
+  };
+
+  // Actualiza la altura cuando el componente se monta o el contenido cambia
+  useLayoutEffect(() => {
+    updateHeight();
+  }, [children]);
+
+  // Escucha cambios de tamaño en la ventana
+  useEffect(() => {
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
   }, []);
+
+  // Fuerza un repaint para evitar espacios en blanco en el footer
+  useEffect(() => {
+    document.body.style.height = "auto";
+    requestAnimationFrame(() => {
+      document.body.style.height = document.body.scrollHeight + "px";
+    });
+  }, [svgHeight]);
 
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
@@ -107,4 +127,3 @@ export const TracingBeam = ({ children, className }) => {
 };
 
 export default TracingBeam;
-
