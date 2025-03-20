@@ -5,16 +5,24 @@ import Perfil from 'public/Perfil.png';
 const Quiensoy = () => {
   return (
     <div>
-      <div className="mt-14 md:mt-10 lg:mt-10 xl:mt-64 font-['Outfit'] ">
-        <h1 className="text-custom-blue text-5xl font-semibold  leading-[56px] md:mx-12 lg:mx-20 xl:mx-36 ml-5">
+      <div className="mt-14 md:mt-10 lg:mt-10 xl:mt-64 font-['Geist'] ">
+        <h1 className="text-custom-blue text-5xl font-semibold  leading-[56px] md:mx-12 lg:mx-20  ml-5 xl:mx-[-120px]">
           Acerca de mi
         </h1>
 
         <div className="">
-          <Image src={Perfil} alt="Brayan Albadam" width={400} height={400} className="float-right ml-24 mr-1 mt-5 sm:mr-20 shadow border-2 lg:w-96 w-screen mb-9"/>
+        <Image 
+  src={Perfil} 
+  alt="Brayan Albadam" 
+  width={400} 
+  height={400} 
+  className="block mx-auto mt-5 sm:mt-3 shadow border-2 
+  w-3/4 sm:w-1/2 md:w-1/3 lg:w-96 max-w-xs sm:max-w-sm md:max-w-[500px] lg:max-w-96 xl:max-w-lg 
+  sm:relative sm:top-0 md:relative md:top-0 lg:float-right lg:ml-7   lg:mt-5 lg:sm:mr-[-10rem] lg:mb-10 "
+/>
         </div>
 
-        <div className="text-Darkcharcoal font-normal leading-normal xl:mx-36 mt-10 md:mb-10 ml-4 mr-2">
+        <div className="text-Darkcharcoal font-normal leading-normal xl:mx-[-120px] mt-10 md:mb-10 ml-4 mr-2">
           <div>
             Soy Brayan Albadam, product designer y desarrollador frontend de la Universidad industrial de
             Santander. Certificado profesionalmente en diseño de experiencia de usuario por{' '}
@@ -51,7 +59,7 @@ const Quiensoy = () => {
             Anteriormente, adquirí valiosa experiencia en medios de comunicación, incluyendo radio y televisión, donde participé en aspectos técnicos audiovisuales. Mi trayectoria incluye emisoras como Todelar Palmira, HopeRadio Colombia y Armonías del Palmar de RCN Radio.
             <br />
             <br />
-            Tengo experiencia en comunicación digital y social media. A lo largo de mi carrera, he cultivado habilidades en la creación de conceptos de diseño, investigación de usuarios y establecimiento de marcos de productos mediante el uso de prototipos basado en la metodología Design Thinking.
+            Tengo experiencia en comunicación digital y social media. A lo largo de mi carrera, he cultivado habilidades en la creación de conceptos de diseño, investigación de usuarios y establecimiento de  marcos de productos mediante el uso de prototipos basado en la metodología Design Thinking.
             <br />
             <br />
             Con enfoque centrado en el usuario, diseño las experiencias más increíbles para los usuarios.

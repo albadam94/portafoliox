@@ -4,11 +4,11 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 const Formacion = () => {
   return (
     <>
-    <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-36 font-['Outfit'] mt-10 ">Educación</h1>
+    <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px]  font-['Geist'] mt-10 ">Educación</h1>
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
       
 
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 font-['Outfit'] mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 font-['Geist'] mt-20">
         <Accordion isCompact className="flex flex-col p-4 border rounded-lg shadow-md mb-4">
         <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Marketing y negocios digitales</span>}subtitle="Universidad Nacional Abierta y a Distancia UNAD" aria-label="Marketing y negocios digitales">
             <p className="text-sm text-Darkcharcoal font-normal">

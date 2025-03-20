@@ -47,7 +47,7 @@ const Proyecto = ({ proyecto }) => {
     return (
         
          
-      <div className="max-w-[820px] md:h-[460px] mx-auto px-4 md:px-10  md:py-[82px] bg-white rounded-3xl shadow flex-col justify-start items-start gap-2.5 inline-flex font-['Outfit']  mb-10">
+      <div className="max-w-[820px] md:h-[460px] mx-auto px-4 md:px-10  md:py-[82px] bg-white rounded-3xl shadow flex-col justify-start items-start gap-2.5 inline-flex font-['Geist']  mb-10">
         <div className="flex flex-col items-start gap-4 md:flex-row">
          
           <div className="w-full md:w-[370px] h-[296px] object-cover relative bg-white rounded-md">
@@ -61,7 +61,7 @@ const Proyecto = ({ proyecto }) => {
           </div>
   
           
-          <div className="p-7 md:p-4 flex flex-col md:gap-6 items-center md:justify-center font-['Outfit']">
+          <div className="p-7 md:p-4 flex flex-col md:gap-6 items-center md:justify-center font-['Geist']">
 
           
             <h5 className="text-sky-400 text-lg md:text-xl font-medium leading-tight text-center md:text-left">
@@ -69,7 +69,7 @@ const Proyecto = ({ proyecto }) => {
             </h5>
   
            
-            <p className="md:w-80 text-Darkcharcoal md:text-base md:font-normal font-['Outfit'] md:leading-tight px-2">
+            <p className="md:w-80 text-Darkcharcoal md:text-base md:font-normal font-['Geist'] md:leading-tight px-2">
               {proyecto.description}
             </p>
   
