@@ -10,13 +10,13 @@ const Formacion = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-1 gap-6 font-['Geist'] mt-20">
         <Accordion isCompact className="flex flex-col p-4 border rounded-lg shadow-md mb-4">
-        <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Marketing y negocios digitales</span>}subtitle="Universidad Nacional Abierta y a Distancia UNAD" aria-label="Marketing y negocios digitales">
+        <AccordionItem className="font-medium"  key="1" title={<span style={{ color: '#083040' }}>Profesional en Diseño Digital</span>}subtitle="Universidad Politécnico GranColombiano" aria-label="Profesional en Diseño Digital">
             <p className="text-sm text-Darkcharcoal font-normal">
-            * Publicidad Digital: Gestión de campañas PPC, media buying y plataformas como Google Ads y Meta Ads
-            * Redes Sociales: Community management, social media strategy y creación de contenido.
-            * E-commerce: Gestión de tiendas en línea y marketplaces.
-            * Branding y Comunicación: Posicionamiento de marcas y manejo de reputación online.
-            * UX/UI: Mejora de la experiencia e interfaces digitales
+            * Diseñador interactivo: Diseño de interfaces digitales y experiencia de usuario.
+            * Diseñador publicitario
+            * Director de arte y creativo: Creación de campañas publicitarias y estrategias de comunicación visual.
+            * Ilustrador digital: Creación de ilustraciones y gráficos digitales.
+            * Coordinador areas de diseño: Gestión y coordinación de equipos de diseño.
             </p>
           </AccordionItem>
           <AccordionItem className="font-medium"  key="2" title={<span style={{ color: '#083040' }}>Tecnólogo producción multimedia</span>}subtitle="SENA" aria-label="Tecnólogo en producción multimedia">
