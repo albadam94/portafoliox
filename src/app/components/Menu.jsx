@@ -69,7 +69,7 @@ export default function Menu() {
             </a>
             <a
               legacyBehavior
-              href='https://drive.google.com/file/d/1p_3yPSe-I-E2Am3uqp6ArPC-0zS5vsOI/view?usp=sharing'
+              href='https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -109,7 +109,7 @@ export default function Menu() {
             </a>
             <a
               legacyBehavior
-              href='https://drive.google.com/file/d/1p_3yPSe-I-E2Am3uqp6ArPC-0zS5vsOI/view?usp=sharing'
+              href='https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
             >
