@@ -37,7 +37,7 @@ const Stack = () => {
       }}
     >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-['Geist']">
-        <SkillItem logoSrc="/Logos/Figma.svg" title="Figma" description="Diseño de interfaz" />
+        <SkillItem logoSrc="/Logos/Figma.svg" title="Figma" description="Diseño de interfaces" />
         <SkillItem logoSrc="/Logos/Ilustrator.svg" title="Adobe Illustrator" description="Ilustración" />
         <SkillItem logoSrc="/Logos/Photoshop.svg" title="Adobe Photoshop" description="Diseño Gráfico" />
         <SkillItem logoSrc="/Logos/iconHTML.svg" title="HTML" description="Desarrollo web" />
