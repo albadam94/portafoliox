@@ -25,7 +25,7 @@ export default function Home() {
          <h1 id='Proyectos' className="text-custom-blue text-5xl font-semibold font-['Geist'] leading-normal  text-center md:text-left md:mt-5 lg:mt-64 mt-20">Proyectos</h1>
           
       <Proyectos  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 mb-40 mt-10 md:mt-10'/>
-      {/*<Proyectos  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 '/>*/}
+      {/*<Proyecto  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 '/>*/}
       
      
 
