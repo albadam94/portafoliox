@@ -1,15 +1,20 @@
 import React from 'react';
 
-
-
-
 const Habilidades = () => {
   return (
     <div className="mt-16 md:mt-32 px-4 ">
 
-      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-10 ">Habilidades</h1>
+      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-10 ">
+        Habilidades
+      </h1>
 
-      <div className="w-full max-w-[800px] mx-auto mt-10 px-6 py-8 bg-white rounded-3xl shadow-lg">
+      <div
+        className="w-full max-w-[800px] mx-auto mt-10 px-6 py-8 bg-white rounded-3xl"
+        style={{
+          boxShadow:
+            "0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)",
+        }}
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-['Geist']">
           <div className="border p-4 rounded-lg">Diseño UX/UI</div>
           <div className="border p-4 rounded-lg">Wireframe</div>
@@ -23,9 +28,12 @@ const Habilidades = () => {
         </div>
       </div>
 
-      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-20 md:mt-10 ">Stack</h1>
+      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-20 md:mt-10 ">
+        Stack
+      </h1>
     </div>
   );
 };
 
 export default Habilidades;
+
