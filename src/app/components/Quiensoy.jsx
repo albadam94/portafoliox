@@ -32,7 +32,7 @@ const Quiensoy = () => {
           >
             Google
           </a>{' '}
-          y en diseño de experiencia de usuario y consumidor por la Universidad San Buenaventura Cali. También estoy certificado en desarrollo frontend por la Universidad Industrial de Santander.
+          y en diseño de experiencia de usuario y consumidor por la Universidad San Buenaventura Cali, también estoy certificado en desarrollo frontend por la Universidad Industrial de Santander.
         </p>
 
         <p>
