@@ -17,22 +17,30 @@ const proyectosData = [
     imageUrl: '/Bancolombia.svg',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
-  {
+    {
     id: 3,
+    title: 'Diseño UI integration social',
+    description: 'Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma',
+    imageUrl: '/IntegrationMockup.png',
+    link: 'https://integrationsocial.com/',
+  },
+  {
+    id: 4,
     title: 'Fluity Fintech App',
     description: 'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
     imageUrl: '/PresentaciónSVG.svg',
     link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Diseño UI Tactiq Bizzell',
-    description: 'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. diseñada en Figma',
+    description: 'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma',
     imageUrl: '/Ejercicios.svg',
     link: 'https://www.tactiq-bizzell.us/',
   },
+  
   {
-    id: 5,
+    id: 6,
     title: 'Ecommerce Tienda Cannabis',
     description: 'Diseño en Figma y desarrollo de un ecommerce en Wordpress usando elementor y woocommerce, alojado estaticamente en netlify',
     imageUrl: '/Cannabis.svg',
