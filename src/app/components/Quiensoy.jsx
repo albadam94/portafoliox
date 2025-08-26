@@ -44,7 +44,7 @@ const Quiensoy = () => {
         </p>
 
         <p>
-          También trabajé como Project Manager en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, donde me encargué de gestionar las actividades necesarias para entregar a tiempo los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co - Fase Producto Digital.
+          También trabajé como Project Manager en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, donde me encargué de gestionar las actividades necesarias de los equipos de diseño y desarrollo para entregar a tiempo los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co - Fase Producto Digital.
         </p>
 
         <p>
