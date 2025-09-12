@@ -17,7 +17,7 @@ const proyectosData = [
     imageUrl: '/Bancolombia.svg',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
-    {
+  {
     id: 3,
     title: 'Diseño UI integration social',
     description: 'Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma',
@@ -38,7 +38,6 @@ const proyectosData = [
     imageUrl: '/Ejercicios.svg',
     link: 'https://www.tactiq-bizzell.us/',
   },
-  
   {
     id: 6,
     title: 'Ecommerce Tienda Cannabis',
@@ -50,23 +49,21 @@ const proyectosData = [
 
 const Proyecto = ({ proyecto, index }) => {
   return (
-   <motion.div
-  initial={{ y: 50 + index * 20, scale: 0.9, opacity: 0 }}
-  whileInView={{ y: 0, scale: 1, opacity: 1 }}
-  viewport={{ once: false, amount: 0.3 }}
-  transition={{ duration: 0.6, delay: index * 0.15 }}
-  className="max-w-[820px] mx-auto p-10 bg-white rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex font-['Geist'] relative"
-  style={{
-    zIndex: proyectosData.length - index,
-    boxShadow:
-      '0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)',
-  }}
->
-
-      <div className="flex flex-col items-start gap-6 md:flex-row">
-        
-        {/* Contenedor de imagen con aspect-ratio */}
-        <div className="relative w-full md:w-[380px] aspect-[4/3] bg-white rounded-md overflow-hidden">
+    <motion.div
+      initial={{ y: 50 + index * 20, scale: 0.9, opacity: 0 }}
+      whileInView={{ y: 0, scale: 1, opacity: 1 }}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 0.6, delay: index * 0.15 }}
+      className="max-w-[820px] mx-auto p-10 bg-white rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex font-['Geist'] relative"
+      style={{
+        zIndex: proyectosData.length - index,
+        boxShadow:
+          '0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)',
+      }}
+    >
+      <div className="flex flex-col items-start gap-6 md:flex-row md:gap-6 lg:gap-10">
+        {/* Contenedor de imagen */}
+        <div className="relative w-full md:w-[320px] lg:w-[380px] aspect-[4/3] bg-white rounded-md overflow-hidden">
           <Image
             src={proyecto.imageUrl}
             alt={proyecto.title}
@@ -75,22 +72,23 @@ const Proyecto = ({ proyecto, index }) => {
           />
         </div>
 
-        <div className="p-7 md:p-4 flex flex-col gap-4 items-center md:items-start md:justify-center font-['Geist']">
+        {/* Contenedor de texto */}
+        <div className="p-7 md:p-4 lg:p-6 flex flex-col gap-4 items-center md:items-start md:justify-center font-['Geist'] md:flex-1">
           <h5 className="text-sky-400 text-lg md:text-xl font-medium leading-tight text-center md:text-left">
             {proyecto.title}
           </h5>
 
-          <p className="md:w-80 text-Darkcharcoal md:text-base md:font-normal font-['Geist'] md:leading-tight px-2 text-center md:text-left">
+          <p className="md:w-[300px] lg:w-80 text-Darkcharcoal text-base font-normal font-['Geist'] leading-tight px-2 text-center md:text-left">
             {proyecto.description}
           </p>
 
           <a
-            className="w-[175px] h-[47px] md:p-6 bg-Darkcharcoal rounded-xl border border-Darkcharcoal justify-center items-center inline-flex mt-3 md:mt-4"
+            className="w-[175px] h-[47px] md:w-[180px] lg:w-[190px] md:h-[48px] lg:h-[50px] bg-Darkcharcoal rounded-xl border border-Darkcharcoal justify-center items-center inline-flex mt-3 md:mt-4 lg:mt-5"
             href={proyecto.link}
             rel="noopener noreferrer"
             target="_blank"
           >
-            <button className="text-sky-400 text-sm font-semibold leading-[10px]">
+            <button className="text-sky-400 text-sm font-semibold">
               VER PROYECTO
             </button>
           </a>

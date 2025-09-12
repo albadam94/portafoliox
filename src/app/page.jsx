@@ -19,7 +19,9 @@ export default function Home() {
           <h1 className="text-custom-blue Title text-4xl mb-3 mt-9 md:text-7xl font-bold    md:mt-16 md:mb-6">Product{""} <span className="UX">Designer</span><br></br></h1>          
           <p className="text-Darkcharcoal text-base font-medium leading-15 leading-tight mb-2">Hola ✌️soy Brayan Albadam diseñador digital</p>
           <p className="text-Darkcharcoal text-base font-medium leading-15 leading-tight mb-4">Especializado en diseño de experiencia de usuario</p>
+          <div className="flex justify-center items-center mt-10">
           <Icons />
+          </div>
           </div>
       
          <h1 id='Proyectos' className="text-custom-blue text-5xl font-semibold font-['Geist'] leading-normal  text-center md:text-left md:mt-5 lg:mt-64 mt-20">Proyectos</h1>
