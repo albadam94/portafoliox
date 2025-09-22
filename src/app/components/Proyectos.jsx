@@ -40,10 +40,10 @@ const proyectosData = [
   },
   {
     id: 6,
-    title: 'Ecommerce Tienda Cannabis',
-    description: 'Diseño en Figma y desarrollo de un ecommerce en Wordpress usando elementor y woocommerce, alojado estaticamente en netlify',
-    imageUrl: '/Cannabis.svg',
-    link: 'https://medicalcannabis.netlify.app/',
+    title: 'Tripflow App',
+    description: 'Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.',
+    imageUrl: '/Tripflow.png',
+    link: 'https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1',
   },
 ];
 
