@@ -1,4 +1,5 @@
 "use client";
+
 import { Archivo } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
@@ -12,17 +13,15 @@ import { TracingBeam } from "./components/TracingBeam";
 const Font = Archivo({ subsets: ["latin"] });
 
 const metadata = {
-  title: "UX Albadam",
-  description:
-    "Albadam UX/UI Designer -Desarrollador Frontend, diseño web, UX/UI, Social Media",
+  title: "Brayan Albadam-Product Designer",
+  description: "Brayan Albadam UX/UI Designer, Product Designer, Diseño web, UX/UI",
   author: "Brayan Albadam Vanegas",
   replyTo: "brayanalbadam@gmail.com",
-  refresh: "0; url=https://uxalbadam.com",
   keywords:
-    "Diseño grafico,Diseño UX/UI, Programación, Desarrollo de Software, Identidad Visual, Logotipos, Frontend",
+    "Product Designer, Diseño UX/UI, Diseñador UX, Desarrollo de software, Identidad Visual, Logotipos, Diseño web, Diseño de aplicaciones móviles, Diseño de experiencia de usuario, Diseño de interfaz de usuario, Prototipado, Investigación de usuarios, Arquitectura de la información, Usabilidad, Accesibilidad, Diseño centrado en el usuario, Estrategia de diseño, Diseño de interacción, Diseño visual, Herramientas de diseño, Figma, Adobe XD, Sketch, InVision, Diseño responsive",
   revisitAfter: "5 days",
   robots: "ALL",
-  "google-site-verification": "Y0E6OuCeDeetuG8_FSbCEDuPLGl7K8_tDB-w0GyxEJA",
+  "google-site-verification": "yDuTKeFjMkJauhbe6vtW82XEOiCm3_Fc6pnDHP45QGs",
 };
 
 export default function RootLayout({ children }) {
@@ -42,23 +41,18 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={Font.className}>
-        <Menu />
         <NextUIProvider>
+          <Menu />
           <CustomCursor />
-         
-         
-            <TracingBeam >
-            
-            {children}
-       
 
-            </TracingBeam >
-          
+          <TracingBeam>
+            {children}
+          </TracingBeam>
 
           <ScrollToTopButton />
           <ScrollShadow />
+          <Footer />
         </NextUIProvider>
-        <Footer />
       </body>
     </html>
   );
