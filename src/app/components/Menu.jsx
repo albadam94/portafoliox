@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Menu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,11 +12,11 @@ export default function Menu() {
   };
 
   const scrollToProjects = () => {
-    const projectsSection = document.getElementById('Proyectos');
+    const projectsSection = document.getElementById("Proyectos");
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.location.href = '/#Proyectos';
+      window.location.href = "/#Proyectos";
     }
   };
 
@@ -26,14 +26,14 @@ export default function Menu() {
         setMenuOpen(false);
       }
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
-    <nav className="menu mt-0 sticky top-0 z-50 p-4 bg-inherit">
+<nav className="menu mt-0 sticky top-0 z-50 p-4 bg-[#FBFBFB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -65,7 +65,6 @@ export default function Menu() {
             <button
               className="hover:text-custom-teal"
               onClick={scrollToProjects}
-              legacyBehavior
             >
               Proyectos
             </button>
@@ -76,13 +75,12 @@ export default function Menu() {
 
           {/* Botones de acción - solo en desktop */}
           <div className="hidden lg:flex ml-6 space-x-6">
-            <a href="mailto:brayanalbadam@gmail.com" legacyBehavior>
+            <a href="mailto:brayanalbadam@gmail.com">
               <button className="text-white bg-Darkcharcoal px-3 py-2 text-sm font-semibold font-['Geist'] w-[110px] h-10 rounded-3xl border">
                 Contacto
               </button>
             </a>
             <a
-              legacyBehavior
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -112,30 +110,30 @@ export default function Menu() {
                 Inicio
               </a>
             </Link>
-            <Link href="/#Proyectos" legacyBehavior>
-              <a className="text-Darkcharcoal block mt-2 hover:text-custom-teal">
-                Proyectos
-              </a>
-            </Link>
+            <button
+              onClick={scrollToProjects}
+              className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
+            >
+              Proyectos
+            </button>
             <Link href="/acerca" legacyBehavior>
               <a className="text-Darkcharcoal block mt-2 hover:text-custom-teal">
                 Acerca de mi
               </a>
             </Link>
-            <a href="mailto:brayanalbadam@gmail.com" legacyBehavior>
-              <a className="text-Darkcharcoal block mt-2 hover:text-custom-teal">
-                Contacto
-              </a>
+            <a
+              href="mailto:brayanalbadam@gmail.com"
+              className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
+            >
+              Contacto
             </a>
             <a
-              legacyBehavior
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-cyan-500 block mt-2 hover:text-teal-400"
             >
-              <a className="text-cyan-500 block mt-2 hover:text-teal-400">
-                Descargar CV
-              </a>
+              Descargar CV
             </a>
           </div>
         )}
