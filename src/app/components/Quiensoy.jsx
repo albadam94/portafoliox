@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Perfil from 'public/Perfil.png';
+import Perfil from 'public/perfil.png';
 
 const Quiensoy = () => {
   return (

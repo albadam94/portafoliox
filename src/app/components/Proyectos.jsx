@@ -6,43 +6,49 @@ const proyectosData = [
   {
     id: 1,
     title: 'Proyecto ASAVirtual',
-    description: 'Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS',
-    imageUrl: '/CoverB.svg',
+    description:
+      'Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS',
+    imageUrl: '/coverb.svg',
     link: 'https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual',
   },
   {
     id: 2,
     title: 'Bank Design Bancolombia',
-    description: 'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web',
-    imageUrl: '/Bancolombia.svg',
+    description:
+      'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web',
+    imageUrl: '/bancolombia.svg',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
   {
     id: 3,
     title: 'Diseño UI integration social',
-    description: 'Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma',
-    imageUrl: '/IntegrationMockup.png',
+    description:
+      'Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma',
+    imageUrl: '/integrationmockup.png',
     link: 'https://integrationsocial.com/',
   },
   {
     id: 4,
     title: 'Fluity Fintech App',
-    description: 'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
-    imageUrl: '/PresentaciónSVG.svg',
+    description:
+      'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
+    imageUrl: '/presentacionsvg.svg',
     link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
   },
   {
     id: 5,
     title: 'Diseño UI Tactiq Bizzell',
-    description: 'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma',
-    imageUrl: '/Ejercicios.svg',
+    description:
+      'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma',
+    imageUrl: '/ejercicios.svg',
     link: 'https://www.tactiq-bizzell.us/',
   },
   {
     id: 6,
     title: 'Tripflow App',
-    description: 'Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.',
-    imageUrl: '/Tripflow.png',
+    description:
+      'Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.',
+    imageUrl: '/tripflow.png',
     link: 'https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1',
   },
 ];
