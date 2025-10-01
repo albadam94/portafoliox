@@ -32,7 +32,7 @@ const proyectosData = [
     title: 'Fluity Fintech App',
     description:
       'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
-    imageUrl: '/presentacionsvg.svg',
+    imageUrl: '/fluity.svg',
     link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
   },
   {

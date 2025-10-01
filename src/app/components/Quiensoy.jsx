@@ -6,7 +6,7 @@ const Quiensoy = () => {
   return (
     <div className="mt-14 md:mt-10 lg:mt-10 xl:mt-64 font-['Geist']">
       <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-12 lg:mx-20 ml-5 xl:mx-[-120px]">
-        Acerca de mí
+        Acerca de mí 
       </h1>
 
       <div>
