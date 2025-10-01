@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Perfil from 'public/perfil.png';
 
 const Quiensoy = () => {
   return (
@@ -11,7 +10,7 @@ const Quiensoy = () => {
 
       <div>
         <Image
-          src={Perfil}
+          src="/perfil.png"  
           alt="Brayan Albadam"
           width={400}
           height={400}
