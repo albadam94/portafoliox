@@ -1,6 +1,5 @@
 "use client";
 
-import { Archivo } from "next/font/google";
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
@@ -9,8 +8,6 @@ import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import CustomCursor from "./components/CustomCursor";
 import { TracingBeam } from "./components/TracingBeam";
-
-const Font = Archivo({ subsets: ["latin"] });
 
 const metadata = {
   title: "Brayan Albadam-Product Designer",
@@ -39,16 +36,19 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content={metadata["google-site-verification"]}
         />
+
+       {/* Favicons */}
+          <link rel="icon" href="/favicons/Favicon.png" type="image/png" />
+          <link rel="icon" href="/favicons/Favicon32x32.png" sizes="32x32" type="image/png" />
+          <link rel="icon" href="/favicons/Favicon16x16.png" sizes="16x16" type="image/png" />
+          <link rel="apple-touch-icon" href="/favicons/Favicon180x180.png" sizes="180x180" />
+
       </head>
-      <body className={Font.className}>
+      <body>
         <NextUIProvider>
           <Menu />
           <CustomCursor />
-
-          <TracingBeam>
-            {children}
-          </TracingBeam>
-
+          <TracingBeam>{children}</TracingBeam>
           <ScrollToTopButton />
           <ScrollShadow />
           <Footer />
