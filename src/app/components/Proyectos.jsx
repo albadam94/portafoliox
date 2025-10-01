@@ -54,6 +54,8 @@ const proyectosData = [
 ];
 
 const Proyecto = ({ proyecto, index }) => {
+  const isSvg = proyecto.imageUrl.endsWith('.svg');
+
   return (
     <motion.div
       initial={{ y: 50 + index * 20, scale: 0.9, opacity: 0 }}
@@ -70,12 +72,20 @@ const Proyecto = ({ proyecto, index }) => {
       <div className="flex flex-col items-start gap-6 md:flex-row md:gap-6 lg:gap-10">
         {/* Contenedor de imagen */}
         <div className="relative w-full md:w-[320px] lg:w-[380px] aspect-[4/3] bg-white rounded-md overflow-hidden">
-          <Image
-            src={proyecto.imageUrl}
-            alt={proyecto.title}
-            fill
-            className="object-contain md:object-cover rounded-md"
-          />
+          {isSvg ? (
+            <img
+              src={proyecto.imageUrl}
+              alt={proyecto.title}
+              className="object-contain md:object-cover rounded-md w-full h-full"
+            />
+          ) : (
+            <Image
+              src={proyecto.imageUrl}
+              alt={proyecto.title}
+              fill
+              className="object-contain md:object-cover rounded-md"
+            />
+          )}
         </div>
 
         {/* Contenedor de texto */}
