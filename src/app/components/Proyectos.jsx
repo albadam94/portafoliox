@@ -105,7 +105,7 @@ const Proyecto = ({ proyecto, index }) => {
             target="_blank"
           >
             <button className="text-sky-400 text-sm font-semibold">
-              VER PROYECTO
+              Ver Proyecto
             </button>
           </a>
         </div>
