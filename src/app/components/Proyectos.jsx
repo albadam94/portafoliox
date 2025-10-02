@@ -16,7 +16,7 @@ const proyectosData = [
     title: 'Bank Design Bancolombia',
     description:
       'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web',
-    imageUrl: '/bancolombia.svg',
+    imageUrl: '/bancolombia.png',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
   {
