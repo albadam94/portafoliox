@@ -8,7 +8,7 @@ const proyectosData = [
     title: 'Proyecto ASAVirtual',
     description:
       'Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS',
-    imageUrl: '/coverb.svg',
+    imageUrl: '/asavirtual.png',
     link: 'https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual',
   },
   {
@@ -16,7 +16,7 @@ const proyectosData = [
     title: 'Bank Design Bancolombia',
     description:
       'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web',
-    imageUrl: '/bancolombia.svg',
+    imageUrl: '/bancolombia.png',
     link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
   },
   {
@@ -32,7 +32,7 @@ const proyectosData = [
     title: 'Fluity Fintech App',
     description:
       'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
-    imageUrl: '/fluity.svg',
+    imageUrl: '/fluity.png',
     link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
   },
   {
@@ -40,7 +40,7 @@ const proyectosData = [
     title: 'Diseño UI Tactiq Bizzell',
     description:
       'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma',
-    imageUrl: '/ejercicios.svg',
+    imageUrl: '/tactiqbizell.png',
     link: 'https://www.tactiq-bizzell.us/',
   },
   {
