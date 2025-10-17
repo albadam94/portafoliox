@@ -27,9 +27,9 @@ const Formacion = () => {
               <p className="text-sm text-Darkcharcoal font-normal">
                 * Diseñador interactivo: Diseño de interfaces digitales y experiencia de usuario
                 * Diseñador publicitario  
-                * Director de arte y creativo: Creación de campañas publicitarias y estrategias de comunicación visual.  
-                * Ilustrador digital: Creación de ilustraciones y gráficos digitales.  
-                * Coordinador áreas de diseño: Gestión y coordinación de equipos de diseño.  
+                * Director de arte y creativo: Creación de campañas publicitarias y estrategias de comunicación visual 
+                * Ilustrador digital: Creación de ilustraciones y gráficos digitales
+                * Coordinador áreas de diseño: Gestión y coordinación de equipos de diseño
               </p>
             </AccordionItem>
 
