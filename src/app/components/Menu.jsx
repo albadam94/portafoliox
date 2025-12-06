@@ -33,21 +33,19 @@ export default function Menu() {
   }, []);
 
   return (
-<nav className="menu mt-0 sticky top-0 z-50 p-4 bg-[#FBFBFB]">
+    <nav className="menu mt-0 sticky top-0 z-50 p-4 bg-[#FBFBFB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href="/" legacyBehavior>
-              <a className="flex">
-                <Image
-                  className="h-12 w-16"
-                  src="/Logos/Logo.svg"
-                  alt="Logo"
-                  width={20}
-                  height={20}
-                />
-              </a>
+            <Link href="/" className="flex">
+              <Image
+                className="h-12 w-16"
+                src="/Logos/Logo.svg"
+                alt="Logo"
+                width={20}
+                height={20}
+              />
             </Link>
           </div>
 
@@ -59,17 +57,19 @@ export default function Menu() {
               space-x-9 ml-60
             "
           >
-            <Link href="/" legacyBehavior>
-              <a className="hover:text-custom-teal">Inicio</a>
+            <Link href="/" className="hover:text-custom-teal">
+              Inicio
             </Link>
+
             <button
               className="hover:text-custom-teal"
               onClick={scrollToProjects}
             >
               Proyectos
             </button>
-            <Link href="/acerca" legacyBehavior>
-              <a className="hover:text-custom-teal">Acerca de mi</a>
+
+            <Link href="/acerca" className="hover:text-custom-teal">
+              Acerca de mi
             </Link>
           </div>
 
@@ -80,6 +80,7 @@ export default function Menu() {
                 Contacto
               </button>
             </a>
+
             <a
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"
@@ -91,7 +92,7 @@ export default function Menu() {
             </a>
           </div>
 
-          {/* Botón hamburguesa - visible en mobile y tablet */}
+          {/* Botón hamburguesa - mobile/tablet */}
           <div className="lg:hidden ml-6">
             <button
               className="text-Darkcharcoal hover:text-custom-teal"
@@ -105,28 +106,34 @@ export default function Menu() {
         {/* Menú móvil/tablet */}
         {menuOpen && (
           <div className="block lg:hidden mt-2">
-            <Link href="/" legacyBehavior>
-              <a className="text-Darkcharcoal block mt-2 hover:text-custom-teal">
-                Inicio
-              </a>
+            <Link
+              href="/"
+              className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
+            >
+              Inicio
             </Link>
+
             <button
               onClick={scrollToProjects}
               className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
             >
               Proyectos
             </button>
-            <Link href="/acerca" legacyBehavior>
-              <a className="text-Darkcharcoal block mt-2 hover:text-custom-teal">
-                Acerca de mi
-              </a>
+
+            <Link
+              href="/acerca"
+              className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
+            >
+              Acerca de mi
             </Link>
+
             <a
               href="mailto:brayanalbadam@gmail.com"
               className="text-Darkcharcoal block mt-2 hover:text-custom-teal"
             >
               Contacto
             </a>
+
             <a
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"

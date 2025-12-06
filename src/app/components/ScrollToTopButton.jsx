@@ -1,7 +1,5 @@
+"use client";
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,12 +32,30 @@ const ScrollToTopButton = () => {
     backgroundColor: '#161616',
     color: 'white',
     boxShadow: '0 2px 4px #16BCCB',
-    display: isVisible ? 'block' : 'none',
+    display: isVisible ? 'flex' : 'none',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: 'none',
+    cursor: 'pointer',
+    zIndex: 1000,
+    width: '48px',
+    height: '48px',
   };
 
   return (
-    <button style={buttonStyles} onClick={scrollToTop}>
-      <FontAwesomeIcon icon={faArrowUp} />
+    <button style={buttonStyles} onClick={scrollToTop} aria-label="Volver arriba">
+      <svg 
+        width="24" 
+        height="24" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </svg>
     </button>
   );
 };

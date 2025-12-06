@@ -5,9 +5,10 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import ClientScrollToTop from "./ClientScrollToTop";
 import CustomCursor from "./components/CustomCursor";
 import { TracingBeam } from "./components/TracingBeam";
+
 
 const metadata = {
   title: "Brayan Albadam-Product Designer",
@@ -44,12 +45,12 @@ export default function RootLayout({ children }) {
           <link rel="apple-touch-icon" href="/favicons/Favicon180x180.png" sizes="180x180" />
 
       </head>
-      <body>
+      <body suppressHydrationWarning={true}>
         <NextUIProvider>
           <Menu />
           <CustomCursor />
           <TracingBeam>{children}</TracingBeam>
-          <ScrollToTopButton />
+         <ClientScrollToTop />
           <ScrollShadow />
           <Footer />
         </NextUIProvider>
