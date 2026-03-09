@@ -4,8 +4,11 @@ import Image from 'next/image';
 const Quiensoy = () => {
   return (
     <div className="mt-14 md:mt-10 lg:mt-10 xl:mt-64 font-['Geist']">
-      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-12 lg:mx-20 ml-5 xl:mx-[-120px]">
-        Acerca de mí 
+      <h1 
+        className="text-custom-blue font-bold md:mx-12 lg:mx-20 ml-5 xl:mx-[-120px]"
+        style={{ fontSize: '48px', letterSpacing: '-2px' }}
+      >
+        Acerca de mí
       </h1>
 
       <div>
@@ -22,7 +25,7 @@ const Quiensoy = () => {
 
       <div className="text-Darkcharcoal font-normal leading-relaxed xl:mx-[-120px] mt-10 md:mb-10 ml-4 mr-2 space-y-6">
         <p>
-          Soy Brayan Albadam, estudiante de diseño digital de la Universidad Politécnico Grancolombiano, certificado profesionalmente en diseño de experiencia de usuario por{' '}
+          Soy Brayan Albadam, diseñador digital con formación en la Universidad Politécnico Grancolombiano y certificaciones en UX por{' '}
           <a
             href="https://www.coursera.org/account/accomplishments/specialization/certificate/DVYLRJ2VVTH5"
             className="text-sky-400 font-bold underline"
@@ -31,23 +34,19 @@ const Quiensoy = () => {
           >
             Google
           </a>{' '}
-          y en diseño de experiencia de usuario y consumidor por la Universidad San Buenaventura Cali, también estoy certificado en desarrollo frontend por la Universidad Industrial de Santander.
+          y la Universidad San Buenaventura Cali, complementadas con estudios en desarrollo de aplicaciones web por la Universidad Industrial de Santander.
         </p>
 
         <p>
-          En el ámbito del diseño, he creado marcas para pequeñas y medianas empresas, así como para profesionales de diversas disciplinas.
+          Mi trabajo combina diseño y desarrollo: he construido identidades de marca para empresas y profesionales, desarrollado interfaces en WordPress y liderado la experiencia de usuario en una plataforma educativa en CANVAS LMS para agricultores de Centroamérica, donde el diseño fue clave para superar barreras de accesibilidad y adopción tecnológica.
         </p>
 
         <p>
-          Me desempeñé como desarrollador frontend en WordPress y como diseñador UX y desarrollador en la implementación de una plataforma educativa en CANVAS LMS, dirigida a agricultores de Centroamérica, donde la experiencia de usuario fue un factor fundamental, aplicando habilidades en diseño de experiencias y desarrollo frontend.
+          Como Project Manager en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, coordiné los equipos de diseño y desarrollo para entregar 74 MVPs en el Ciclo 2 del Proyecto Apps.Co — Fase Producto Digital, cumpliendo tiempos y estándares de calidad.
         </p>
 
         <p>
-          También trabajé como Project Manager en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, donde me encargué de gestionar las actividades necesarias de los equipos de diseño y desarrollo para entregar a tiempo los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co - Fase Producto Digital.
-        </p>
-
-        <p>
-          Además, fui seleccionado como semifinalista en el{' '}
+          He sido semifinalista en el{' '}
           <a
             href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/"
             className="text-sky-400 font-bold underline"
@@ -56,15 +55,11 @@ const Quiensoy = () => {
           >
             concurso
           </a>{' '}
-          de rediseño de la marca del Aeropuerto Felipe Ángeles de México y participé en el reto de diseño de experiencia de usuario de Bancolombia Bank Design 2023.
+          de rediseño de marca del Aeropuerto Internacional Felipe Ángeles de México y participé en el reto Bank Design 2023 de Bancolombia, dos experiencias que pusieron a prueba mi criterio bajo presión real.
         </p>
 
         <p>
-          A lo largo de mi carrera, he cultivado habilidades en la creación de conceptos de diseño, investigación de usuarios y establecimiento de marcos de productos mediante el uso de prototipos basados en la metodología Design Thinking.
-        </p>
-
-        <p>
-          Con enfoque centrado en el usuario, diseño las experiencias más increíbles para los usuarios.
+          Aplico Design Thinking para descubrir problemas reales, traducirlos en soluciones claras y construir experiencias que la gente realmente quiera usar.
         </p>
       </div>
     </div>
