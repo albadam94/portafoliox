@@ -7,7 +7,6 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import ClientScrollToTop from "./ClientScrollToTop";
 import CustomCursor from "./components/CustomCursor";
-import { TracingBeam } from "./components/TracingBeam";
 
 
 const metadata = {
@@ -49,7 +48,9 @@ export default function RootLayout({ children }) {
         <NextUIProvider>
           <Menu />
           <CustomCursor />
-          <TracingBeam>{children}</TracingBeam>
+          <div className="relative mx-auto h-full w-full max-w-4xl">
+                 {children}
+          </div>
          <ClientScrollToTop />
           <ScrollShadow />
           <Footer />

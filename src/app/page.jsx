@@ -29,15 +29,7 @@ export default function Home() {
       <Proyectos  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 mb-40 mt-10 md:mt-10'/>
       {/*<Proyecto  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 '/>*/}
       
-     
-
-
     
-
-
-
-
-
 
 
       </div> 
