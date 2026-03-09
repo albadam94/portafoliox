@@ -1,120 +1,134 @@
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+"use client";
+import React, { useRef } from "react";
+import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const proyectosData = [
   {
     id: 1,
-    title: 'Proyecto ASAVirtual',
+    title: "Proyecto ASAVirtual",
     description:
-      'Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS',
-    imageUrl: '/asavirtual.png',
-    link: 'https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual',
+      "Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS",
+    imageUrl: "/asavirtual.png",
+    link: "https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual",
   },
   {
     id: 2,
-    title: 'Bank Design Bancolombia',
+    title: "Bank Design Bancolombia",
     description:
-      'Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web',
-    imageUrl: '/bancolombia.png',
-    link: 'https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia',
+      "Diseño UX para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web",
+    imageUrl: "/bancolombia.png",
+    link: "https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia",
   },
   {
     id: 3,
-    title: 'Diseño UI integration social',
+    title: "Diseño UI integration social",
     description:
-      'Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma',
-    imageUrl: '/integrationmockup.png',
-    link: 'https://integrationsocial.com/',
+      "Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales. Diseñada en Figma",
+    imageUrl: "/integrationmockup.png",
+    link: "https://integrationsocial.com/",
   },
   {
     id: 4,
-    title: 'Fluity Fintech App',
+    title: "Fluity Fintech App",
     description:
-      'Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios',
-    imageUrl: '/fluity.png',
-    link: 'https://www.behance.net/gallery/218209629/Fluity-Fintech-App',
+      "Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios",
+    imageUrl: "/fluity.png",
+    link: "https://www.behance.net/gallery/218209629/Fluity-Fintech-App",
   },
   {
     id: 5,
-    title: 'Diseño UI Tactiq Bizzell',
+    title: "Diseño UI Tactiq Bizzell",
     description:
-      'Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma',
-    imageUrl: '/tactiqbizell.png',
-    link: 'https://www.tactiq-bizzell.us/',
+      "Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logística, comunicaciones en salud, consultoría estratégica y tecnología avanzada, diseñadas específicamente para agencias federales. Diseñada en Figma",
+    imageUrl: "/tactiqbizell.png",
+    link: "https://www.tactiq-bizzell.us/",
   },
   {
     id: 6,
-    title: 'Tripflow App',
+    title: "Tripflow App",
     description:
-      'Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.',
-    imageUrl: '/tripflow.png',
-    link: 'https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1',
+      "Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.",
+    imageUrl: "/tripflow.png",
+    link: "https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1",
   },
   {
     id: 7,
-    title: 'NUÍ App',
+    title: "NUÍ App",
     description:
-      'Desarrollo de una landing en Wordpress para promocionar una app de gestión gastronomica',
-      imageUrl: '/nui.png',
-      link: 'https://nuiapp.netlify.app/',
+      "Desarrollo de una landing en Wordpress para promocionar una app de gestión gastronomica",
+    imageUrl: "/nui.png",
+    link: "https://nuiapp.netlify.app/",
   },
 ];
 
-const Proyecto = ({ proyecto, index }) => {
-  const isSvg = proyecto.imageUrl.endsWith('.svg');
+const StackCard = ({ proyecto, index, total }) => {
+  const cardRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: cardRef,
+    offset: ["start end", "end start"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [60, 0]);
+  const isSvg = proyecto.imageUrl.endsWith(".svg");
 
   return (
     <motion.div
-      initial={{ y: 50 + index * 20, scale: 0.9, opacity: 0 }}
-      whileInView={{ y: 0, scale: 1, opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 0.6, delay: index * 0.15 }}
-      className="max-w-[820px] mx-auto p-10 bg-white rounded-3xl flex-col justify-start items-start gap-2.5 inline-flex font-['Geist'] relative"
+      ref={cardRef}
       style={{
-        zIndex: proyectosData.length - index,
-        boxShadow:
-          '0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)',
+        scale,
+        y: translateY,
+        zIndex: index + 1,
+        top: `${index * 24}px`,
+        boxShadow: "0 1px 2px 0 rgba(60,64,67,0.30), 0 1px 3px 1px rgba(60,64,67,0.15)",
       }}
+      className="sticky max-w-[820px] mx-auto p-8 bg-white rounded-3xl font-['Geist']"
     >
-      <div className="flex flex-col items-start gap-6 md:flex-row md:gap-6 lg:gap-10">
-        {/* Contenedor de imagen */}
-        <div className="relative w-full md:w-[320px] lg:w-[380px] aspect-[4/3] bg-white rounded-md overflow-hidden">
+      <div className="flex flex-col items-start gap-6 md:flex-row md:gap-8">
+        {/* Imagen */}
+        <div className="relative w-full md:w-[320px] lg:w-[380px] aspect-[4/3] bg-gray-50 rounded-2xl overflow-hidden flex-shrink-0">
           {isSvg ? (
             <img
               src={proyecto.imageUrl}
               alt={proyecto.title}
-              className="object-contain md:object-cover rounded-md w-full h-full"
+              className="object-contain w-full h-full"
             />
           ) : (
             <Image
               src={proyecto.imageUrl}
               alt={proyecto.title}
               fill
-              className="object-contain md:object-cover rounded-md"
+              className="object-cover"
             />
           )}
         </div>
 
-        {/* Contenedor de texto */}
-        <div className="p-7 md:p-4 lg:p-6 flex flex-col gap-4 items-center md:items-start md:justify-center font-['Geist'] md:flex-1">
-          <h5 className="text-sky-400 text-lg md:text-xl font-medium leading-tight text-center md:text-left">
+        {/* Texto */}
+        <div className="flex flex-col gap-4 items-center md:items-start justify-center flex-1 py-4">
+          {/* Numeración */}
+          <span className="text-xs font-semibold text-gray-400 tracking-widest uppercase">
+            {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+          </span>
+
+          <h5 className="text-sky-400 text-xl md:text-2xl font-semibold leading-tight text-center md:text-left">
             {proyecto.title}
           </h5>
 
-          <p className="md:w-[300px] lg:w-80 text-Darkcharcoal text-base font-normal font-['Geist'] leading-tight px-2 text-center md:text-left">
+          <p className="text-Darkcharcoal font-normal leading-relaxed text-center md:text-left max-w-sm"
+style={{ fontSize: '14px' }}>
             {proyecto.description}
           </p>
 
           <a
-            className="w-[175px] h-[47px] md:w-[180px] lg:w-[190px] md:h-[48px] lg:h-[50px] bg-Darkcharcoal rounded-xl border border-Darkcharcoal justify-center items-center inline-flex mt-3 md:mt-4 lg:mt-5"
             href={proyecto.link}
             rel="noopener noreferrer"
             target="_blank"
+            className="mt-2 inline-flex items-center justify-center w-[175px] h-[47px] bg-[#323332] rounded-xl border border-[##323332]"
           >
-            <button className="text-sky-400 text-sm font-semibold">
+            <span className="text-sky-400 text-sm font-semibold">
               Ver Proyecto
-            </button>
+            </span>
           </a>
         </div>
       </div>
@@ -124,9 +138,14 @@ const Proyecto = ({ proyecto, index }) => {
 
 const ProyectosList = () => {
   return (
-    <div className="mt-14 flex flex-col gap-10 relative">
+    <div className="mt-14 flex flex-col gap-6 relative">
       {proyectosData.map((proyecto, index) => (
-        <Proyecto key={proyecto.id} proyecto={proyecto} index={index} />
+        <StackCard
+          key={proyecto.id}
+          proyecto={proyecto}
+          index={index}
+          total={proyectosData.length}
+        />
       ))}
     </div>
   );
