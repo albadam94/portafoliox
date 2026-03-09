@@ -51,6 +51,14 @@ const proyectosData = [
     imageUrl: '/tripflow.png',
     link: 'https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1',
   },
+  {
+    id: 7,
+    title: 'NUÍ App',
+    description:
+      'Desarrollo de una landing en Wordpress para promocionar una app de gestión gastronomica',
+      imageUrl: '/nui.png',
+      link: 'https://nuiapp.netlify.app/',
+  },
 ];
 
 const Proyecto = ({ proyecto, index }) => {

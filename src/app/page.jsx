@@ -24,8 +24,19 @@ export default function Home() {
           </div>
           </div>
       
-         <h1 id='Proyectos' className="text-custom-blue text-5xl font-semibold font-['Geist'] leading-normal  text-center md:text-left md:mt-5 lg:mt-64 mt-20">Proyectos</h1>
-          
+    <h1 
+          id='Proyectos' 
+          className="text-custom-blue font-['Geist'] font-bold text-center md:text-left md:mt-5 lg:mt-64 mt-20"
+          style={{ fontSize: '48px', letterSpacing: '-1px' }}
+        >
+          Proyectos
+        </h1>
+            <p 
+              className="text-Darkcharcoal font-['Geist'] text-center md:text-left mt-2"
+              style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '-1px' }}
+            >
+              Conoce algunos proyectos que he diseñado e implementado
+            </p>
       <Proyectos  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 mb-40 mt-10 md:mt-10'/>
       {/*<Proyecto  className='mx-4 md:mx-12 lg:mx-20 xl:mx-80 '/>*/}
       
