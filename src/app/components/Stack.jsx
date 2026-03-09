@@ -1,51 +1,42 @@
 import React from 'react';
 import Image from 'next/image';
 
-const SkillItem = ({ logoSrc, title, description }) => {
+const SkillItem = ({ logoSrc, title }) => {
   return (
-    <div className="flex justify-start items-start gap-[35px] font-['Geist']">
-      <div
-        className="w-[242px] px-[19px] py-2.5 bg-white rounded-xl flex flex-col justify-start items-start gap-2.5"
-        style={{
-          boxShadow:
-            "0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)",
-        }}
-      >
-        <div className="flex items-center gap-5">
-          <Image src={logoSrc} width={25} height={25} alt={title} />
-          <div className="flex flex-col justify-start items-start gap-1">
-            <div className="text-zinc-800 text-base font-medium font-archivo leading-[22px]">
-              {title}
-            </div>
-            <div className="text-zinc-800 text-xs font-normal font-archivo leading-[14px]">
-              {description}
-            </div>
-          </div>
-        </div>
-      </div>
+    <div className="flex items-center justify-center gap-3 py-10 px-6 hover:bg-[#F2F2F2] transition-colors duration-200 cursor-default border border-gray-200">
+      <Image src={logoSrc} width={28} height={28} alt={title} />
+      <span className="text-[#333333] text-base font-semibold font-['Geist']">{title}</span>
     </div>
   );
 };
 
 const Stack = () => {
   return (
-    <div
-      className="w-full max-w-[800px] mx-auto mt-10 px-10 py-10 md:px-6 md:py-8 bg-white rounded-3xl"
-      style={{
-        boxShadow:
-          "0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)",
-      }}
-    >
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-['Geist']">
-        <SkillItem logoSrc="/Logos/Figma.svg" title="Figma" description="Diseño de interfaces" />
-        <SkillItem logoSrc="/Logos/Ilustrator.svg" title="Adobe Illustrator" description="Ilustración" />
-        <SkillItem logoSrc="/Logos/Photoshop.svg" title="Adobe Photoshop" description="Diseño Gráfico" />
-        <SkillItem logoSrc="/Logos/iconHTML.svg" title="HTML" description="Desarrollo web" />
-        <SkillItem logoSrc="/Logos/iconCSS.svg" title="CSS3" description="Estilo Visual" />
-        <SkillItem logoSrc="/Logos/iconReact.svg" title="React" description="Desarrollo Frontend" />
-        <SkillItem logoSrc="/Logos/Wordpress.svg" title="Wordpress" description="Diseño Web" />
-        <SkillItem logoSrc="/Logos/Trello.svg" title="Trello" description="Gestión de Proyectos" />
-        <SkillItem logoSrc="/Logos/Github.svg" title="Github" description="Repositorio Desarrollo" />
+    <div className="px-4 font-['Geist']">
+      <h1
+        className="text-custom-blue font-bold ml-5 md:mx-12 lg:mx-20 xl:mx-[-120px] mt-20 md:mt-10"
+        style={{ fontSize: '48px', letterSpacing: '-2px' }}
+      >
+        Stack
+      </h1>
+
+      <div className="w-full max-w-[900px] mx-auto mt-10">
+        {/* Fila 1 - 5 items */}
+        <div className="grid grid-cols-2 md:grid-cols-5">
+          <SkillItem logoSrc="/Logos/Figma.svg" title="Figma" />
+          <SkillItem logoSrc="/Logos/Ilustrator.svg" title="Illustrator" />
+          <SkillItem logoSrc="/Logos/Photoshop.svg" title="Photoshop" />
+          <SkillItem logoSrc="/Logos/iconHTML.svg" title="HTML" />
+          <SkillItem logoSrc="/Logos/iconCSS.svg" title="CSS3" />
+        </div>
+
+        {/* Fila 2 - 4 items */}
+        <div className="grid grid-cols-2 md:grid-cols-4">
+          <SkillItem logoSrc="/Logos/iconReact.svg" title="React" />
+          <SkillItem logoSrc="/Logos/Wordpress.svg" title="Wordpress" />
+          <SkillItem logoSrc="/Logos/Trello.svg" title="Trello" />
+          <SkillItem logoSrc="/Logos/Github.svg" title="Github" />
+        </div>
       </div>
     </div>
   );

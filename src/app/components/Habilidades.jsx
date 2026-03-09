@@ -1,39 +1,42 @@
 import React from 'react';
 
 const Habilidades = () => {
-  return (
-    <div className="mt-16 md:mt-32 px-4 ">
+  const habilidades = [
+    "Diseño UX/UI",
+    "Wireframe",
+    "Adobe Creative Cloud",
+    "Investigación de usuarios",
+    "Design Thinking",
+    "Diseño de espacios",
+    "Prototipado",
+    "Diseño de producto",
+    "Desarrollo Web",
+  ];
 
-      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-10 ">
+  return (
+    <div className="mt-16 md:mt-32 px-4 font-['Geist']">
+
+      <h1
+        className="text-custom-blue font-bold ml-5 md:mx-12 lg:mx-20 xl:mx-[-120px]"
+        style={{ fontSize: '48px', letterSpacing: '-2px' }}
+      >
         Habilidades
       </h1>
 
-      <div
-        className="w-full max-w-[800px] mx-auto mt-10 px-6 py-8 bg-white rounded-3xl"
-        style={{
-          boxShadow:
-            "0 1px 2px 0 rgba(60, 64, 67, 0.30), 0 1px 3px 1px rgba(60, 64, 67, 0.15)",
-        }}
-      >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-Darkcharcoal font-medium font-['Geist']">
-          <div className="border p-4 rounded-lg">Diseño UX/UI</div>
-          <div className="border p-4 rounded-lg">Wireframe</div>
-          <div className="border p-4 rounded-lg">Adobe Creative Cloud</div>
-          <div className="border p-4 rounded-lg">Investigación de usuarios</div>
-          <div className="border p-4 rounded-lg">Design Thinking</div>
-          <div className="border p-4 rounded-lg">Diseño de espacios</div>
-          <div className="border p-4 rounded-lg">Prototipado</div>
-          <div className="border p-4 rounded-lg">Diseño de producto</div>
-          <div className="border p-4 rounded-lg">Desarrollo Web</div>
+      <div className="w-full max-w-[800px] mx-auto mt-10">
+        <div className="grid grid-cols-2 md:grid-cols-3">
+          {habilidades.map((habilidad, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center py-8 px-6 border border-gray-200 text-[#333333] font-semibold text-base text-center hover:bg-[#F2F2F2] transition-colors duration-200"
+            >
+              {habilidad}
+            </div>
+          ))}
         </div>
       </div>
-
-      <h1 className="text-custom-blue text-5xl font-semibold leading-[56px] md:mx-auto lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-20 md:mt-10 ">
-        Stack
-      </h1>
     </div>
   );
 };
 
 export default Habilidades;
-
