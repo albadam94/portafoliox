@@ -6,7 +6,7 @@ import { ScrollShadow } from "@nextui-org/scroll-shadow";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import ClientScrollToTop from "./ClientScrollToTop";
-import CustomCursor from "./components/CustomCursor";
+import SmoothCursor from "./components/SmoothCursor.jsx";
 
 
 const metadata = {
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning={true}>
         <NextUIProvider>
           <Menu />
-          <CustomCursor />
+          <SmoothCursor />
           <div className="relative mx-auto h-full w-full max-w-4xl">
                  {children}
           </div>

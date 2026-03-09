@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: none;
+}
 
 :root {
   background-color: #FBFBFB;
