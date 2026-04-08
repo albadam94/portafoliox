@@ -3,25 +3,35 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const Formacion = () => {
   return (
-    <>
+    // Contenedor unificado con el resto del sitio
+    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mt-20 md:mt-32 font-['Geist']">
+      
+      {/* Título alineado al margen, sin márgenes negativos */}
       <h1
-        className="text-custom-blue font-bold ml-5 md:mx-12 lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-10"
-        style={{ fontSize: '48px', letterSpacing: '-2px' }}
+        className="text-custom-blue font-bold mb-10 text-[40px] md:text-[48px]"
+        style={{ letterSpacing: '-2px' }}
       >
         Educación
       </h1>
 
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      {/* Contenedor del Accordion centrado */}
+      <div className="max-w-[900px] mx-auto mt-10">
         <Accordion
           isCompact
           variant="light"
-          className="flex flex-col gap-3 font-['Geist']"
+          className="flex flex-col gap-3"
+          // Quitamos padding lateral interno para que el texto aproveche el espacio
+          itemClasses={{
+            base: "px-0",
+            title: "w-full",
+            trigger: "py-4",
+          }}
         >
           <AccordionItem
             key="1"
             aria-label="Profesional en Diseño Digital"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Profesional en Diseño Digital</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">Universidad Politécnico GranColombiano</span>
               </div>
@@ -36,7 +46,7 @@ const Formacion = () => {
             key="2"
             aria-label="Tecnólogo producción multimedia"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Tecnólogo producción multimedia</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">SENA</span>
               </div>
@@ -51,7 +61,7 @@ const Formacion = () => {
             key="3"
             aria-label="Diplomado programación"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Diplomado programación, Desarrollo de software con énfasis en aplicaciones web</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">Universidad Industrial de Santander</span>
               </div>
@@ -66,7 +76,7 @@ const Formacion = () => {
             key="4"
             aria-label="Certificado UX Google"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Certificado profesional diseño de experiencia de usuario UX Google</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">Coursera — Google</span>
               </div>
@@ -81,7 +91,7 @@ const Formacion = () => {
             key="5"
             aria-label="Diseño UX-CX"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Diseño de experiencia de usuario y consumidor UX-CX</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">Universidad San Buenaventura</span>
               </div>
@@ -96,7 +106,7 @@ const Formacion = () => {
             key="6"
             aria-label="Ver más"
             title={
-              <div className="flex flex-col py-1">
+              <div className="flex flex-col">
                 <span className="text-[#083040] font-semibold text-base">Ver más</span>
                 <span className="text-gray-400 text-xs font-normal mt-0.5">Otros estudios y certificaciones</span>
               </div>
@@ -108,7 +118,7 @@ const Formacion = () => {
           </AccordionItem>
         </Accordion>
       </div>
-    </>
+    </div>
   );
 };
 

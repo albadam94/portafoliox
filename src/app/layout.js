@@ -1,5 +1,5 @@
 "use client";
-
+ 
 import "./globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
@@ -7,8 +7,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import ClientScrollToTop from "./ClientScrollToTop";
 import SmoothCursor from "./components/SmoothCursor.jsx";
-
-
+ 
 const metadata = {
   title: "Brayan Albadam-Product Designer",
   description: "Brayan Albadam UX/UI Designer, Product Designer, Diseño web, UX/UI",
@@ -20,7 +19,7 @@ const metadata = {
   robots: "ALL",
   "google-site-verification": "yDuTKeFjMkJauhbe6vtW82XEOiCm3_Fc6pnDHP45QGs",
 };
-
+ 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
@@ -36,22 +35,26 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content={metadata["google-site-verification"]}
         />
-
-       {/* Favicons */}
-          <link rel="icon" href="/favicons/Favicon.png" type="image/png" />
-          <link rel="icon" href="/favicons/Favicon32x32.png" sizes="32x32" type="image/png" />
-          <link rel="icon" href="/favicons/Favicon16x16.png" sizes="16x16" type="image/png" />
-          <link rel="apple-touch-icon" href="/favicons/Favicon180x180.png" sizes="180x180" />
-
+        <link rel="icon" href="/favicons/Favicon.png" type="image/png" />
+        <link rel="icon" href="/favicons/Favicon32x32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/favicons/Favicon16x16.png" sizes="16x16" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicons/Favicon180x180.png" sizes="180x180" />
       </head>
       <body suppressHydrationWarning={true}>
         <NextUIProvider>
           <Menu />
           <SmoothCursor />
-          <div className="relative mx-auto h-full w-full max-w-4xl">
-                 {children}
+ 
+          {/*
+            Sin max-w aquí — cada página controla su propio layout.
+            El header en page.jsx ocupa 100vw libremente.
+            Las secciones interiores usan sus propios márgenes.
+          */}
+          <div className="relative h-full w-full">
+            {children}
           </div>
-         <ClientScrollToTop />
+ 
+          <ClientScrollToTop />
           <ScrollShadow />
           <Footer />
         </NextUIProvider>

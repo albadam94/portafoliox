@@ -3,19 +3,28 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 
 const Experiencia = () => {
   return (
-    <>
+    // Contenedor unificado con el resto del sitio (max-w-7xl, px-6...)
+    <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mt-20 md:mt-32 font-['Geist']">
+      
+      {/* Título alineado al margen, sin márgenes negativos */}
       <h1
-        className="text-custom-blue font-bold ml-5 md:mx-12 lg:mx-20 xl:mx-[-120px] font-['Geist'] mt-10"
-        style={{ fontSize: '48px', letterSpacing: '-2px' }}
+        className="text-custom-blue font-bold mb-10 text-[40px] md:text-[48px]"
+        style={{ letterSpacing: '-2px' }}
       >
         Experiencia
       </h1>
 
-      <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      {/* Contenedor del Accordion centrado con max-w-[900px] para consistencia */}
+      <div className="max-w-[900px] mx-auto mt-10">
         <Accordion
           isCompact
           variant="light"
-          className="flex flex-col gap-3 font-['Geist']"
+          className="flex flex-col gap-3"
+          itemClasses={{
+            base: "px-0",
+            title: "w-full",
+            trigger: "py-4",
+          }}
         >
           <AccordionItem
             key="1"
@@ -27,13 +36,18 @@ const Experiencia = () => {
               </div>
             }
           >
-            <p className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed">
-              Diseño y desarrollo de landings page e ecommerce en Wordpress.<br /><br />
-              Lideré la implementación Frontend de un LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.<br /><br />
-              Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.<br /><br />
-              Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos y brindé apoyo en el diseño UI en la creación de banners y demás elementos visuales.<br /><br />
-              Brindé apoyo en el diseño UI y prototipado realizando modificaciones en las interfaces de los cursos e implementándolos en la aplicación mediante código HTML y CSS tanto para agricultores como Extensionistas en la plataforma de CANVAS LMS.
-            </p>
+            <div className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed space-y-4">
+              <p>Diseño y desarrollo de landings page e ecommerce en Wordpress.</p>
+              <p>
+                Lideré la implementación Frontend de un LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.
+              </p>
+              <p>
+                Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.
+              </p>
+              <p>
+                Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos y brindé apoyo en el diseño UI en la creación de banners y demás elementos visuales.
+              </p>
+            </div>
           </AccordionItem>
 
           <AccordionItem
@@ -61,19 +75,25 @@ const Experiencia = () => {
               </div>
             }
           >
-            <p className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed">
-              Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.<br /><br />
-              Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal.<br /><br />
-              Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos, Diseño de flujos, diseño UI, UI KIT, diseño de componentes, diseño de banners, diseño páginas de perfil, página de carga de contenidos, diseño de dashboard de estadísticas y pagos.{' '}
-              <a
-                href="https://playme.us"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sky-400 font-bold underline"
-              >
-                Proyecto playme.us
-              </a>
-            </p>
+            <div className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed space-y-4">
+              <p>
+                Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.
+              </p>
+              <p>
+                Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal.
+              </p>
+              <p>
+                Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos. Diseño de flujos, UI KIT, componentes, dashboard de estadísticas y pagos.{" "}
+                <a
+                  href="https://playme.us"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sky-500 font-bold underline hover:text-sky-600 transition-colors"
+                >
+                  Proyecto playme.us
+                </a>
+              </p>
+            </div>
           </AccordionItem>
 
           <AccordionItem
@@ -86,18 +106,16 @@ const Experiencia = () => {
               </div>
             }
           >
-            <p className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed">
-              Realizar investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informar las decisiones de diseño.<br /><br />
-              Desarrollar perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.<br /><br />
-              Crear prototipos interactivos que articulen claramente el flujo y la funcionalidad de los productos digitales.<br /><br />
-              Diseñar interfaces visualmente atractivas que se alineen con la identidad de la marca y los objetivos de marketing.<br /><br />
-              Desarrollar sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales.<br /><br />
-              Colaborar con los desarrolladores para garantizar que la integridad del diseño se mantenga durante la fase de desarrollo.
-            </p>
+            <div className="text-sm text-Darkcharcoal font-normal pb-4 leading-relaxed space-y-4">
+              <p>Realizar investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informar las decisiones de diseño.</p>
+              <p>Desarrollar perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.</p>
+              <p>Crear prototipos interactivos que articulen claramente el flujo y la funcionalidad de los productos digitales.</p>
+              <p>Desarrollar sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales.</p>
+            </div>
           </AccordionItem>
         </Accordion>
       </div>
-    </>
+    </div>
   );
 };
 

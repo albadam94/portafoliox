@@ -62,8 +62,8 @@ const StackCard = ({ proyecto, index, total }) => {
     offset: ["start end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1]);
-  const translateY = useTransform(scrollYProgress, [0, 1], [60, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [0.98, 1]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [40, 0]);
   const isSvg = proyecto.imageUrl.endsWith(".svg");
 
   return (
@@ -73,13 +73,14 @@ const StackCard = ({ proyecto, index, total }) => {
         scale,
         y: translateY,
         zIndex: index + 1,
-        top: `${80 + index * 24}px`,
-        boxShadow: "0 1px 2px 0 rgba(60,64,67,0.30), 0 1px 3px 1px rgba(60,64,67,0.15)",
+        // Espaciado dinámico para el efecto de apilado (Stacking)
+        top: `${140 + index * 28}px`,
+        boxShadow: "0 10px 30px -10px rgba(0,0,0,0.1)",
       }}
-      className="sticky max-w-[820px] mx-auto p-8 bg-white rounded-3xl font-['Geist']"
+      // Se mantiene el max-w-[820px] y el padding original solicitado
+      className="sticky max-w-[820px] mx-auto p-8 bg-white rounded-3xl font-['Geist'] border border-gray-50"
     >
       <div className="flex flex-col items-start gap-6 md:flex-row md:gap-8">
-        {/* Imagen */}
         <div className="relative w-full md:w-[320px] lg:w-[380px] aspect-[4/3] bg-gray-50 rounded-2xl overflow-hidden flex-shrink-0">
           {isSvg ? (
             <img src={proyecto.imageUrl} alt={proyecto.title} className="object-contain w-full h-full" />
@@ -88,11 +89,11 @@ const StackCard = ({ proyecto, index, total }) => {
           )}
         </div>
 
-        {/* Texto */}
         <div className="flex flex-col gap-4 items-center md:items-start justify-center flex-1 py-4">
           <span className="text-xs font-semibold text-gray-400 tracking-widest uppercase">
             {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
           </span>
+          {/* Mantengo el color sky-400 y el estilo original */}
           <h5 className="text-sky-400 text-xl md:text-2xl font-semibold leading-tight text-center md:text-left">
             {proyecto.title}
           </h5>
@@ -103,7 +104,7 @@ const StackCard = ({ proyecto, index, total }) => {
             href={proyecto.link}
             rel="noopener noreferrer"
             target="_blank"
-            className="mt-2 inline-flex items-center justify-center w-[175px] h-[47px] bg-[#323332] rounded-xl border border-[#323332]"
+            className="mt-2 inline-flex items-center justify-center w-[175px] h-[47px] bg-[#323332] rounded-xl border border-[#323332] hover:bg-black transition-colors"
           >
             <span className="text-sky-400 text-sm font-semibold">Ver Proyecto</span>
           </a>
@@ -115,25 +116,31 @@ const StackCard = ({ proyecto, index, total }) => {
 
 const ProyectosList = () => {
   return (
-    <div className="relative">
-      {/* Título sticky */}
-      <div id="Proyectos" className="sticky top-16 z-50 py-4 mb-6 mt-8" style={{ backgroundColor: '#FBFBFA' }}>
+    // Contenedor alineado con el resto de las secciones (max-w-7xl)
+    <div className="relative max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+      
+      {/* Título sticky con el fondo unificado #FBFBFB */}
+      <div 
+        id="Proyectos" 
+        className="sticky top-20 z-50 py-10 mb-6" 
+        style={{ backgroundColor: '#FBFBFB' }}
+      >
         <h1
-          className="text-custom-blue font-['Geist'] font-bold text-center md:text-left"
-          style={{ fontSize: '48px', letterSpacing: '-1px' }}
+          className="text-custom-blue font-['Geist'] font-bold text-left"
+          style={{ fontSize: '48px', letterSpacing: '-2px' }}
         >
           Proyectos
         </h1>
         <p
-          className="text-Darkcharcoal font-['Geist'] text-center md:text-left mt-1"
-          style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '-1px' }}
+          className="text-Darkcharcoal font-['Geist'] text-left mt-2"
+          style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '-1px', opacity: 0.9 }}
         >
           Conoce algunos proyectos que he diseñado e implementado
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="flex flex-col gap-6">
+      {/* Listado de Cards con espaciado para permitir el scroll final */}
+      <div className="flex flex-col pb-5">
         {proyectosData.map((proyecto, index) => (
           <StackCard
             key={proyecto.id}

@@ -35,7 +35,14 @@ export default function Menu() {
     }`;
 
   return (
-    <nav className="menu mt-0 sticky top-0 z-50 p-4 bg-[#FBFBFB]">
+    <nav
+      className="menu mt-0 sticky top-0 z-50 p-4"
+      style={{
+       backgroundColor: "rgba(251, 251, 251, 0.85)", 
+      backdropFilter: "blur(12px)",
+       WebkitBackdropFilter: "blur(12px)",
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
@@ -46,8 +53,8 @@ export default function Menu() {
                 className="h-12 w-16"
                 src="/Logos/Logo.svg"
                 alt="Logo"
-                width={20}
-                height={20}
+                width={64} // Valor más realista para h-12 w-16
+                height={48}
               />
             </Link>
           </div>
@@ -72,20 +79,21 @@ export default function Menu() {
 
           {/* Botones desktop */}
           <div className="hidden lg:flex ml-6 space-x-4 font-['Geist']">
-            <a href="mailto:brayanalbadam@gmail.com">
-              <button className="text-white bg-[#323332] px-4 py-2 text-sm font-semibold w-[110px] h-10 rounded-3xl">
-                Contacto
-              </button>
+            <a 
+              href="mailto:brayanalbadam@gmail.com"
+              className="flex items-center justify-center text-white bg-[#323332] px-4 py-2 text-sm font-semibold w-[110px] h-10 rounded-3xl"
+            >
+              Contacto
             </a>
 
+            {/* ERROR CORREGIDO AQUÍ: Se añadió la etiqueta <a> de apertura */}
             <a
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center justify-center text-cyan-500 bg-[#083040] px-4 py-2 text-sm font-semibold w-36 h-10 rounded-3xl"
             >
-              <button className="text-cyan-500 bg-[#083040] px-4 py-2 text-sm font-semibold w-36 h-10 rounded-3xl">
-                Descargar CV
-              </button>
+              Descargar CV
             </a>
           </div>
 
@@ -128,21 +136,21 @@ export default function Menu() {
               Acerca de mi
             </Link>
 
-            <a href="mailto:brayanalbadam@gmail.com" className="block mt-2">
-              <button className="text-white bg-[#323332] px-4 py-2 text-sm font-semibold w-full h-10 rounded-3xl">
-                Contacto
-              </button>
+            <a 
+              href="mailto:brayanalbadam@gmail.com" 
+              className="flex items-center justify-center mt-2 text-white bg-[#323332] px-4 py-2 text-sm font-semibold w-full h-10 rounded-3xl"
+            >
+              Contacto
             </a>
 
+          
             <a
               href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="block mt-2"
+              className="flex items-center justify-center mt-2 text-cyan-500 bg-[#083040] px-4 py-2 text-sm font-semibold w-full h-10 rounded-3xl"
             >
-              <button className="text-cyan-500 bg-[#083040] px-4 py-2 text-sm font-semibold w-full h-10 rounded-3xl">
-                Descargar CV
-              </button>
+              Descargar CV
             </a>
           </div>
         )}

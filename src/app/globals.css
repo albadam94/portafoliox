@@ -89,3 +89,32 @@ body {
     background-position: 100% 50%; 
   }
 }
+
+
+/* En tu globals.css */
+
+/* Clase para desvanecer la malla de puntos arriba y abajo */
+.fade-mask-mesh {
+  /* Soporte para navegadores basados en WebKit (Safari, Chrome) */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%, /* Puntos visibles al 100% después del 20% */
+    black 80%, /* Comienza a desvanecerse después del 80% */
+    transparent 100%
+  );
+  
+  /* Soporte estándar */
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+/* Asegura que el menú tenga el Z-Index correcto para estar sobre los puntos */
+.menu {
+  z-index: 50 !important;
+}
