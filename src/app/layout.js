@@ -44,12 +44,6 @@ export default function RootLayout({ children }) {
         <NextUIProvider>
           <Menu />
           <SmoothCursor />
- 
-          {/*
-            Sin max-w aquí — cada página controla su propio layout.
-            El header en page.jsx ocupa 100vw libremente.
-            Las secciones interiores usan sus propios márgenes.
-          */}
           <div className="relative h-full w-full">
             {children}
           </div>

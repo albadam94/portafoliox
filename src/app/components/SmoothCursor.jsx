@@ -2,43 +2,64 @@
 import { useEffect, useRef } from "react";
 
 const SmoothCursor = () => {
-  const cursorRef = useRef(null);
-  const posRef = useRef({ x: 0, y: 0 });
-  const currentPos = useRef({ x: 0, y: 0 });
-  const currentAngle = useRef(0);
+  const ringRef = useRef(null);
+  const ballRef = useRef(null);
+
+  const mousePos = useRef({ x: 0, y: 0 });
+  const ringPos = useRef({ x: 0, y: 0 });
+  const ballOffset = useRef({ x: 0, y: 0 });
   const rafRef = useRef(null);
 
   useEffect(() => {
-    const cursor = cursorRef.current;
-    if (!cursor) return;
+    const ring = ringRef.current;
+    const ball = ballRef.current;
+    if (!ring || !ball) return;
+
+    const RING_R = 16;   // radio del círculo exterior
+    const BALL_R = 3.5;  // radio de la bolita
+    const MAX_OFFSET = RING_R - BALL_R - 1; // límite: bolita no sale del anillo
+
+    const lerp = (a, b, t) => a + (b - a) * t;
 
     const onMouseMove = (e) => {
-      posRef.current = { x: e.clientX, y: e.clientY };
+      mousePos.current = { x: e.clientX, y: e.clientY };
     };
 
     window.addEventListener("mousemove", onMouseMove);
 
-    const lerp = (a, b, t) => a + (b - a) * t;
-
     const animate = () => {
-      const dx = posRef.current.x - currentPos.current.x;
-      const dy = posRef.current.y - currentPos.current.y;
+      const prevX = ringPos.current.x;
+      const prevY = ringPos.current.y;
 
-      currentPos.current.x = lerp(currentPos.current.x, posRef.current.x, 0.1);
-      currentPos.current.y = lerp(currentPos.current.y, posRef.current.y, 0.1);
+      // Anillo sigue al cursor con lerp
+      ringPos.current.x = lerp(ringPos.current.x, mousePos.current.x, 0.12);
+      ringPos.current.y = lerp(ringPos.current.y, mousePos.current.y, 0.12);
 
-      // Rotar según dirección de movimiento
-      if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
-        const targetAngle = Math.atan2(dy, dx) * (180 / Math.PI) + 90;
-        const angleDiff = ((targetAngle - currentAngle.current + 540) % 360) - 180;
-        currentAngle.current += angleDiff * 0.12;
+      // Velocidad del anillo = dirección del movimiento
+      const vx = ringPos.current.x - prevX;
+      const vy = ringPos.current.y - prevY;
+
+      // La bolita se desplaza en la dirección del movimiento (inercia)
+      let tx = vx * 12;
+      let ty = vy * 12;
+
+      // Clamp: bolita no sale del anillo
+      const dist = Math.sqrt(tx * tx + ty * ty);
+      if (dist > MAX_OFFSET) {
+        tx = (tx / dist) * MAX_OFFSET;
+        ty = (ty / dist) * MAX_OFFSET;
       }
 
-      cursor.style.transform = `
-        translate(${currentPos.current.x}px, ${currentPos.current.y}px)
-        translate(-50%, -50%)
-        rotate(${currentAngle.current}deg)
-      `;
+      // Suavizar posición de la bolita
+      ballOffset.current.x = lerp(ballOffset.current.x, tx, 0.1);
+      ballOffset.current.y = lerp(ballOffset.current.y, ty, 0.1);
+
+      // Aplicar posición del anillo
+      ring.style.transform = `translate(${ringPos.current.x}px, ${ringPos.current.y}px) translate(-50%, -50%)`;
+
+      // Mover la bolita dentro del SVG
+      ball.setAttribute("cx", ballOffset.current.x.toFixed(2));
+      ball.setAttribute("cy", ballOffset.current.y.toFixed(2));
 
       rafRef.current = requestAnimationFrame(animate);
     };
@@ -53,23 +74,32 @@ const SmoothCursor = () => {
 
   return (
     <div
-      ref={cursorRef}
+      ref={ringRef}
       className="hidden md:block fixed top-0 left-0 pointer-events-none z-[9999]"
       style={{ willChange: "transform" }}
     >
       <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="40"
+        height="40"
+        viewBox="-20 -20 40 40"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M12 2L4 20L12 16L20 20L12 2Z"
-          fill="#083040"
+        {/* Anillo exterior */}
+        <circle
+          cx="0"
+          cy="0"
+          r={16}
           stroke="#083040"
-          strokeWidth="1"
-          strokeLinejoin="round"
+          strokeWidth="1.5"
+        />
+        {/* Bolita interior que rueda */}
+        <circle
+          ref={ballRef}
+          cx="0"
+          cy="0"
+          r={3.5}
+          fill="#083040"
         />
       </svg>
     </div>
