@@ -142,7 +142,7 @@ const ProjectCard = ({ proyecto, index, verProyecto }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center font-['Geist'] font-semibold transition-all duration-200 hover:bg-gray-100"
             style={{
-              fontSize: "14px",
+              fontSize: "13px",
               height: "46px",
               paddingLeft: "28px",
               paddingRight: "28px",
