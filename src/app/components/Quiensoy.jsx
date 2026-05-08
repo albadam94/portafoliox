@@ -1,78 +1,106 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from "next-intl";
 
 const Quiensoy = () => {
+  const t = useTranslations("quiensoy");
   return (
-    // Contenedor principal con márgenes controlados para consistencia visual
     <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 mt-16 md:mt-24 mb-20 font-['Geist']">
-      
-      {/* Título - Manteniendo los 48px y el espaciado de letras del resto del sitio */}
-      <h1 
-        className="text-custom-blue font-bold mb-8 text-[40px] md:text-[48px]"
-        style={{ letterSpacing: '-2px' }}
+
+      <h1
+        className="font-bold mb-12"
+        style={{ fontSize: "clamp(36px, 5vw, 48px)", letterSpacing: "-2px", color: "#ffffff" }}
       >
-        Acerca de mí
+        {t("titulo")}
       </h1>
 
-      {/* Grid: Imagen a la derecha en Desktop, arriba en Mobile (order-1) */}
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
-        
-        {/* Bloque de Imagen - Prioridad en mobile con la proporción 3/4 para evitar cortes */}
-        <div className="w-full lg:w-[400px] flex-shrink-0 order-1 lg:order-2">
-          <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:w-[400px] lg:h-[550px] overflow-hidden ">
+      <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+
+        <div className="w-full lg:w-[360px] flex-shrink-0 order-1 lg:order-2">
+          <div
+            className="relative w-full overflow-hidden rounded-2xl"
+            style={{
+              aspectRatio: "3/4",
+              maxHeight: "520px",
+              border: "1px solid rgba(255,255,255,0.08)",
+            }}
+          >
             <Image
-              src="/perfil.png"  
+              src="/perfil.png"
               alt="Brayan Albadam"
               fill
-              className="object-cover object-top shadow-sm border border-gray-100" 
+              className="object-cover object-top"
               priority
+            />
+            <div
+              className="absolute inset-0 rounded-2xl"
+              style={{
+                background: "linear-gradient(to bottom, transparent 60%, rgba(12,12,14,0.4) 100%)",
+              }}
             />
           </div>
         </div>
 
-        {/* Bloque de Texto - Ajustado con el nuevo contenido */}
-        <div className="w-full lg:flex-1 text-Darkcharcoal font-normal leading-relaxed text-base space-y-6 order-2 lg:order-1">
-          <p>
-            Soy <span className="font-semibold text-custom-blue">Brayan Albadam</span>, diseñador digital con formación en la Universidad Politécnico Grancolombiano y certificaciones en UX por{' '}
+        <div className="w-full lg:flex-1 order-2 lg:order-1 space-y-6">
+
+          <p className="leading-relaxed text-base" style={{ color: "#9CA3AF" }}>
+            {t("p1").split("Brayan Albadam")[0]}
+            <span className="font-semibold" style={{ color: "#4CB5F5" }}>Brayan Albadam</span>
+            {t("p1").split("Brayan Albadam")[1]?.split("Google")[0]}
             <a
               href="https://www.coursera.org/account/accomplishments/specialization/certificate/DVYLRJ2VVTH5"
-              className="text-sky-500 font-bold underline"
               target="_blank"
               rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-2 transition-colors duration-200"
+              style={{ color: "#4CB5F5" }}
+              onMouseEnter={e => e.currentTarget.style.color = "#FFD700"}
+              onMouseLeave={e => e.currentTarget.style.color = "#4CB5F5"}
             >
               Google
-            </a>{' '}
-            y la Universidad San Buenaventura Cali, complementadas con estudios en desarrollo de aplicaciones web por la Universidad Industrial de Santander.
+            </a>
+            {t("p1").split("Google")[1]}
           </p>
 
-          <p>
-            Mi trabajo combina diseño y desarrollo: he construido identidades de marca para empresas y profesionales, desarrollado interfaces en WordPress y liderado la experiencia de usuario en una plataforma educativa en CANVAS LMS para agricultores de Centroamérica, donde el diseño fue clave para superar barreras de accesibilidad y adopción tecnológica.
+          <p className="leading-relaxed text-base" style={{ color: "#9CA3AF" }}>
+            {t("p2")}
           </p>
 
-          <p>
-            Como <span className="font-semibold text-custom-blue">Project Manager</span> en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, coordiné los equipos de diseño y desarrollo para entregar 74 MVPs en el Ciclo 2 del Proyecto Apps.Co — Fase Producto Digital, cumpliendo tiempos y estándares de calidad.
+          <p className="leading-relaxed text-base" style={{ color: "#9CA3AF" }}>
+            {t("p3").split("Project Manager")[0]}
+            <span className="font-semibold" style={{ color: "#4CB5F5" }}>Project Manager</span>
+            {t("p3").split("Project Manager")[1]}
           </p>
 
-          <p>
-            He sido semifinalista en el{' '}
+          <p className="leading-relaxed text-base" style={{ color: "#9CA3AF" }}>
+            {t("p4").split("concurso")[0]}
             <a
               href="https://www.infobae.com/america/mexico/2021/04/13/como-va-la-convocatoria-para-crear-el-logotipo-del-aeropuerto-felipe-angeles-que-lanzo-simon-levy/"
-              className="text-sky-500 font-bold underline"
               target="_blank"
               rel="noopener noreferrer"
+              className="font-semibold underline underline-offset-2 transition-colors duration-200"
+              style={{ color: "#4CB5F5" }}
+              onMouseEnter={e => e.currentTarget.style.color = "#FFD700"}
+              onMouseLeave={e => e.currentTarget.style.color = "#4CB5F5"}
             >
-              concurso
-            </a>{' '}
-            de rediseño de marca del Aeropuerto Internacional Felipe Ángeles de México y participé en el reto Bank Design 2023 de Bancolombia, dos experiencias que pusieron a prueba mi criterio bajo presión real.
+              {t("p4").includes("concurso") ? "concurso" : "contest"}
+            </a>
+            {t("p4").split(t("p4").includes("concurso") ? "concurso" : "contest")[1]}
           </p>
 
-          <p>
-            Aplico Design Thinking para descubrir problemas reales, traducirlos en soluciones claras y construir experiencias que la gente realmente quiera usar.
+          <p className="leading-relaxed text-base" style={{ color: "#9CA3AF" }}>
+            {t("p5")}
           </p>
+
+          {/* Divider */}
+          <div
+            className="w-full h-px mt-8"
+            style={{ background: "rgba(255,255,255,0.06)" }}
+          /> 
+          </div>
+
         </div>
-
       </div>
-    </div>
   );
 };
 

@@ -22,10 +22,11 @@ const Icons = () => {
         >
           <FontAwesomeIcon 
             icon={item.icon} 
-            className="text-[#083040] transition-transform duration-300 ease-in-out group-hover:scale-150 group-hover:text-[#FFD700]"
-            style={{ fontSize: '24px' }}
+            className="transition-transform duration-300 ease-in-out group-hover:scale-150"
+            style={{ fontSize: '24px', color: 'rgba(76,181,245,0.4)' }}
+            onMouseEnter={e => e.currentTarget.style.color = '#4CB5F5'}
+            onMouseLeave={e => e.currentTarget.style.color = 'rgba(76,181,245,0.4)'}
           />
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1.5 w-2 bg-[#FFD700] rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out" />
         </a>
       ))}
     </div>
@@ -33,4 +34,3 @@ const Icons = () => {
 };
 
 export default Icons;
-

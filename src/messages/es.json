@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "proyectos": "Proyectos",
+    "acerca": "Acerca de mi",
+    "contacto": "Contacto",
+    "descargarCV": "Descargar CV"
+  },
+  "hero": {
+    "titulo": "Product Designer",
+    "linea1": "Hola ✌️ soy Brayan Albadam diseñador digital",
+    "linea2": "Especializado en diseño de experiencia de usuario"
+  },
+  "about": {
+    "titulo": "Realizo diseños multidisciplinarios que combina estrategia, diseño y desarrollo para ofrecer soluciones integrales de principio a fin.",
+    "linea1": "Lo hago de 3 maneras:",
+    "linea2": "Trabajando con clientes para crear sistemas y soluciones que resuelvan sus desafíos,",
+    "linea3": "Desarrollando proyectos internos enfocados en construir productos que la gente quiera,",
+    "linea4": "Y dirigiendo iniciativas que reúnen a los diseñadores y desarrolladores más brillantes."
+  },
+  "proyectos": {
+    "titulo": "Proyectos",
+    "subtitulo": "Conoce algunos proyectos que he diseñado e implementado",
+    "verProyecto": "Ver Proyecto",
+    "items": [
+      {
+        "title": "Proyecto ASAVirtual",
+        "description": "Diseño e implementación de las interfaces y contenidos de aprendizaje para agricultores de centroamerica, diseño de experiencias, learning experience, implementación en HTML y CSS en Canvas LMS",
+        "imageUrl": "/asavirtualweb.webp",
+        "link": "https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual",
+        "tags": ["Product Design", "Frontend Development"]
+      },
+      {
+        "title": "Bank Design Bancolombia",
+        "description": "Desafio de diseño UX/UI para mejorar la experiencia de usuario en personas de la tercera edad al usar la sucursal virtual de Bancolombia en su versión Web",
+        "imageUrl": "/bancolombiaweb.webp",
+        "link": "https://www.behance.net/gallery/180569665/Bank-Design-2023-Bancolombia",
+        "tags": ["Product Design"]
+      },
+      {
+        "title": "Kognitiiv AI SaaS",
+        "description": "Diseño de producto digital basado en un cerebro de IA el cual esta dividido por areas las cuales responden a una funcionalidad especifica como soporte IT, Agente de llamadas, Marketing y ventas entre otras funcionalidades.",
+        "imageUrl": "/Kognittivweb.webp",
+        "link": "https://www.figma.com/design/fa8uVNniFaV3cwNs5JgX3a/Kognitiiv-SaaS?m=auto&t=hmgSGANipKkvW2nP-6",
+        "tags": ["Product Design"]
+      },
+      {
+        "title": "Integration social",
+        "description": "Diseño UI de un sitio web que ofrece servicios de comunicación todo-en-uno ayudando a las empresas a centralizar en un solo lugar la comunicación con clientes por SMS, correo, llamadas y redes sociales.",
+        "imageUrl": "/integrationmockupweb.webp",
+        "link": "https://integrationsocial.com/",
+        "tags": ["UX/UI Design"]
+      },
+      {
+        "title": "Fluity Fintech App",
+        "description": "Diseño de una app Fintech para el manejo de finanzas personales, inversiones en criptomonedas, transferencias bancarias y pagos de servicios",
+        "imageUrl": "/fluityweb.webp",
+        "link": "https://www.behance.net/gallery/218209629/Fluity-Fintech-App",
+        "tags": ["Product Design"]
+      },
+      {
+        "title": "Tactiq Bizzell",
+        "description": "Diseño UI de una landing page que ofrece soluciones innovadoras en gestión de personal, logistica, comunicaciones, consultoria estrategica y tecnologia avanzada para agencias federales",
+        "imageUrl": "/tactiqbizellweb.webp",
+        "link": "https://www.tactiq-bizzell.us/",
+        "tags": ["UX/UI Design"]
+      },
+      {
+        "title": "Tripflow App",
+        "description": "Diseño en Figma de una app móvil para presupuestar viajes de forma fácil y rápida, permitiendo a los usuarios planificar sus gastos y actividades durante sus vacaciones.",
+        "imageUrl": "/tripflowweb.webp",
+        "link": "https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1",
+        "tags": ["Product Design"]
+      },
+      {
+        "title": "NUÍ App",
+        "description": "Diseño UI y desarrollo frontend en Wordpress de una landing page que ofrece soluciones mediante una app para el comercio gastronomico",
+        "imageUrl": "/nuiweb.webp",
+        "link": "https://nuiapp.netlify.app/",
+        "tags": ["UX/UI Design", "Frontend Development"]
+      }
+    ]
+  },
+  "quiensoy": {
+    "titulo": "Acerca de mí",
+    "p1": "Soy Brayan Albadam, diseñador digital con formación en la Universidad Politécnico Grancolombiano y certificaciones en UX por Google y la Universidad San Buenaventura Cali, complementadas con estudios en desarrollo de aplicaciones web por la Universidad Industrial de Santander.",
+    "p2": "Mi trabajo combina diseño y desarrollo: he construido identidades de marca para empresas y profesionales, desarrollado interfaces en WordPress y liderado la experiencia de usuario en una plataforma educativa en CANVAS LMS para agricultores de Centroamérica, donde el diseño fue clave para superar barreras de accesibilidad y adopción tecnológica.",
+    "p3": "Como Project Manager en un proyecto con el Ministerio TIC, Apps.CO y la Universidad ICESI, coordiné los equipos de diseño y desarrollo para entregar 74 MVPs en el Ciclo 2 del Proyecto Apps.Co — Fase Producto Digital, cumpliendo tiempos y estándares de calidad.",
+    "p4": "He sido semifinalista en el concurso de rediseño de marca del Aeropuerto Internacional Felipe Ángeles de México y participé en el reto Bank Design 2023 de Bancolombia, dos experiencias que pusieron a prueba mi criterio bajo presión real.",
+    "p5": "Aplico Design Thinking para descubrir problemas reales, traducirlos en soluciones claras y construir experiencias que la gente realmente quiera usar."
+  },
+  "habilidades": {
+    "titulo": "Habilidades",
+    "items": [
+      "Diseño UX/UI",
+      "Investigación de usuarios",
+      "Prototipado",
+      "Wireframe",
+      "Design Thinking",
+      "Diseño de producto",
+      "Adobe Creative Cloud",
+      "Diseño de espacios",
+      "Desarrollo Web"
+    ]
+  },
+  "stack": { "titulo": "Stack" },
+  "educacion": {
+    "titulo": "Educación",
+    "items": [
+      {
+        "titulo": "Profesional en Diseño Digital (En progreso)",
+        "institucion": "Universidad Politécnico GranColombiano",
+        "descripcion": "Diseñador interactivo: Diseño de interfaces digitales y experiencia de usuario • Diseñador publicitario • Director de arte y creativo: Creación de campañas publicitarias y estrategias de comunicación visual • Ilustrador digital: Creación de ilustraciones y gráficos digitales • Coordinador áreas de diseño: Gestión y coordinación de equipos de diseño"
+      },
+      {
+        "titulo": "Tecnólogo producción multimedia",
+        "institucion": "SENA",
+        "descripcion": "Desarrollador de multimedia (offline y online) • Diseñador gráfico digital • Ilustrador • Diseñador UX/UI • Webmaster • Editor de audio y video • Asesor de sistemas multimediales • Director de proyectos multimediales"
+      },
+      {
+        "titulo": "Diplomado programación, Desarrollo de software con énfasis en aplicaciones web",
+        "institucion": "Universidad Industrial de Santander",
+        "descripcion": "Diplomado de programación en Python con framework Django, desarrollo de aplicaciones web en HTML, CSS, React, creación de arquitectura en diagramas UML, bases de datos."
+      },
+      {
+        "titulo": "Certificado profesional diseño de experiencia de usuario UX Google",
+        "institucion": "Coursera — Google",
+        "descripcion": "Seguir el proceso de diseño: empatizar con las y los usuarios, definir dificultades, sugerir soluciones, crear prototipos, probar diseños e iterar. Aplicar conceptos básicos de UX, como el diseño centrado en las y los usuarios, en la accesibilidad y en la equidad. Planificar estudios de investigación, realizar entrevistas y estudios de usabilidad y síntesis de resultados de investigación."
+      },
+      {
+        "titulo": "Diseño de experiencia de usuario y consumidor UX-CX",
+        "institucion": "Universidad San Buenaventura",
+        "descripcion": "Creación de productos digitales que permitan una buena experiencia del usuario teniendo en cuenta aspectos de experiencia del lado del cliente para satisfacer necesidades desde el diseño aplicando metodologías como el design thinking."
+      },
+      {
+        "titulo": "Ver más",
+        "institucion": "Otros estudios y certificaciones",
+        "descripcion": "Otros estudios en producción de imágenes digitales, marketing digital, administración de comunidades en línea, desarrollo web, comercio electrónico, aplicación de metodologías SCRUM para proyectos de software."
+      }
+    ]
+  },
+  "experiencia": {
+    "titulo": "Experiencia",
+    "items": [
+      {
+        "titulo": "Diseñador UX/UI — Desarrollador Frontend",
+        "empresa": "We Are Angular",
+        "descripcion": [
+          "Diseño y desarrollo de landings page e ecommerce en Wordpress.",
+          "Lideré la implementación Frontend de un LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.",
+          "Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.",
+          "Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos y brindé apoyo en el diseño UI en la creación de banners y demás elementos visuales."
+        ]
+      },
+      {
+        "titulo": "Project Manager",
+        "empresa": "Ministerio TIC | Innpulsa | Universidad ICESI",
+        "descripcion": ["Líder de proyecto Mid Level, encargado de gestionar las actividades necesarias que debían realizar los diseñadores y desarrolladores, para entregar en los tiempos establecidos los 74 productos mínimos viables que hicieron parte del Ciclo 2 del Proyecto Apps.Co — Fase Producto Digital."]
+      },
+      {
+        "titulo": "Freelance",
+        "empresa": "Independiente",
+        "descripcion": [
+          "Prestación de servicios en consultoría UX, diseño de experiencia de usuario, creación de marca para empresas, profesionales e instituciones, ayudando a escalar y comprender las necesidades de los usuarios mediante el diseño de productos y servicios digitales.",
+          "Diseño de marca y de empaque Ecocomfort, empresa de productos para el hogar de fabricación artesanal.",
+          "Diseño UX/UI de la app web Playme del sector entretenimiento de contenidos. Diseño de flujos, UI KIT, componentes, dashboard de estadísticas y pagos."
+        ]
+      },
+      {
+        "titulo": "Product Designer",
+        "empresa": "Innovative MOJO",
+        "descripcion": [
+          "Realizar investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informar las decisiones de diseño.",
+          "Desarrollar perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.",
+          "Crear prototipos interactivos que articulen claramente el flujo y la funcionalidad de los productos digitales.",
+          "Desarrollar sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "disenado": "Diseñado en",
+    "desarrollado": "Desarrollado en",
+    "derechos": "Todos los derechos reservados"
+  }
+}
