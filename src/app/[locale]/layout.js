@@ -34,7 +34,8 @@ export default async function RootLayout({ children, params }) {
         <meta name="keywords" content={metadata.keywords} />
         <meta name="robots" content={metadata.robots} />
         <meta name="google-site-verification" content={metadata["google-site-verification"]} />
-        <link rel="icon" href="/favicons/Favicon.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/Favicons/Favicon.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/Favicons/Favicon.png?v=2" />
       </head>
       <body suppressHydrationWarning={true}>
         <Providers messages={messages} locale={locale}>
