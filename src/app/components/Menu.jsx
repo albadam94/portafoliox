@@ -266,6 +266,7 @@ export default function Menu() {
   const t = useTranslations("nav");
 
   const isEn = locale === "en";
+  const cvUrl = t("cvUrl");
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -303,9 +304,7 @@ export default function Menu() {
   return (
     <nav
       className="menu mt-0 sticky top-0 z-50 py-3 px-4"
-      style={{
-        backgroundColor: "#0C0C0E",
-      }}
+      style={{ backgroundColor: "#0C0C0E" }}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex justify-between items-center h-14">
@@ -338,10 +337,9 @@ export default function Menu() {
           </div>
 
           <div className="hidden lg:flex items-center space-x-3 font-['Geist']">
-            <CVButton href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing">
+            <CVButton href={cvUrl}>
               {t("descargarCV")}
             </CVButton>
-
             <LangToggle lang={isEn ? "En" : "Es"} onToggle={toggleLang} size="md" />
           </div>
 
@@ -408,7 +406,7 @@ export default function Menu() {
               {t("contacto")}
             </a>
 
-            <CVButton href="https://drive.google.com/file/d/1OyqOQWaFNqTk0MlQ5NlPZFLWZciZO3px/view?usp=sharing">
+            <CVButton href={cvUrl}>
               {t("descargarCV")}
             </CVButton>
           </div>

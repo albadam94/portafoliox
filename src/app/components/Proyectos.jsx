@@ -12,8 +12,10 @@ const ProjectCard = ({ proyecto, index, verProyecto }) => {
     offset: ["start start", "end start"],
   });
 
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "10%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
+  // Imagen más alta y margen generoso para evitar el golpe
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  // Contenido se mueve muy sutilmente
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
 
   return (
     <div
@@ -26,9 +28,14 @@ const ProjectCard = ({ proyecto, index, verProyecto }) => {
         marginLeft: "calc(-50vw + 50%)",
       }}
     >
+      {/* Imagen con mayor altura y margen negativo para absorber el parallax */}
       <motion.div
         className="absolute inset-x-0 w-full"
-        style={{ y: imageY, height: "120%", top: "-10%" }}
+        style={{
+          y: imageY,
+          height: "140%",
+          top: "-20%",
+        }}
       >
         <Image
           src={proyecto.imageUrl}
@@ -42,6 +49,7 @@ const ProjectCard = ({ proyecto, index, verProyecto }) => {
         />
       </motion.div>
 
+      {/* Gradiente izquierda */}
       <div
         className="absolute inset-0"
         style={{
@@ -58,6 +66,7 @@ const ProjectCard = ({ proyecto, index, verProyecto }) => {
         }}
       />
 
+      {/* Gradiente arriba/abajo */}
       <div
         className="absolute inset-0"
         style={{
@@ -164,7 +173,7 @@ const ProyectosList = () => {
       >
         <h1
           className="font-['Geist'] font-bold mt-8"
-          style={{ fontSize: "48px", letterSpacing: "-2px", color: "#9CA3AF" }}
+          style={{ fontSize: "48px", letterSpacing: "-2px", color: "#FFFFFF" }}
         >
           {t("titulo")}
         </h1>

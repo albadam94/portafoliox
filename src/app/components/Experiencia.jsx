@@ -45,7 +45,6 @@ const Experiencia = () => {
               <div className="text-sm font-normal pb-4 leading-relaxed space-y-4" style={{ color: "#9CA3AF" }}>
                 {item.descripcion.map((parrafo, i) => (
                   <p key={i}>
-                    {/* Link especial para Playme */}
                     {parrafo.includes("Playme") || parrafo.includes("playme") ? (
                       <>
                         {parrafo.split(/playme\.us|Playme web app/i)[0]}
@@ -59,7 +58,7 @@ const Experiencia = () => {
                               rel="noopener noreferrer"
                               className="font-bold underline transition-colors duration-200"
                               style={{ color: "#4CB5F5" }}
-                              onMouseEnter={e => e.currentTarget.style.color = "#FFD700"}
+                              onMouseEnter={e => e.currentTarget.style.color = "#FFFFFF"}
                               onMouseLeave={e => e.currentTarget.style.color = "#4CB5F5"}
                             >
                               playme.us
@@ -72,7 +71,7 @@ const Experiencia = () => {
                             rel="noopener noreferrer"
                             className="font-bold underline transition-colors duration-200"
                             style={{ color: "#4CB5F5" }}
-                            onMouseEnter={e => e.currentTarget.style.color = "#FFD700"}
+                            onMouseEnter={e => e.currentTarget.style.color = "#FFFFFF"}
                             onMouseLeave={e => e.currentTarget.style.color = "#4CB5F5"}
                           >
                             playme.us
