@@ -150,7 +150,6 @@ const CVButton = ({ href, children }) => {
         />
       </span>
 
-      {/* Texto */}
       <span className="relative z-[2]">{children}</span>
     </a>
   );
@@ -306,7 +305,6 @@ export default function Menu() {
       className="menu mt-0 sticky top-0 z-50 py-3 px-4"
       style={{
         backgroundColor: "#0C0C0E",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
       }}
     >
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
