@@ -31,6 +31,13 @@
         "link": "https://www.behance.net/gallery/188355743/Proyecto-ASAVirtual",
         "tags": ["Product Design", "Frontend Development"]
       },
+         {
+        "title": "Stryde Ecommerce",
+        "description": "Figma design of a sports apparel e-commerce app, brand design, UX/UI design, frontend development with Claude IA.",
+        "imageUrl": "/strydeweb.webp",
+        "link": "https://ecommerce-stryde.vercel.app/",
+        "tags": ["Brand Design", "Product Design", "Frontend Development"]
+      },
       {
         "title": "Bank Design Bancolombia",
         "description": "UX/UI design challenge to improve the user experience for elderly people using Bancolombia's virtual branch in its Web version",
@@ -66,13 +73,7 @@
         "link": "https://www.tactiq-bizzell.us/",
         "tags": ["UX/UI Design"]
       },
-      {
-        "title": "Tripflow App",
-        "description": "Figma design of a mobile app to budget trips easily and quickly, allowing users to plan their expenses and activities during their vacations.",
-        "imageUrl": "/tripflowweb.webp",
-        "link": "https://www.figma.com/design/38ehOtnXgZLLJ9174nO7zA/Tripflow?node-id=0-1&t=zUwQK01bOi5oP1q9-1",
-        "tags": ["Product Design"]
-      },
+   
       {
         "title": "NUÍ App",
         "description": "UI design and frontend development in WordPress of a landing page offering solutions through an app for the gastronomic commerce",
