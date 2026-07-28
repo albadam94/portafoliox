@@ -52,7 +52,8 @@ const Experiencia = () => {
                           <>
                             <span>Playme web app</span>
                             {parrafo.split(/Playme web app/i)[1]?.replace("playme.us", "")}
-                            {" "}<a
+                            {" "}
+                            <a
                               href="https://playme.us"
                               target="_blank"
                               rel="noopener noreferrer"
@@ -83,6 +84,34 @@ const Experiencia = () => {
                     )}
                   </p>
                 ))}
+
+                {item.proyectos && (
+                  <div>
+                    <p>{t("proyectosLabel")}</p>
+                    <ul className="mt-2 space-y-1.5">
+                      {item.proyectos.map((proyecto, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <span style={{ color: "#4CB5F5" }}>●</span>
+                          {proyecto.url ? (
+                            <a
+                              href={proyecto.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-bold underline transition-colors duration-200"
+                              style={{ color: "#4CB5F5" }}
+                              onMouseEnter={e => e.currentTarget.style.color = "#FFFFFF"}
+                              onMouseLeave={e => e.currentTarget.style.color = "#4CB5F5"}
+                            >
+                              {proyecto.nombre}
+                            </a>
+                          ) : (
+                            <span>{proyecto.nombre}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </AccordionItem>
           ))}

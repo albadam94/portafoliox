@@ -140,17 +140,19 @@
       }
     ]
   },
-  "experiencia": {
-    "titulo": "Experiencia",
-    "items": [
+"experiencia": {
+  "titulo": "Experiencia",
+  "proyectosLabel": "Algunos proyectos que diseñé son:",
+  "items": [
       {
         "titulo": "Diseñador UX/UI — Desarrollador Frontend",
         "empresa": "We Are Angular",
         "descripcion": [
-          "Diseño y desarrollo de landings page e ecommerce en Wordpress.",
-          "Lideré la implementación Frontend de un LMS en CANVAS para un proyecto de educación en agricultura para usuarios en países de San Salvador, Honduras y Guatemala; Diseño Experiencia de usuario UX, Obtención de datos con API y CSV, Creación de módulos, Registros CSV, implementación HTML y CSS.",
-          "Realicé pruebas de usabilidad con el equipo de Learning Experience para conocer la interactividad de los usuarios con la aplicación.",
-          "Realicé los diseños de UX Flow, UX Task, casos de uso del sistema PRM de aprendizaje y de cada uno de los cursos y brindé apoyo en el diseño UI en la creación de banners y demás elementos visuales."
+          "Diseñé y desarrollé sitios web en WordPress para proyectos como NUI Experience y Afroproyectos, asegurando una experiencia de usuario intuitiva y alineada con los objetivos de negocio.",
+          "Lideré la implementación frontend en CANVAS LMS para un proyecto de educación agrícola dirigido a usuarios de El Salvador, Honduras y Guatemala, participando en el diseño de experiencia de usuario, integración y obtención de datos mediante APIs, creación de módulos de aprendizaje, gestión de registros CSV e implementación de interfaces utilizando HTML y CSS.",
+          "Realicé pruebas de usabilidad en colaboración con el equipo de Learning Experience para evaluar la interacción de los agricultores con la plataforma e identificar oportunidades de mejora en la experiencia de usuario.",
+          "Diseñé flujos de usuario, flujos de tareas y casos de uso para el sistema de aprendizaje PRM y sus cursos, optimizando los recorridos de los usuarios y facilitando el cumplimiento de los objetivos de aprendizaje.",
+          "Apoyé los procesos de diseño y prototipado mediante la creación y actualización de interfaces en Figma, colaborando posteriormente en su implementación dentro de la plataforma mediante HTML y CSS para garantizar consistencia entre diseño y desarrollo."
         ]
       },
       {
@@ -170,12 +172,23 @@
       {
         "titulo": "Product Designer",
         "empresa": "Innovative MOJO",
-        "descripcion": [
-          "Realizar investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informar las decisiones de diseño.",
-          "Desarrollar perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.",
-          "Crear prototipos interactivos que articulen claramente el flujo y la funcionalidad de los productos digitales.",
-          "Desarrollar sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales."
-        ]
+"descripcion": [
+  "Realice investigaciones de usuarios, pruebas de usabilidad y análisis de datos para comprender el comportamiento de la audiencia e informe las decisiones de diseño.",
+  "Desarrolle perfiles de usuario, mapas de viaje y wireframes para garantizar una comprensión completa de las necesidades y comportamientos de los usuarios.",
+  "Implemente prototipos interactivos que se articularan claramente en el flujo y la funcionalidad de los productos digitales.",
+  "Diseñe interfaces visualmente atractivas que se alinearan con la identidad de la marca y los objetivos de marketing.",
+  "Desarrolle sistemas de diseño, guías de estilo y bibliotecas de componentes para mantener la coherencia en todos los puntos de contacto digitales.",
+  "Colabore con los desarrolladores para garantizar que la integridad del diseño se mantuviera durante la fase de desarrollo."
+],
+"proyectos": [
+  { "nombre": "staterallc.com", "url": "https://staterallc.com" },
+  { "nombre": "foodienotachef.com", "url": "https://foodienotachef.com" },
+  { "nombre": "meritmatch.io", "url": "https://meritmatch.io" },
+  { "nombre": "integrationsocial.com", "url": "https://integrationsocial.com" },
+  { "nombre": "tactiq-bizzell.us", "url": "https://tactiq-bizzell.us" },
+  { "nombre": "dealerautopilot.com", "url": "https://dealerautopilot.com" },
+  { "nombre": "Kognitiiv AI (SaaS)", "url": "https://www.figma.com/design/8i2iDmf3YPZlwjV21vyNjP/Kognitiiv-SaaS?node-id=0-1&t=BC7LlJrJuWLShXFx-1" }
+]
       }
     ]
   },
